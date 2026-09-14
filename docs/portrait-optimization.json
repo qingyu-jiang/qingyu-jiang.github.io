@@ -6,12 +6,12 @@
     1122,
     1402
   ],
-  "web_bytes": 127163,
-  "web_sha256": "1cc6b8ed4f345b60788879527053fb1a8354b68db7f987e4adf1116835d802a9",
+  "web_bytes": 424129,
+  "web_sha256": "35f029f9192211bbbd1af9f2e853174d32a209c13b15334faf619e0f24bd24c2",
   "web_dimensions": [
-    750,
-    937
+    1122,
+    1402
   ],
-  "reduction_percent": 93.5,
-  "encoding": "Progressive JPEG, quality 88, no chroma subsampling; original crop retained"
+  "reduction_percent": 78.5,
+  "encoding": "Progressive JPEG, quality 95, no chroma subsampling; full source resolution and original crop retained; no sharpening or retouching"
 }

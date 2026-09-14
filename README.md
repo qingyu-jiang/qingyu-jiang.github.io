@@ -43,8 +43,10 @@ authors, journals, dates, and publication status should be verified when updated
 
 ## Portrait and CV
 
-The chosen `photo.png` is used as `assets/img/portrait.jpg`: 750 × 937 pixels,
-127 KB, with the original framing preserved. The original remains at the
+The chosen `photo.png` is used as `assets/img/portrait.jpg`: 1122 × 1402 pixels,
+424 KB, preserving the full supplied resolution and original framing. The high-quality
+JPEG uses no additional sharpening. Its display URL changes with each build so
+browsers fetch the updated photo. The original remains at the
 project root, ignored by Git and excluded from the site. The temporary portrait
 comparison has been removed. Encoding details are in
 [portrait metadata](docs/portrait-optimization.json).

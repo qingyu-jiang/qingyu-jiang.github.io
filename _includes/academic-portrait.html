@@ -1,6 +1,6 @@
 {% assign portrait = site.academic.portrait | default: '' | strip %}
 {% if portrait != '' %}
-<img class="portrait" src="{{ portrait | relative_url | escape }}" alt="{{ site.academic.portrait_alt | escape }}" width="250" height="313" fetchpriority="high">
+<img class="portrait" src="{{ portrait | relative_url | escape }}?v={{ site.time | date: '%s' }}" alt="{{ site.academic.portrait_alt | escape }}" width="250" height="313" fetchpriority="high">
 {% else %}
 <div class="portrait portrait-placeholder" role="img" aria-label="Portrait placeholder: professional photograph to be supplied">[Your portrait]</div>
 {% endif %}
