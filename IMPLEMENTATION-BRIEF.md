@@ -4,7 +4,7 @@ The reviewed website uses Beautiful Jekyll 6.0.1 in this project folder, preserv
 the agreed white background, charcoal text, Georgia headings, system body text,
 and responsive portrait layout. Navigation is Home · Research · Teaching · Contact.
 
-- Identity: Qingyu Jiang, Assistant Professor of Psychology, University of Idaho.
+- Identity: Qingyu Jiang, Assistant Professor, University of Idaho.
 - GitHub account: `qingyu-jiang`; intended user-site repository: `qingyu-jiang.github.io`.
 - The four pages use the reviewed CV, research statement, university profile,
   and verified publication records. Maintain the supported roles and dates.

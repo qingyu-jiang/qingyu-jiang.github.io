@@ -27,13 +27,11 @@ Before joining the University of Idaho, I completed a postdoctoral fellowship at
 {: #education-title }
 
 <ul class="education-list">
-  <li>Ph.D., Human Sciences
-    <span>University of Nebraska–Lincoln · 2023</span>
-    <span>Specialization: Child, Youth, and Family Studies</span>
-    <span>Graduate Certificate in Mixed Methods Research</span>
+  <li>Ph.D. in Child, Youth, and Family Studies, 2023
+    <span>University of Nebraska-Lincoln</span>
   </li>
-  <li>B.A., Psychology
-    <span>Michigan State University · 2016</span>
+  <li>B.A. in Psychology, 2016
+    <span>Michigan State University</span>
   </li>
 </ul>
 

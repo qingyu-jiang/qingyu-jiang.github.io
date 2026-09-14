@@ -1,7 +1,7 @@
 ---
 title: Contact
 permalink: /contact/
-share-description: "Contact Qingyu Jiang, Assistant Professor of Psychology at the University of Idaho, and find academic profile links."
+share-description: "Contact Qingyu Jiang, Assistant Professor at the University of Idaho, and find academic profile links."
 ---
 <div class="reading" markdown="1">
 

@@ -9,7 +9,7 @@ mobile-theme-col: "#ffffff"
 
 academic:
   # Shared academic identity. Update here after an affiliation change.
-  position: "Assistant Professor of Psychology"
+  position: "Assistant Professor"
   affiliation: "University of Idaho"
   department: "Department of Psychology and Communication"
   college: "College of Letters, Arts and Social Sciences"

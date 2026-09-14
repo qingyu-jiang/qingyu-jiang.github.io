@@ -49,7 +49,7 @@ h3 { font: 500 1.0625rem/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Aria
 .pending-link { display: inline-block; color: var(--muted); padding: 4px 0; }
 .pending-link small { font-size: .75rem; }
 .education { border-top: 1px solid var(--line); padding-top: 30px; margin-top: 36px; }
-.education-list { list-style: none; padding: 0; margin: 0 0 4px; display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; font-size: .9375rem; }
+.education-list { list-style: none; padding: 0; margin: 0 0 4px; display: grid; grid-template-columns: 1fr; font-size: .9375rem; }
 .education-list li { margin-bottom: 15px; line-height: 1.6; }
 .education-list span { display: block; color: var(--muted); font-size: .875rem; }
 .reading { max-width: 740px; }
@@ -109,7 +109,6 @@ figcaption { margin-top: 8px; font-size: .75rem; line-height: 1.6; color: var(--
   .portrait { width: 180px; max-width: 100%; }
   .intro-heading { font-size: 1.5rem; }
   .education { margin-top: 30px; padding-top: 27px; }
-  .education-list { grid-template-columns: 1fr; }
   .research-area { grid-template-columns: 1fr; gap: 15px; }
   .research-figure { max-width: 250px; }
   h1 { font-size: 1.8125rem; }
