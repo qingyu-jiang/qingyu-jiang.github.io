@@ -1,9 +1,12 @@
 # Qingyu Jiang’s academic website
 
 Beautiful Jekyll 6.0.1 with a custom academic layout.
-Website: https://qingyu-jiang.github.io.
-Source: https://github.com/qingyu-jiang/qingyu-jiang.github.io.
-GitHub Pages publishes the reviewed `main` branch through GitHub Actions.
+Future website: https://qingyu-jiang.github.io.
+Private source: https://github.com/qingyu-jiang/qingyu-jiang.github.io.
+
+**Private review:** the repository is private, GitHub Pages is unpublished, and the
+Academic website workflow is disabled. Continue reviewing locally. Commits and
+pushes do not publish the website; launch requires Qingyu’s explicit request.
 
 ## Preview and build
 
@@ -58,9 +61,11 @@ verification checks for the newly approved public file.
 
 ## Publishing and maintenance
 
-[Deployment instructions](docs/DEPLOYMENT.md) cover account connection, repository
-setup, GitHub Pages, verification, and rollback. The workflow builds pull requests;
-changes on `main` also deploy once Pages is configured. Local setup does not publish.
+[Deployment instructions](docs/DEPLOYMENT.md) cover the current private setup and
+deliberate launch procedure. The disabled workflow accepts manual runs only. When
+re-enabled, it builds and verifies by default; uploading and deploying require
+`publish: true` on `main` after GitHub Pages has been restored. Local setup does not
+publish. Keep publishing disabled until Qingyu asks to launch.
 
 The original documents and earlier review records remain private under `contexts/`.
 The detailed local source mapping remains at `docs/FACT-CHECK.md`, ignored by Git.
