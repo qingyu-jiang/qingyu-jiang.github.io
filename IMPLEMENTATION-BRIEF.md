@@ -13,8 +13,9 @@ and responsive portrait layout. Navigation is Home · Research · Teaching · Co
   The alternative-photo comparison is complete and its tooling has been removed.
 - CV remains a non-clickable **CV** label with **[Coming soon]**. No PDF is public.
 - Production builds are indexable; local previews add a notice and noindex metadata.
-- The GitHub Actions workflow is prepared. Account connection, repository creation
-  or verification, Pages configuration, and the first live check remain pending.
+- The personal repository is connected as `origin`; `upstream` retains the theme
+  source. GitHub Pages uses the prepared Actions workflow with HTTPS and permits
+  deployments only from `main`. Check the live site after each deployment.
 
 See README.md and docs/DEPLOYMENT.md for current commands and maintenance.
 The full original brief and dated review history are preserved locally under

@@ -1,8 +1,9 @@
 # Qingyu Jiang’s academic website
 
-Beautiful Jekyll 6.0.1 with a custom academic layout. The four pages and selected
-portrait are ready locally; GitHub account connection and the first deployment
-remain to be completed. Intended public URL: https://qingyu-jiang.github.io.
+Beautiful Jekyll 6.0.1 with a custom academic layout.
+Website: https://qingyu-jiang.github.io.
+Source: https://github.com/qingyu-jiang/qingyu-jiang.github.io.
+GitHub Pages publishes the reviewed `main` branch through GitHub Actions.
 
 ## Preview and build
 

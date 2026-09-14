@@ -6,13 +6,19 @@ Jekyll upstream history; the original remote is named `upstream`.
 
 ## Current status
 
-The site and deployment workflow are prepared locally. The unauthenticated GitHub
-API confirms the account exists with no public repositories; the target repository
-returns 404. This does not establish whether a private repository exists. No
-personal remote has been connected and no site has been published. An authenticated
-connection to the intended account is needed for those steps.
+The repository is connected as `origin` at
+https://github.com/qingyu-jiang/qingyu-jiang.github.io. Its default branch is `main`.
+GitHub Pages uses **GitHub Actions**, HTTPS is enforced, and the `github-pages`
+environment permits deployments only from `main`. The account was authenticated
+as `qingyu-jiang` before creating the repository.
 
-## Connect and publish
+The project-local GitHub CLI is `.runtime/github-cli/gh`; its configuration is in
+`.runtime/github-config/`. These remain ignored and excluded. Git identity and the
+credential helper are configured only for this repository. Routine terminal edits
+can use `git add`, `git commit`, and `git push`; no global Git settings were changed.
+After moving the project or signing out, reconnect authentication before pushing.
+
+## Recreate this setup on another computer
 
 1. Authenticate GitHub as `qingyu-jiang` using the GitHub CLI or an available GitHub
    connection. Verify the active account, then check for an existing repository,
