@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+# Install project-local dependencies, or run a command in the prepared bundle.
+set -euo pipefail
+
+project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$project_dir"
+bundler_version=2.5.22
+portable_version=3.3.8
+portable_ruby="$project_dir/.runtime/portable-ruby/$portable_version/bin/ruby"
+run_mode=false
+if [[ "${1:-}" == --run ]]; then
+  run_mode=true
+  shift
+fi
+
+# Prefer the portable runtime already prepared for this project. An existing
+# supported Ruby is also usable; no shell profile or system Ruby is modified.
+if [[ -x "$portable_ruby" ]]; then
+  ruby_bin="$portable_ruby"
+elif command -v ruby >/dev/null 2>&1 && ruby -e 'exit(Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.3") && Gem::Version.new(RUBY_VERSION) < Gem::Version.new("4.0") ? 0 : 1)' 2>/dev/null; then
+  ruby_bin="$(command -v ruby)"
+elif "$run_mode"; then
+  printf '%s\n' 'Run ./scripts/bootstrap once to prepare the local Ruby environment.' >&2
+  exit 1
+elif [[ "$(uname -s)" == Darwin && "$(uname -m)" == arm64 ]]; then
+  printf '%s\n' 'Downloading isolated Ruby 3.3.8 for Apple Silicon…'
+  mkdir -p "$project_dir/.runtime/downloads"
+  archive="$project_dir/.runtime/downloads/portable-ruby-3.3.8.arm64_big_sur.bottle.tar.gz"
+  curl --fail --location --retry 2 --output "$archive" \
+    'https://github.com/Homebrew/homebrew-portable-ruby/releases/download/3.3.8/portable-ruby-3.3.8.arm64_big_sur.bottle.tar.gz'
+  # Official Homebrew/brew 4.4.32 portable-ruby-arm64-darwin checksum.
+  expected=7645e2d653a335798030f6502e7834dfdbeeec5629429a1a34da5dbb2c57d63e
+  actual="$(shasum -a 256 "$archive" | awk '{print $1}')"
+  if [[ "$actual" != "$expected" ]]; then
+    printf '%s\n' 'Ruby download checksum did not match. Bootstrap stopped.' >&2
+    exit 1
+  fi
+  tar -xzf "$archive" -C "$project_dir/.runtime"
+  ruby_bin="$portable_ruby"
+else
+  printf '%s\n' 'Install Ruby 3.3.8 with your preferred Ruby version manager, then rerun ./scripts/bootstrap.' 'See docs/LOCAL-PREVIEW.md.' >&2
+  exit 1
+fi
+
+export PATH="$(dirname "$ruby_bin"):$project_dir/.runtime/bootstrap-gems/bin:$PATH"
+export GEM_HOME="$project_dir/.runtime/bootstrap-gems"
+export GEM_PATH="$GEM_HOME:$("$ruby_bin" -e 'puts Gem.default_path.join(File::PATH_SEPARATOR)')"
+export BUNDLE_PATH="$project_dir/vendor/bundle"
+export BUNDLE_APP_CONFIG="$project_dir/.bundle"
+export BUNDLE_USER_HOME="$project_dir/.runtime/bundler"
+export BUNDLE_FROZEN=true
+
+if "$run_mode"; then
+  if ! "$ruby_bin" -S bundle "_${bundler_version}_" check >/dev/null 2>&1; then
+    printf '%s\n' 'Dependencies need setup. Run ./scripts/bootstrap, then retry.' >&2
+    exit 1
+  fi
+  exec "$ruby_bin" -S bundle "_${bundler_version}_" exec "$@"
+fi
+
+mkdir -p "$GEM_HOME"
+if ! "$ruby_bin" -S bundle "_${bundler_version}_" --version >/dev/null 2>&1; then
+  "$ruby_bin" -S gem install bundler --version "$bundler_version" --no-document
+fi
+"$ruby_bin" -S bundle "_${bundler_version}_" install --jobs 4 --retry 2
+printf '%s\n' 'Local dependencies are ready. Run ./scripts/preview and open http://127.0.0.1:4000.'

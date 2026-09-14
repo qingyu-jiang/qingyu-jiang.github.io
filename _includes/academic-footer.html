@@ -1,0 +1,5 @@
+<footer class="academic-footer">
+  <span>© {{ site.time | date: '%Y' }} {{ site.title | escape }}</span>
+  <span>Powered by <a href="https://beautifuljekyll.com/">Beautiful Jekyll</a></span>
+  {% if site.academic.content_pending %}<p class="review-note">{{ site.academic.review_note | default: 'Local review · Bracketed text marks content to supply.' | escape }}</p>{% endif %}
+</footer>

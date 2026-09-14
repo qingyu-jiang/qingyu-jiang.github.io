@@ -1,13 +1,27 @@
-# project
-_site
-.sass-cache
-.vagrant
+# Generated files and project-local dependencies.
+_site/
+.sass-cache/
+.vagrant/
+.runtime/
+.bundle/
+vendor/
+.jekyll-cache/
+.jekyll-metadata
+beautiful-jekyll-theme-*.gem
 
-# general
+# Operating-system metadata.
 .DS_Store
 Thumbs.db
 ehthumbs.db
 
-Gemfile.lock
+# Original material and private review history stay on this computer.
+/contexts/
+/photo.png
+/Headshot*.JPG
 
-beautiful-jekyll-theme-*.gem
+# Only maintenance documentation and portrait encoding metadata are public.
+/docs/*
+!/docs/LOCAL-PREVIEW.md
+!/docs/DEPLOYMENT.md
+!/docs/UPSTREAM.md
+!/docs/portrait-optimization.json

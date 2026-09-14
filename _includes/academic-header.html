@@ -1,0 +1,17 @@
+<header class="academic-header">
+  <div class="identity">
+    <div class="identity-text">
+      <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+      <p class="affiliation">{{ site.academic.position | escape }}<br>{{ site.academic.affiliation | escape }}</p>
+    </div>
+    <div class="header-cv">{% include academic-cv.html %}</div>
+  </div>
+  <nav class="academic-nav" aria-label="Main navigation">
+    <button class="menu-toggle" type="button" aria-controls="navigation-links" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button>
+    <ul class="nav-list" id="navigation-links">
+      {% for item in site.academic.navigation %}
+      <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

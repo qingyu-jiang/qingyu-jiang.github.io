@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export JEKYLL_ENV="${JEKYLL_ENV:-production}"
+exec "$project_dir/scripts/bootstrap" --run jekyll build "$@"

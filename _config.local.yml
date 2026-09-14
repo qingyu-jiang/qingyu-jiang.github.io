@@ -1,0 +1,4 @@
+# Preview-only settings; production builds load _config.yml on its own.
+academic:
+  content_pending: true
+  review_note: "Local preview"

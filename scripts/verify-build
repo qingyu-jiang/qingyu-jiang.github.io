@@ -1,0 +1,133 @@
+#!/usr/bin/env bash
+# Guard the reviewed Pages artifact. Update the explicit file list when adding pages.
+set -euo pipefail
+project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+if [[ $# -gt 1 ]]; then
+  printf '%s\n' 'Usage: ./scripts/verify-build [build-directory]' >&2
+  exit 2
+fi
+exec "$project_dir/scripts/bootstrap" --run ruby - "$project_dir" "${1:-_site}" <<'RUBY'
+require 'cgi'
+require 'find'
+require 'pathname'
+require 'rexml/document'
+
+project, destination = ARGV
+build = Pathname.new(File.expand_path(destination, project))
+origin = 'https://qingyu-jiang.github.io'
+portrait = "#{origin}/assets/img/portrait.jpg"
+pages = {
+  'index.html' => '/',
+  'research/index.html' => '/research/',
+  'teaching/index.html' => '/teaching/',
+  'contact/index.html' => '/contact/',
+  '404.html' => '/404.html'
+}.freeze
+expected = (pages.keys + %w[
+  assets/css/academic.css assets/js/academic.js
+  assets/img/academic-favicon.svg assets/img/portrait.jpg
+  robots.txt sitemap.xml
+]).sort.freeze
+errors = []
+abort "Build verification failed: #{build} is not a directory. Run ./scripts/build first." unless build.directory?
+
+actual = []
+Find.find(build.to_s) do |path|
+  entry = Pathname.new(path)
+  next if entry == build
+  relative = entry.relative_path_from(build).to_s
+  if entry.symlink?
+    errors << "#{relative}: symbolic links are not allowed in the Pages artifact."
+    actual << relative
+  elsif entry.file?
+    actual << relative
+    errors << "#{relative}: file is empty." if entry.size.zero?
+  end
+end
+(expected - actual).each { |path| errors << "Missing #{path}." }
+(actual - expected).each { |path| errors << "Unexpected #{path}; remove it or review and update the allowed file list." }
+
+def attributes(tag)
+  tag.scan(/([:\w-]+)\s*=\s*(["'])(.*?)\2/m).to_h do |name, _, value|
+    [name.downcase, CGI.unescapeHTML(value)]
+  end
+end
+
+def metadata(html, key)
+  html.scan(/<meta\b[^>]*>/im).filter_map do |tag|
+    attrs = attributes(tag)
+    attrs['content'] if attrs['name'] == key || attrs['property'] == key
+  end
+end
+
+html_by_path = {}
+pages.each do |path, url_path|
+  next unless (build + path).file?
+  html = (build + path).read
+  html_by_path[path] = html
+  canonical = html.scan(/<link\b[^>]*>/im).filter_map do |tag|
+    attrs = attributes(tag)
+    attrs['href'] if attrs.fetch('rel', '').split.include?('canonical')
+  end
+  errors << "#{path}: canonical URL must be #{origin}#{url_path}." unless canonical == ["#{origin}#{url_path}"]
+  errors << "#{path}: og:image must use the public portrait URL." unless metadata(html, 'og:image') == [portrait]
+  errors << "#{path}: og:url must match its public canonical URL." unless metadata(html, 'og:url') == ["#{origin}#{url_path}"]
+  errors << "#{path}: contains a local development URL." if html.match?(%r{(?:https?:)?//(?:localhost|127\.\d+\.\d+\.\d+|0\.0\.0\.0|\[::1\])(?=[:/"'\s<])}i)
+  errors << "#{path}: contains the local review notice." if html.match?(/review-note|Local (?:draft|preview|review)/i)
+  robots = metadata(html, 'robots').join(',')
+  if path == '404.html'
+    errors << '404.html: add noindex metadata to the error page.' unless robots.match?(/\bnoindex\b/i)
+  elsif html.match?(/\bnoindex\b/i)
+    errors << "#{path}: contains noindex; build with the production configuration."
+  end
+
+  header = html[/<header\b[^>]*>(.*?)<\/header>/im, 1].to_s
+  cv = header.scan(/<span\b[^>]*class\s*=\s*["'][^"']*\bpending-cv\b[^"']*["'][^>]*>(.*?)<\/span>/im).flatten
+  cv_text = cv.map { |text| CGI.unescapeHTML(text.gsub(/<[^>]*>/, '')).gsub(/\s+/, '') }
+  errors << "#{path}: the header must retain the CV [Coming soon] placeholder." unless cv_text == ['CV[Comingsoon]']
+  anchors = html.scan(/<a\b[^>]*>.*?<\/a>/im)
+  if anchors.any? { |anchor| attributes(anchor.split('>', 2).first + '>')['href'].to_s.match?(%r{(?:^|/)assets/files/cv\.pdf(?:[?#]|$)}i) }
+    errors << "#{path}: the reserved CV PDF must not be linked."
+  end
+  if header.scan(/<a\b[^>]*>(.*?)<\/a>/im).flatten.any? { |text| CGI.unescapeHTML(text.gsub(/<[^>]*>/, '')).strip.match?(/\A(?:Full\s+)?CV(?:\s|\z)/i) }
+    errors << "#{path}: CV must remain non-clickable."
+  end
+  if path != 'research/index.html' && html.match?(/\bWHEAT\b/)
+    errors << "#{path}: WHEAT Lab belongs only at the bottom of Research."
+  end
+end
+
+research = html_by_path['research/index.html']
+if research
+  main = research[/<main\b[^>]*>(.*?)<\/main>/im, 1].to_s.strip
+  last_section = main.scan(/<section\b[^>]*>.*?<\/section>/im).last.to_s
+  lab_class = attributes(last_section.split('>', 2).first.to_s + '>').fetch('class', '').split.include?('lab-note')
+  unless lab_class && last_section.match?(/\bWHEAT Lab\b/) && main.end_with?(last_section) && research.scan(/\bWHEAT\b/).size == 1
+    errors << 'research/index.html: keep one WHEAT Lab section as the final content in main.'
+  end
+end
+
+if (build + 'sitemap.xml').file?
+  begin
+    xml = REXML::Document.new((build + 'sitemap.xml').read)
+    locations = xml.root.elements.to_a('url').map { |url| url.elements['loc']&.text.to_s }
+    expected_locations = pages.reject { |path, _| path == '404.html' }.values.map { |path| origin + path }.sort
+    errors << 'sitemap.xml: expected exactly the four public page URLs, without localhost or the 404 page.' unless locations.sort == expected_locations
+  rescue REXML::ParseException, NoMethodError => error
+    errors << "sitemap.xml: invalid sitemap (#{error.class})."
+  end
+end
+if (build + 'robots.txt').file?
+  robots = (build + 'robots.txt').read
+  sitemaps = robots.lines.filter_map { |line| line[/\A\s*Sitemap:\s*(\S+)\s*\z/i, 1] }
+  errors << "robots.txt: Sitemap must be #{origin}/sitemap.xml." unless sitemaps == ["#{origin}/sitemap.xml"]
+  errors << 'robots.txt: Disallow: / would block the public site.' if robots.match?(%r{^\s*Disallow:\s*/\s*$}i)
+end
+
+unless errors.empty?
+  warn "Build verification failed (#{errors.size}):"
+  errors.each { |error| warn "  - #{error}" }
+  exit 1
+end
+puts 'Build verified: 11 public files; production URLs, indexing, CV placeholder, and Research-only WHEAT Lab checked.'
+RUBY

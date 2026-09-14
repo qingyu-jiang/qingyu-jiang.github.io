@@ -124,6 +124,9 @@
 
   {% if img != "" %}
   <meta property="og:image" content="{{ img | absolute_url }}">
+  {% if img == site.academic.portrait %}
+  <meta property="og:image:alt" content="{{ site.academic.portrait_alt | escape }}">
+  {% endif %}
   {% endif %}
 
   {% if page.id %}
@@ -140,19 +143,24 @@
   <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
   {% endif %}
 
-  {% if img != "" and img != site.avatar %}
+  {% if img != "" and img != site.avatar and img != site.academic.portrait %}
   <meta name="twitter:card" content="summary_large_image">
   {% else %}
   <meta name="twitter:card" content="summary">
   {% endif %}
+  {% if site.social-network-links.twitter %}
   <meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
   <meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
+  {% endif %}
 
   <meta property="twitter:title" content="{{ title }}">
   <meta property="twitter:description" content="{{ description }}">
 
   {% if img != "" %}
   <meta name="twitter:image" content="{{ img | absolute_url }}">
+  {% if img == site.academic.portrait %}
+  <meta name="twitter:image:alt" content="{{ site.academic.portrait_alt | escape }}">
+  {% endif %}
   {% endif %}
 
   {% include matomo.html %}
