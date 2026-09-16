@@ -75,10 +75,18 @@ domains, or an accidentally exposed CV.
 
 ## Verify a launch or later publication
 
-Open Home, Research, Teaching, and Contact at desktop and phone sizes. Check
-navigation, portrait, DOI/profile/email links, and the custom 404 page. Confirm
-**CV [Coming soon]** remains non-clickable, with no PDF available, and WHEAT Lab
-appears only at the bottom of Research.
+The current content revision follows Website_v2.docx. Open Home, Research,
+Teaching, WHEAT Lab, and Contact at desktop and phone sizes. Check the five-item
+navigation, full-resolution portrait, Home profile icons and links, DOI/email
+links, and the custom 404 page. Verify all eleven teaching entries and the full
+author lists for the five selected publications. Research should start with its
+three areas, and lab recruitment should appear on the dedicated WHEAT Lab page.
+
+Confirm the website has no CV control or placeholder and no exposed or linked CV
+PDF. The lab’s request for applicants to email their CV is intentional. Resolve
+or clearly retain any pending research-image and profile-link choices before
+approving publication. Source documents and private review records must not be
+included in the twelve-file production artifact.
 
 Confirm canonical URLs, sharing image, `sitemap.xml`, and `robots.txt` use the
 public HTTPS domain. Live pages must omit the local notice and noindex metadata

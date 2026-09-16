@@ -1,74 +1,81 @@
 ---
 title: Teaching
 permalink: /teaching/
-share-description: "Qingyu Jiang’s teaching in psychology and family studies, undergraduate research mentoring, and academic and community service."
+share-description: "Qingyu Jiang’s teaching experience as an instructor, co-instructor, graduate teaching assistant, and guest lecturer."
 ---
 <div class="reading" markdown="1">
 
 # Teaching
 
-My teaching spans developmental psychology, emotion, family policy, and research training. My experience includes psychology instruction at the University of Idaho and co-instruction in child and family studies at the University of Nebraska–Lincoln.
+<section class="teaching-role" aria-labelledby="instructor" markdown="1">
 
-<section class="content-section" aria-labelledby="selected-teaching" markdown="1">
+## Instructor
+{: #instructor }
 
-## Selected teaching experience
-{: #selected-teaching }
-
-### University of Idaho
-
-<ul class="course-list">
-  <li>
-    <span class="course-title">Psychology of Emotion</span>
-    <span class="course-meta">PSYC 4560 · Instructor · Fall 2026</span>
-  </li>
-  <li>
-    <span class="course-title">Developmental Psychology</span>
-    <span class="course-meta">PSYC 3050 · Instructor · Spring 2026</span>
-  </li>
-  <li>
-    <span class="course-title">Psychology Research Training</span>
-    <span class="course-meta">PSYC 4940 · Instructor · 2025–present</span>
-  </li>
-</ul>
-
-I also contribute one session per semester to **Survey of Contemporary Psychology** (PSYC 2010; 2025–present).
-{: .teaching-note }
-
-### University of Nebraska–Lincoln
+*University of Idaho*
+{: .teaching-institution }
 
 <ul class="course-list">
-  <li>
-    <span class="course-title">Child and Family Policy</span>
-    <span class="course-meta">CYAF 488/888 · Co-instructor · Spring 2022</span>
-  </li>
-  <li>
-    <span class="course-title">Youth Professionals as Consumers of Research</span>
-    <span class="course-meta">CYAF 863 · Co-instructor · Fall 2021</span>
-  </li>
+  <li>PSYC 3050: Developmental Psychology</li>
+  <li>PSYC 4560: Psychology of Emotion</li>
+  <li>PSYC 4940: Psychology Research Training</li>
 </ul>
-
-My earlier experience also includes graduate teaching assistantships at Nebraska and guest lectures on qualitative and social research methods.
-{: .teaching-note }
 
 </section>
 
-<section class="content-section" aria-labelledby="mentoring" markdown="1">
+<section class="teaching-role" aria-labelledby="co-instructor" markdown="1">
 
-## Mentoring
-{: #mentoring }
+## Co-Instructor
+{: #co-instructor }
 
-I mentor undergraduate research assistants and have served on a master’s thesis committee in Family and Consumer Sciences. My work with student collaborators includes reviews of mental health chatbots and generative AI in parenting. I aim to help students develop research questions, learn complementary methods, and work toward presentations and publications.
+*University of Nebraska-Lincoln*
+{: .teaching-institution }
+
+<ul class="course-list">
+  <li>CYAF 488/888: Child and Family Policy</li>
+  <li>CYAF 863: Youth Professionals as Consumers of Research</li>
+</ul>
 
 </section>
 
-<section class="content-section" aria-labelledby="service" markdown="1">
+<section class="teaching-role" aria-labelledby="teaching-assistant" markdown="1">
 
-## Service and community engagement
-{: #service }
+## Graduate Teaching Assistant
+{: #teaching-assistant }
 
-My professional service includes reviewing for journals such as *Child Development* and *Family Process*, as well as academic conferences. At the University of Idaho, I serve on the Graduate Program Committee and the Honors Program Committee.
+*University of Nebraska-Lincoln*
+{: .teaching-institution }
 
-My community engagement has included coordinating outreach for the Building Our Bonds Authentically project in Massachusetts and coordinating an Expanded Learning Opportunity Project in Nebraska.
+<ul class="course-list">
+  <li>CYAF 160: Human Development and the Family</li>
+  <li>CYAF 380: Working with Families in Communities and Schools</li>
+</ul>
+
+</section>
+
+<section class="teaching-role" aria-labelledby="guest-lecturer" markdown="1">
+
+## Guest Lecturer
+{: #guest-lecturer }
+
+<ul class="course-list guest-courses">
+  <li>
+    <span class="course-title">SOC 3133: Methods in Social Research</span>
+    <em class="course-meta">The University of Oklahoma</em>
+  </li>
+  <li>
+    <span class="course-title">CD 6642: Qualitative Methods</span>
+    <em class="course-meta">California State University, San Bernardino</em>
+  </li>
+  <li>
+    <span class="course-title">CYAF 160: Human Development and Family</span>
+    <em class="course-meta">University of Nebraska-Lincoln</em>
+  </li>
+  <li>
+    <span class="course-title">CYAF 271: Infancy</span>
+    <em class="course-meta">University of Nebraska-Lincoln</em>
+  </li>
+</ul>
 
 </section>
 </div>

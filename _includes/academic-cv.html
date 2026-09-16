@@ -1,6 +1,0 @@
-{%- assign cv_files = site.static_files | where: 'path', site.academic.cv -%}
-{%- if site.academic.cv_enabled == true and cv_files.size > 0 -%}
-<a class="cv-link" href="{{ site.academic.cv | relative_url }}">{{ include.label | default: 'CV' }}</a>
-{%- else -%}
-<span class="pending-cv">{{ include.label | default: 'CV' }}<small>[Coming soon]</small></span>
-{%- endif -%}

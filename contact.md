@@ -1,20 +1,20 @@
 ---
 title: Contact
 permalink: /contact/
-share-description: "Contact Qingyu Jiang, Assistant Professor at the University of Idaho, and find academic profile links."
+share-description: "Contact Qingyu Jiang, Assistant Professor at the University of Idaho, by email or at the Department of Psychology and Communication."
 ---
-<div class="reading" markdown="1">
+<div class="reading contact-page" markdown="1">
 
-# Contact
+# Let’s get in touch!
 
-<p>{% include academic-email.html %}</p>
-
-<p>{{ site.academic.department | escape }}<br>{{ site.academic.college | escape }}<br>{{ site.academic.location | escape }}</p>
-
+<p>Email: {% include academic-email.html %}</p>
 <p>Office: {{ site.academic.office | escape }}</p>
 
-<p>I am also affiliate faculty in the {{ site.academic.affiliate_school | escape }}.</p>
-
-{% include academic-profiles.html %}
+<address class="postal-address">
+  {{ site.academic.affiliation | escape }}<br>
+  {{ site.academic.department | escape }}<br>
+  {{ site.academic.street_address | escape }}<br>
+  {{ site.academic.postal_city | escape }}
+</address>
 
 </div>

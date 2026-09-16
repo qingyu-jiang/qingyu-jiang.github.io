@@ -13,22 +13,29 @@ academic:
   affiliation: "University of Idaho"
   department: "Department of Psychology and Communication"
   college: "College of Letters, Arts and Social Sciences"
-  office: "Student Health Center, Room 201"
+  office: "Student Health Center 201"
+  street_address: "875 Perimeter Drive MS 3043"
+  postal_city: "Moscow, ID 83844"
   location: "Moscow, Idaho"
   affiliate_school: "Margaret Ritchie School of Family and Consumer Sciences"
   github_username: qingyu-jiang
   email: "qjiang@uidaho.edu"
   portrait: "/assets/img/portrait.jpg"
   portrait_alt: "Portrait of Qingyu Jiang"
-  cv: "/assets/files/cv.pdf" # Reserved stable path; currently excluded from the build.
-  cv_enabled: false # Keep the header placeholder until a CV is explicitly enabled.
   content_pending: false # Local preview overrides this; approved production content is indexable.
   profiles:
-    - label: Google Scholar
-      url: "https://scholar.google.com/citations?user=ZQPFSWsAAAAJ&hl=en"
-    - label: University profile
+    - label: Faculty Page
+      icon: faculty
       url: "https://www.uidaho.edu/people/qjiang"
-  # Add other professional profiles here when their URLs are supplied.
+    - label: Google Scholar
+      icon: scholar
+      url: "https://scholar.google.com/citations?user=ZQPFSWsAAAAJ&hl=en"
+    - label: ResearchGate
+      icon: researchgate
+      url: "" # Awaiting the supplied profile URL.
+    - label: LinkedIn
+      icon: linkedin
+      url: "" # Awaiting the supplied profile URL.
   navigation:
     - title: Home
       url: /
@@ -36,6 +43,8 @@ academic:
       url: /research/
     - title: Teaching
       url: /teaching/
+    - title: WHEAT Lab
+      url: /wheat-lab/
     - title: Contact
       url: /contact/
 

@@ -36,6 +36,6 @@ Qingyu requests launch and publishing has been restored. See [deployment setting
    the academic design; do not restore demo identity, blog content, or deployment
    automation as part of a theme update.
 4. Run `./scripts/bootstrap` and `./scripts/build`, then review the actual pages,
-   keyboard navigation, phone layout, and CV behavior before merging.
+   keyboard navigation, phone layout, and the absence of a public CV before merging.
 5. Record the reviewed upstream revision and any dependency changes here. Use
    `git revert <commit>` if the update needs to be undone.

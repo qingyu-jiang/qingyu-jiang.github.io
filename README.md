@@ -32,32 +32,46 @@ time; stop the preview first or supply a different `--destination` for the build
 
 ## Content
 
+The current content revision follows the supplied **Website_v2.docx**. Its detailed
+page copy replaces the earlier first-person introduction, teaching summaries, and
+Research-only lab note. Navigation is **Home · Research · Teaching · WHEAT Lab ·
+Contact**. The original document is private source material, not a website asset.
+
 | File | Page or purpose |
 | --- | --- |
-| `index.md` | Home: introduction and education |
-| `research.md` | Research themes, selected publications, and WHEAT Lab at the bottom |
-| `teaching.md` | Selected courses, mentoring, and service |
-| `contact.md` | Contact introduction and shared contact details |
-| `_config.yml` | Identity, affiliation, email, profile links, navigation, portrait, and CV settings |
+| `index.md` | Four-paragraph biography, profile icons/links, and stacked education |
+| `research.md` | Three research areas, five selected publications with full author lists, and two current AI projects |
+| `teaching.md` | Eleven course entries grouped by Instructor, Co-Instructor, Graduate Teaching Assistant, and Guest Lecturer |
+| `wheat-lab.md` | Lab introduction, recruitment information, and application instructions |
+| `contact.md` | Email, office, and mailing address |
+| `_config.yml` | Identity, affiliation, email, profile links, navigation, and portrait |
 
-Edit paragraphs in Markdown while preserving front matter and permalinks. Keep
-**WHEAT Lab only at the bottom of Research**. Citation titles link to DOI records;
-authors, journals, dates, and publication status should be verified when updated.
+Edit paragraphs in Markdown while preserving front matter and permalinks. Research
+begins with the three areas; its page heading is available to assistive technology
+without repeating a visible introduction. WHEAT Lab has its own page and appears
+in the Home biography and navigation. Keep each publication’s complete author
+list and verify metadata when updating citations. The two AI entries are current
+projects, not published papers.
+
+Keep missing profile destinations and research imagery clearly marked until
+approved links and images are available. Do not invent profile URLs or present a
+placeholder as a research result. The latest document governs content where it
+differs from the original brief; retain previously verified publication corrections.
 
 ## Portrait and CV
 
 The chosen `photo.png` is used as `assets/img/portrait.jpg`: 1122 × 1402 pixels,
 424 KB, preserving the full supplied resolution and original framing. The high-quality
 JPEG uses no additional sharpening. Its display URL changes with each build so
-browsers fetch the updated photo. The original remains at the
-project root, ignored by Git and excluded from the site. The temporary portrait
-comparison has been removed. Encoding details are in
-[portrait metadata](docs/portrait-optimization.json).
+browsers fetch the updated photo. The original remains at the project root, ignored
+by Git and excluded from the site. The temporary portrait comparison has been
+removed. Encoding details are in [portrait metadata](docs/portrait-optimization.json).
 
-The header displays **CV** and **[Coming soon]**, without a download link. To add a
-CV later, put the approved file at `assets/files/cv.pdf`, remove its specific
-exclusion in `_config.yml`, set `academic.cv_enabled: true`, and update the build
-verification checks for the newly approved public file.
+Website_v2.docx removes the website’s CV control and placeholder. No CV PDF is
+public or linked. The lab’s request that applicants email **their CV** remains part
+of its application instructions. Adding Qingyu’s CV in the future requires an
+explicit content decision and corresponding changes to the output allowlist and
+build checks; placing a PDF in the folder alone must not expose it.
 
 ## Publishing and maintenance
 

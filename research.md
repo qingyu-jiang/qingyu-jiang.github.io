@@ -1,26 +1,30 @@
 ---
 title: Research
 permalink: /research/
-share-description: "Research on family relationships, caregiver well-being, child development, and parents’ use of generative AI, with selected publications."
+share-description: "Research on developmental contexts and child adaptation, caregiver well-being and early childhood development, and mental health and parenting in the age of AI."
 ---
-# Research
+<h1 class="visually-hidden">Research</h1>
 
-My research examines family relationships, caregiver well-being, and the resources that support children’s development. I combine longitudinal analyses, qualitative inquiry, and mixed methods, with particular attention to families facing economic hardship and barriers to support.
-{: .research-intro }
+<section class="research-area" aria-labelledby="research-1" markdown="1">
 
-<section class="research-area no-image" aria-labelledby="research-1" markdown="1">
-<div markdown="1">
-
-## Family relationships, stress, and child development
+## Developmental Contexts, Family, and Child Adaptation
 {: #research-1 }
 
-I study how economic hardship, parenting stress, and family relationships relate to children’s emotional and behavioral adjustment. Much of this work uses longitudinal data to examine reciprocal associations between parents and children over time, and how coparenting and parent–child closeness connect early experiences with adolescent mental health.
+<div class="research-overview">
+<div markdown="1">
 
-In a first-author longitudinal study of single-mother families facing economic hardship, parenting stress and child behavior problems predicted one another between ages three and five. Across later intervals through age fifteen, child behavior problems predicted subsequent maternal parenting stress. Related collaborative work examines family relationships as pathways linking childhood material hardship with adolescent depression and anxiety.
+Dr. Jiang’s research examines how developmental contexts and family relationships shape child development and mental health. Across family, community, cultural, and socioeconomic contexts, she studies parenting stress, coparenting, and parent-child relationships to understand social-emotional development and the risk of behavioral and mental health problems. Much of this research draws on the Future of Families and Child Wellbeing Study, a national longitudinal study with substantial representation of racially and ethnically diverse families and families experiencing economic disadvantage. She uses repeated assessments from birth through early childhood and into adolescence to trace how early experiences and caregiving relate to later adjustment.
+
+</div>
+<figure class="research-figure">
+  <div class="figure-placeholder"><span class="placeholder-kicker">Research image</span><span>Image to be added</span></div>
+  <figcaption>Placeholder · Research area 1</figcaption>
+</figure>
+</div>
 
 <div class="selected-publication" markdown="1">
 
-### Selected publications
+### Selected Publications
 
 <div class="publication" markdown="1">
 
@@ -33,30 +37,37 @@ Jiang, Q., Wang, D., Yang, Z., & Choi, J.-K. (2023). *Family Process, 62*(2), 67
 </div>
 <div class="publication" markdown="1">
 
-[Family relationships mediate the association between material hardship and adolescent mental health](https://doi.org/10.1037/fam0001406)
+[The longitudinal influences of adverse childhood experiences and positive childhood experiences at family, school, and neighborhood on adolescent depression and anxiety](https://doi.org/10.1016/j.jad.2021.05.108)
 {: .publication-title }
 
-Wang, D., Frost, A. M. H., & Jiang, Q. (2026). *Journal of Family Psychology, 40*(5), 746–757.
+Wang, D., Jiang, Q., Yang, Z., & Choi, J.-K. (2021). *Journal of Affective Disorders, 292*, 542–551.
 {: .citation-details }
 
 </div>
 </div>
-</div>
+
 </section>
 
-<section class="research-area no-image" aria-labelledby="research-2" markdown="1">
-<div markdown="1">
+<section class="research-area" aria-labelledby="research-2" markdown="1">
 
-## Caregiver well-being and early development
+## Caregiver Well-Being and Early Childhood Development
 {: #research-2 }
 
-I examine how parents’ psychological and relational resources connect with everyday caregiving and children’s development. My work includes postpartum mental health, caregiving confidence, infant development, and mindful parenting.
+<div class="research-overview">
+<div markdown="1">
 
-In research with mothers during the COVID-19 pandemic, engagement in meaningful activities was associated with fewer postpartum depressive symptoms, particularly among mothers who reported a depression diagnosis during pregnancy. In another study, greater mindful parenting was associated with less pressure to eat, which was related to lower food responsiveness in toddlers. Together, these projects inform my interest in feasible ways to support caregivers and young children.
+She studies how psychological and relational resources support caregiver well-being, responsive caregiving, and early childhood development. Parents’ well-being matters in its own right and is central to the relationships through which young children grow. Her work focuses on self-compassion, self-efficacy, mindful parenting, and social support across pregnancy, infancy, and early childhood. She explores how these resources relate to parents’ experiences of mental health and stress, their responses during challenging parent-child interactions, and young children’s emotional, social, and cognitive development. She is particularly interested in how caregivers manage their own emotions while helping children learn to regulate theirs. This research also guides her plans for nature-based, mindfulness-informed programs that combine shared outdoor activities with practices to strengthen caregiver emotion regulation and responsive interaction.
+
+</div>
+<figure class="research-figure">
+  <div class="figure-placeholder"><span class="placeholder-kicker">Research image</span><span>Image to be added</span></div>
+  <figcaption>Placeholder · Research area 2</figcaption>
+</figure>
+</div>
 
 <div class="selected-publication" markdown="1">
 
-### Selected publications
+### Selected Publications
 
 <div class="publication" markdown="1">
 
@@ -76,35 +87,45 @@ Jiang, Q., Koire, A., Lin, H.-C., Feldman, N., Ma, C., Erdei, C., Mittal, L., Ro
 {: .citation-details }
 
 </div>
+<div class="publication" markdown="1">
+
+[Infant neurodevelopment during the COVID-19 pandemic: Associations with maternal pandemic-related experiences, parenting stress, and self-efficacy](https://doi.org/10.1016/j.earlhumdev.2024.106018)
+{: .publication-title }
+
+Jiang, Q., Feldman, N., Koire, A., Ma, C., Mittal, L., Lin, H.-C., Erdei, C., Roffman, J. L., & Liu, C. H. (2024). *Early Human Development, 193*, Article 106018.
+{: .citation-details }
+
 </div>
 </div>
+
 </section>
 
-<section class="research-area no-image" aria-labelledby="research-3" markdown="1">
-<div markdown="1">
+<section class="research-area" aria-labelledby="research-3" markdown="1">
 
-## Parenting and generative AI
+## Mental Health and Parenting in the Age of AI
 {: #research-3 }
 
-Emerging research
-{: .research-status }
+<div class="research-overview">
+<div markdown="1">
 
-I am developing a line of research on how parents use generative AI for information and support. With student collaborators, I am preparing two reviews: one on mental health chatbots relevant to parental well-being, and another on parents’ use and experiences of generative AI in early childhood parenting.
-
-Planned studies will examine why parents seek or avoid AI support, how parents’ experiences compare with independent assessments of response quality, and how these interactions relate to later coping and help-seeking. I am particularly interested in how AI fits alongside support from partners, communities, and professionals.
+Her research investigates how parents use generative artificial intelligence (AI) for support and what these interactions may mean for mental health, parenting, and family relationships. She asks when and why parents turn to AI, the kinds of support they seek, and how their needs and experiences relate to their mental health and family resources. A central question is whether support that feels helpful also offers reliable guidance that is responsive to parents’ needs, appropriate for child development, and relevant to everyday family life. Her goal is to understand the immediate and longer-term implications of AI support, including how it relates to coping, seeking help from others, and parenting decisions.
 
 </div>
+<figure class="research-figure">
+  <div class="figure-placeholder"><span class="placeholder-kicker">Research image</span><span>Image to be added</span></div>
+  <figcaption>Placeholder · Research area 3</figcaption>
+</figure>
+</div>
+
+<div class="current-projects" markdown="1">
+
+### Current Projects
+
+- AI Mental Health Chatbots and Parental Well-Being
+- Generative AI in Early Childhood Parenting
+
+</div>
+
 </section>
 
 {% include academic-profiles.html scholar_only=true %}
-
-<section class="lab-note" aria-labelledby="lab-title" markdown="1">
-
-## WHEAT Lab
-{: #lab-title }
-
-Well-being, Health, Early Adaptation and Thriving
-
-Undergraduate research assistants, Fall 2026: Camden Cotant · Isabelle Wellborn · Kathryn Barber
-
-</section>

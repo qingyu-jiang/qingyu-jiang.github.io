@@ -20,6 +20,7 @@ pages = {
   'index.html' => '/',
   'research/index.html' => '/research/',
   'teaching/index.html' => '/teaching/',
+  'wheat-lab/index.html' => '/wheat-lab/',
   'contact/index.html' => '/contact/',
   '404.html' => '/404.html'
 }.freeze
@@ -82,28 +83,42 @@ pages.each do |path, url_path|
   end
 
   header = html[/<header\b[^>]*>(.*?)<\/header>/im, 1].to_s
-  cv = header.scan(/<span\b[^>]*class\s*=\s*["'][^"']*\bpending-cv\b[^"']*["'][^>]*>(.*?)<\/span>/im).flatten
-  cv_text = cv.map { |text| CGI.unescapeHTML(text.gsub(/<[^>]*>/, '')).gsub(/\s+/, '') }
-  errors << "#{path}: the header must retain the CV [Coming soon] placeholder." unless cv_text == ['CV[Comingsoon]']
+  header_text = CGI.unescapeHTML(header.gsub(/<[^>]*>/, ' ')).gsub(/\s+/, ' ')
+  if header.match?(/\b(?:pending-cv|header-cv)\b/i) || header_text.match?(/\bCV\b/i)
+    errors << "#{path}: remove the CV control and placeholder from the header."
+  end
   anchors = html.scan(/<a\b[^>]*>.*?<\/a>/im)
   if anchors.any? { |anchor| attributes(anchor.split('>', 2).first + '>')['href'].to_s.match?(%r{(?:^|/)assets/files/cv\.pdf(?:[?#]|$)}i) }
     errors << "#{path}: the reserved CV PDF must not be linked."
   end
-  if header.scan(/<a\b[^>]*>(.*?)<\/a>/im).flatten.any? { |text| CGI.unescapeHTML(text.gsub(/<[^>]*>/, '')).strip.match?(/\A(?:Full\s+)?CV(?:\s|\z)/i) }
-    errors << "#{path}: CV must remain non-clickable."
+
+  nav = header[/<nav\b[^>]*>(.*?)<\/nav>/im, 1].to_s
+  nav_links = nav.scan(/<a\b[^>]*>.*?<\/a>/im).map do |anchor|
+    href = attributes(anchor.split('>', 2).first + '>')['href']
+    label = CGI.unescapeHTML(anchor.gsub(/<[^>]*>/, '')).gsub(/\s+/, ' ').strip
+    [label, href]
   end
-  if path != 'research/index.html' && html.match?(/\bWHEAT\b/)
-    errors << "#{path}: WHEAT Lab belongs only at the bottom of Research."
-  end
+  expected_nav = [
+    ['Home', '/'], ['Research', '/research/'], ['Teaching', '/teaching/'],
+    ['WHEAT Lab', '/wheat-lab/'], ['Contact', '/contact/']
+  ]
+  errors << "#{path}: navigation must contain the five reviewed links in order." unless nav_links == expected_nav
 end
 
 research = html_by_path['research/index.html']
 if research
   main = research[/<main\b[^>]*>(.*?)<\/main>/im, 1].to_s.strip
-  last_section = main.scan(/<section\b[^>]*>.*?<\/section>/im).last.to_s
-  lab_class = attributes(last_section.split('>', 2).first.to_s + '>').fetch('class', '').split.include?('lab-note')
-  unless lab_class && last_section.match?(/\bWHEAT Lab\b/) && main.end_with?(last_section) && research.scan(/\bWHEAT\b/).size == 1
-    errors << 'research/index.html: keep one WHEAT Lab section as the final content in main.'
+  area_tags = main.scan(/<section\b[^>]*>/im).select do |tag|
+    attributes(tag).fetch('class', '').split.include?('research-area')
+  end
+  errors << 'research/index.html: expected exactly three research areas.' unless area_tags.size == 3
+  headings = main.scan(/<h1\b[^>]*>.*?<\/h1>/im)
+  hidden_heading = headings.size == 1 &&
+    attributes(headings.first.split('>', 2).first + '>').fetch('class', '').split.any? { |name| %w[sr-only visually-hidden].include?(name) } &&
+    CGI.unescapeHTML(headings.first.gsub(/<[^>]*>/, '')).strip == 'Research'
+  errors << 'research/index.html: retain one visually hidden Research page heading.' unless hidden_heading
+  if main.match?(/\blab-note\b|<h[1-6]\b[^>]*>[^<]*WHEAT/mi)
+    errors << 'research/index.html: the lab section belongs on the dedicated WHEAT Lab page.'
   end
 end
 
@@ -112,7 +127,7 @@ if (build + 'sitemap.xml').file?
     xml = REXML::Document.new((build + 'sitemap.xml').read)
     locations = xml.root.elements.to_a('url').map { |url| url.elements['loc']&.text.to_s }
     expected_locations = pages.reject { |path, _| path == '404.html' }.values.map { |path| origin + path }.sort
-    errors << 'sitemap.xml: expected exactly the four public page URLs, without localhost or the 404 page.' unless locations.sort == expected_locations
+    errors << 'sitemap.xml: expected exactly the five public page URLs, without localhost or the 404 page.' unless locations.sort == expected_locations
   rescue REXML::ParseException, NoMethodError => error
     errors << "sitemap.xml: invalid sitemap (#{error.class})."
   end
@@ -129,5 +144,5 @@ unless errors.empty?
   errors.each { |error| warn "  - #{error}" }
   exit 1
 end
-puts 'Build verified: 11 public files; production URLs, indexing, CV placeholder, and Research-only WHEAT Lab checked.'
+puts 'Build verified: 12 public files; production URLs, indexing, five-page navigation, no CV control or PDF, and three Research areas checked.'
 RUBY

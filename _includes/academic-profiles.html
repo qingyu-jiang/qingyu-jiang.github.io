@@ -1,12 +1,11 @@
 <ul class="profile-links" aria-label="Professional links">
   {% if include.email %}
-  <li>{% include academic-email.html label='Email' %}</li>
+  <li><a href="mailto:{{ site.academic.email | escape }}">{% include academic-icon.html name='email' %}<span>Email</span></a></li>
   {% endif %}
   {% for profile in site.academic.profiles %}
   {% if include.scholar_only != true or profile.label == 'Google Scholar' %}
   {% assign profile_url = profile.url | default: '' | strip %}
-  <li>{% if profile_url != '' %}<a href="{{ profile_url | escape }}">{% if include.scholar_only == true %}More publications on Google Scholar{% else %}{{ profile.label | escape }}{% endif %}</a>{% else %}<span class="pending-link">{{ profile.label | escape }} <small>[URL needed]</small></span>{% endif %}</li>
+  <li>{% if profile_url != '' %}<a href="{{ profile_url | escape }}">{% include academic-icon.html name=profile.icon %}<span>{% if include.scholar_only == true %}More publications on Google Scholar{% else %}{{ profile.label | escape }}{% endif %}</span></a>{% else %}<span class="pending-link">{% include academic-icon.html name=profile.icon %}<span>{{ profile.label | escape }} <small>[URL needed]</small></span></span>{% endif %}</li>
   {% endif %}
   {% endfor %}
-  {% if include.cv %}<li>{% include academic-cv.html label='Full CV' %}</li>{% endif %}
 </ul>
