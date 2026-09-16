@@ -87,8 +87,9 @@ page-specific font sizes or weights. Desktop / phone sizes in pixels:
 | Navigation and profile links | 15 / 15 | 500 |
 
 Page-title line height is 1.25, section-heading line height 1.35, and body text
-1.7. Text-only pages share one responsive 70ch content column for headings, prose,
-publications, and the centered Lab notice. Home keeps its wider portrait/biography
+1.7. Text-only pages share one responsive content column, capped at 720 px, for
+headings, prose, publications, and the centered Lab notice. Home keeps its wider
+portrait/biography
 layout, with a 220 px desktop portrait and two-column phone profile links.
 Home, Research, and Teaching retain
 visually hidden page titles. WHEAT Lab and Contact use the shared section-heading

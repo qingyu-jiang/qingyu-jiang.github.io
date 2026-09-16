@@ -45,7 +45,8 @@
   --leading-section: 1.35;
   --leading-subsection: 1.4;
   --leading-body: 1.7;
-  --reading-measure: 70ch;
+  --reading-measure: 45rem;
+  --biography-measure: 70ch;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -78,9 +79,9 @@ h3 { color: var(--heading); font: var(--weight-semibold) var(--type-subsection)/
 .portrait { width: 220px; aspect-ratio: 4 / 5; object-fit: cover; }
 .portrait-placeholder { display: grid; place-items: center; background: var(--placeholder); padding: 18px; color: var(--muted); font-size: var(--type-detail); text-align: center; }
 .biography p:last-child { margin-bottom: 0; }
-/* Paragraph measure is independent of headings, citations, and navigation. */
-.biography p, .research-area > p,
-.reading > p:not(.lab-status), .content-section > p { max-width: var(--reading-measure); text-wrap: pretty; }
+/* Text-only pages share one column; the portrait biography keeps its own measure. */
+.biography p { max-width: var(--biography-measure); text-wrap: pretty; }
+.reading p { text-wrap: pretty; }
 .profile-links { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 8px 24px; list-style: none; padding: 0; margin: 28px 0 0; font-size: var(--type-nav); font-weight: var(--weight-medium); }
 .profile-links a, .pending-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 4px 0; }
 .profile-icon { display: inline-block; flex: 0 0 18px; width: 18px; height: 18px; }

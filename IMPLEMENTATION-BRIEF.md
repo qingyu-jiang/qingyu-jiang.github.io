@@ -36,8 +36,8 @@ complete shared scale.
 - Contact displays `qjiang [at] uidaho [dot] edu` as plain text derived from the
   shared email setting, plus the supplied office and mailing address. Keep the
   Home Email item linked to Contact, not a mailto destination.
-- Text-only pages share a 70ch content column, including headings, citations, and
-  the centered Lab notice. Home retains a wider portrait/biography layout with a
+- Text-only pages share a 720 px maximum content column for headings, prose,
+  citations, and the centered Lab notice. Home retains a wider portrait/biography layout with a
   220 px desktop portrait; phone profile links use two deliberate columns.
 - Content sections use whitespace instead of dividing lines. Keep the navigation
   divider and the footer boundary. Typography sizes and weights remain shared.
