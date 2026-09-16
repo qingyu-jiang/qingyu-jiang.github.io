@@ -8,6 +8,7 @@ if [[ $# -gt 1 ]]; then
 fi
 exec "$project_dir/scripts/bootstrap" --run ruby - "$project_dir" "${1:-_site}" <<'RUBY'
 require 'cgi'
+require 'digest'
 require 'find'
 require 'pathname'
 require 'rexml/document'
@@ -106,6 +107,19 @@ pages.each do |path, url_path|
     ['WHEAT Lab', '/wheat-lab/'], ['Contact', '/contact/']
   ]
   errors << "#{path}: navigation must contain the five reviewed links in order." unless nav_links == expected_nav
+end
+
+# Keep the portrait URL stable for text-only builds, but refresh it for new image bytes.
+home = html_by_path['index.html']
+if home && (build + 'assets/img/portrait.jpg').file?
+  portrait_version = Digest::SHA256.file(build + 'assets/img/portrait.jpg').hexdigest[0, 12]
+  portrait_images = home.scan(/<img\b[^>]*>/im).map { |tag| attributes(tag) }.select do |attrs|
+    attrs.fetch('class', '').split.include?('portrait')
+  end
+  expected_src = "/assets/img/portrait.jpg?v=#{portrait_version}"
+  unless portrait_images.size == 1 && portrait_images.first['src'] == expected_src
+    errors << "index.html: portrait cache version must match the image; set academic.portrait_version to '#{portrait_version}' and rebuild."
+  end
 end
 
 research = html_by_path['research/index.html']

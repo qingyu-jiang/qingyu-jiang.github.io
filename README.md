@@ -52,6 +52,10 @@ begins with the supplied overview, followed by three text-only areas; do not
 restore image placeholders. Keep each publication’s complete author list and
 verified metadata. Current Projects uses two separate paragraphs without bullets.
 The Home Google Scholar profile remains; Research has no extra Scholar link.
+Home separates current appointments from academic training into two paragraphs.
+Research separates its opening overview from the three-area summary, and the
+caregiver section separates its research focus from the detailed questions.
+These paragraph breaks preserve all approved wording.
 
 WHEAT Lab accepts undergraduate assistants and welcomes graduate/postdoctoral
 inquiries, without implying a specific postdoctoral opening.
@@ -90,8 +94,9 @@ page-specific font sizes or weights. Desktop / phone sizes in pixels:
 Page-title line height is 1.25, section-heading line height 1.35, and body text
 1.7. Text-only pages share one responsive content column, capped at 720 px, for
 headings, prose, publications, and the centered Lab notice. Home keeps its wider
-portrait/biography layout, with a 220 px desktop portrait and two-column phone
-profile links. Home, Research, and Teaching retain visually hidden page titles.
+portrait/biography layout, with a 220 px desktop portrait. It stacks at 720 px
+and below; phone profile links use two columns. Home, Research, and Teaching
+retain visually hidden page titles.
 WHEAT Lab and Contact use the shared section-heading style for their visible page
 headings, while retaining semantic h1 elements.
 The font binaries and licenses are committed under `assets/fonts/`; provenance
@@ -101,9 +106,12 @@ is recorded in `docs/font-assets.json`.
 
 The chosen `photo.png` is used as `assets/img/portrait.jpg`: 1122 × 1402 pixels,
 424 KB, preserving the full supplied resolution and original framing. The high-quality
-JPEG uses no additional sharpening. Its display URL changes with each build so
-browsers fetch the updated photo. The original remains at the project root, ignored
-by Git and excluded from the site. The temporary portrait comparison has been
+JPEG uses no additional sharpening. Its display URL uses `academic.portrait_version`,
+the first 12 characters of the image’s SHA-256 hash. Text-only builds retain the
+same URL. After replacing the portrait, run `shasum -a 256 assets/img/portrait.jpg`
+and update that setting; `./scripts/verify-build` checks the rendered version and
+reports the required value if it is stale. The original remains at the project
+root, ignored by Git and excluded from the site. The temporary portrait comparison has been
 removed. Encoding details are in [portrait metadata](docs/portrait-optimization.json).
 
 Website_v2.docx removes the website’s CV control and placeholder. No CV PDF is

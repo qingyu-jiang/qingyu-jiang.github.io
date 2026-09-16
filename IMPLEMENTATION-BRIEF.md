@@ -19,12 +19,15 @@ complete shared scale.
 - GitHub account: `qingyu-jiang`; private repository: `qingyu-jiang.github.io`.
 - Five-page navigation: Home · Research · Teaching · WHEAT Lab · Contact.
 - Home uses the opening third-person biography beside the portrait, icon-and-text
-  profile links, and stacked, left-aligned education. The WHEAT name is plain text.
+  profile links, and stacked, left-aligned education. Appointments and academic
+  training form two paragraphs with the approved wording. The WHEAT name is plain text.
   The three former research paragraphs are removed from Home. Education uses
   “PhD in Child, Youth, and Family Studies, 2023” and “BA in Psychology, 2016.”
-- Research starts with the exact overview supplied in v3, then three text-only
-  research areas. The first area opens “She examines.” Image placeholders and
-  the extra Scholar link are removed. Preserve all five verified full-author
+- Research starts with the exact overview wording supplied in v3, split before
+  “Her research connects three complementary areas,” then three text-only research
+  areas. The caregiver section also breaks before “She explores how these
+  resources relate.” The first area opens “She examines.” Image placeholders
+  and the extra Scholar link are removed. Preserve all five verified full-author
   publication citations and DOI links. Current Projects has two plain paragraphs
   without bullets. The Research page heading remains visually hidden.
 - Teaching contains eleven course entries grouped by the four supplied roles,
@@ -38,15 +41,17 @@ complete shared scale.
   shared email setting, plus the supplied office and mailing address. Keep the
   Home Email item linked to Contact, not a mailto destination.
 - Text-only pages share a 720 px maximum content column for headings, prose,
-  citations, and the centered Lab notice. Home retains a wider portrait/biography layout with a
-  220 px desktop portrait; phone profile links use two deliberate columns.
+  citations, and the centered Lab notice. Home retains a wider portrait/biography
+  layout with a 220 px desktop portrait and stacks at 720 px and below; phone profile links use
+  two deliberate columns.
 - Content sections use whitespace instead of dividing lines. Keep the navigation
   divider and the footer boundary. Typography sizes and weights remain shared.
 - Missing external profile destinations remain clearly marked pending supplied
   URLs. Research is intentionally text-only, with no image placeholders.
 - The selected root `photo.png` supplies the full-resolution optimized
   `assets/img/portrait.jpg`. Alternative-photo comparison is complete and its
-  tooling has been removed.
+  tooling has been removed. The portrait URL uses an image-specific SHA-256 prefix
+  in `academic.portrait_version`, checked by the build verifier.
 - The website’s CV control and placeholder are removed. No CV PDF is public or
   linked. References to applicants sending their CV remain in lab instructions.
 - Private review is the current mode: GitHub Pages is unpublished, the repository

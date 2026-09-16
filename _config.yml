@@ -21,6 +21,7 @@ academic:
   github_username: qingyu-jiang
   email: "qjiang@uidaho.edu"
   portrait: "/assets/img/portrait.jpg"
+  portrait_version: "35f029f91922" # First 12 SHA-256 characters; checked by verify-build.
   portrait_alt: "Portrait of Qingyu Jiang"
   content_pending: false # Local preview overrides this; approved production content is indexable.
   profiles:
