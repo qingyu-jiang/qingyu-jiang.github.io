@@ -80,9 +80,11 @@ page-specific font sizes or weights. Desktop / phone sizes in pixels:
 
 Page-title line height is 1.25, section-heading line height 1.35, and body text
 1.7. Long paragraphs have a responsive reading measure; headings, navigation,
-and citations keep their own available width. Home and Research retain their
-intentionally hidden page titles. The font binaries and licenses are committed
-under `assets/fonts/`; provenance is recorded in `docs/font-assets.json`.
+and citations keep their own available width. Home, Research, and Teaching retain
+visually hidden page titles. WHEAT Lab and Contact use the shared section-heading
+style for their visible page headings, while retaining semantic h1 elements.
+The font binaries and licenses are committed under `assets/fonts/`; provenance
+is recorded in `docs/font-assets.json`.
 
 ## Portrait and CV
 

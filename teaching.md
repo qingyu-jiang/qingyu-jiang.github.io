@@ -5,7 +5,7 @@ share-description: "Qingyu Jiang’s teaching experience as an instructor, co-in
 ---
 <div class="reading" markdown="1">
 
-# Teaching
+<h1 class="visually-hidden">Teaching</h1>
 
 <section class="teaching-role" aria-labelledby="instructor" markdown="1">
 

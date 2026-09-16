@@ -6,6 +6,7 @@ share-description: "Contact Qingyu Jiang, Assistant Professor at the University 
 <div class="reading contact-page" markdown="1">
 
 # Let’s get in touch!
+{: .section-heading }
 
 <p>Email: {% include academic-email.html %}</p>
 <p>Office: {{ site.academic.office | escape }}</p>

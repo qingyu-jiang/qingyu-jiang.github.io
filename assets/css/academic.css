@@ -59,7 +59,7 @@ img { display: block; max-width: 100%; height: auto; }
 p { margin: 0 0 22px; }
 h1, h2 { font-family: var(--serif); font-weight: var(--weight-medium); color: var(--heading); text-wrap: pretty; }
 h1 { font-size: var(--type-title); line-height: var(--leading-title); letter-spacing: -.3px; margin: 0 0 24px; }
-h2 { font-size: var(--type-section); line-height: var(--leading-section); margin: 0 0 18px; }
+h2, .section-heading { font-size: var(--type-section); line-height: var(--leading-section); letter-spacing: normal; margin: 0 0 18px; }
 h3 { color: var(--heading); font: var(--weight-semibold) var(--type-subsection)/var(--leading-subsection) var(--sans); margin: 0 0 12px; }
 .academic-page { width: 100%; max-width: 1048px; margin: auto; padding: 42px 44px 24px; }
 .academic-main { overflow-wrap: anywhere; }
