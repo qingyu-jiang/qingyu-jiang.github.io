@@ -1,0 +1,100 @@
+{
+  "description": "Self-hosted, unmodified Google Fonts WOFF2 Latin subsets of Adobe Source Serif 4 and Source Sans 3. No external font request is needed at page load.",
+  "downloaded_at": "2026-09-16",
+  "css_source_url": "https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap",
+  "css_source_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "license": "SIL Open Font License 1.1",
+  "subset": "latin",
+  "subset_note": "Covers all characters in the current generated website. If future content requires other scripts or extended Latin characters, add the corresponding official subsets before using that content.",
+  "css_unicode_range": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+  "verification_tool": "fontTools 4.65.0 (temporary inspection only; no runtime dependency)",
+  "restore": "Download each source_url to its path and verify the matching sha256. URLs for fonts are versioned gstatic assets; license URLs are pinned to a Google Fonts repository commit. Local binaries are committed so site builds do not depend on these download services.",
+  "fonts": [
+    {
+      "path": "assets/fonts/source-serif-4-roman.woff2",
+      "family": "Source Serif 4",
+      "style": "normal",
+      "source_url": "https://fonts.gstatic.com/s/sourceserif4/v14/vEFI2_tTDB4M7-auWDN0ahZJW1gb8te1Xb7G.woff2",
+      "bytes": 122168,
+      "sha256": "2a24bad466f09b88b8e9cbc488bf774117c912e66374c57bf4716855849143f8",
+      "embedded_version": "Version 4.004;hotconv 1.0.116;makeotfexe 2.5.65601",
+      "axes": {
+        "wght": {
+          "min": 200.0,
+          "default": 400.0,
+          "max": 900.0
+        },
+        "opsz": {
+          "min": 8.0,
+          "default": 20.0,
+          "max": 60.0
+        }
+      },
+      "requested_weights": [
+        500
+      ],
+      "italic_angle": 0.0,
+      "unicode_mapping_count": 231,
+      "license_file": "assets/fonts/SOURCE-SERIF-OFL.txt"
+    },
+    {
+      "path": "assets/fonts/source-sans-3-roman.woff2",
+      "family": "Source Sans 3",
+      "style": "normal",
+      "source_url": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpStKy2OAdR1K-IwhWudF-R3w8aZejf5Hc.woff2",
+      "bytes": 28792,
+      "sha256": "ac057a5593cbe3df0d2585da5dd5f33b8efa84aa30550c710fe061b37fc5c54b",
+      "embedded_version": "Version 3.052;hotconv 1.1.0;makeotfexe 2.6.0",
+      "axes": {
+        "wght": {
+          "min": 200.0,
+          "default": 200.0,
+          "max": 900.0
+        }
+      },
+      "requested_weights": [
+        400,
+        500,
+        600
+      ],
+      "italic_angle": 0.0,
+      "unicode_mapping_count": 231,
+      "license_file": "assets/fonts/SOURCE-SANS-OFL.txt"
+    },
+    {
+      "path": "assets/fonts/source-sans-3-italic.woff2",
+      "family": "Source Sans 3",
+      "style": "italic",
+      "source_url": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LYxnV18A.woff2",
+      "bytes": 28464,
+      "sha256": "dba77455b9c188678eb9103c4b6b7fb8105968c3a4b5828204c350f6781c1638",
+      "embedded_version": "Version 3.052;hotconv 1.1.0;makeotfexe 2.6.0",
+      "axes": {
+        "wght": {
+          "min": 200.0,
+          "default": 200.0,
+          "max": 900.0
+        }
+      },
+      "requested_weights": [
+        400
+      ],
+      "italic_angle": -11.0,
+      "unicode_mapping_count": 231,
+      "license_file": "assets/fonts/SOURCE-SANS-OFL.txt"
+    }
+  ],
+  "license_files": [
+    {
+      "path": "assets/fonts/SOURCE-SERIF-OFL.txt",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/92345ac0dbb28d27dbd32f3a782e84c55eaac214/ofl/sourceserif4/OFL.txt",
+      "sha256": "5f94c3fd3a23131a417ab5a0c8452de57e70c3cfb9f604d88241f7065ebf9fd9"
+    },
+    {
+      "path": "assets/fonts/SOURCE-SANS-OFL.txt",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/92345ac0dbb28d27dbd32f3a782e84c55eaac214/ofl/sourcesans3/OFL.txt",
+      "sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392"
+    }
+  ],
+  "font_bytes_total": 179424
+}

@@ -27,6 +27,9 @@ pages = {
 expected = (pages.keys + %w[
   assets/css/academic.css assets/js/academic.js
   assets/img/academic-favicon.svg assets/img/portrait.jpg
+  assets/fonts/source-serif-4-roman.woff2
+  assets/fonts/source-sans-3-roman.woff2 assets/fonts/source-sans-3-italic.woff2
+  assets/fonts/SOURCE-SERIF-OFL.txt assets/fonts/SOURCE-SANS-OFL.txt
   robots.txt sitemap.xml
 ]).sort.freeze
 errors = []
@@ -144,5 +147,5 @@ unless errors.empty?
   errors.each { |error| warn "  - #{error}" }
   exit 1
 end
-puts 'Build verified: 12 public files; production URLs, indexing, five-page navigation, no CV control or PDF, and three Research areas checked.'
+puts "Build verified: #{expected.length} public files; local fonts, production URLs, indexing, five-page navigation, no CV control or PDF, and three Research areas checked."
 RUBY

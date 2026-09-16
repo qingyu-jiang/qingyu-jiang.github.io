@@ -19,9 +19,12 @@ ehthumbs.db
 /photo.png
 /Headshot*.JPG
 
-# Only maintenance documentation and portrait encoding metadata are public.
+# Only maintenance documentation and asset provenance are tracked here.
 /docs/*
 !/docs/LOCAL-PREVIEW.md
 !/docs/DEPLOYMENT.md
 !/docs/UPSTREAM.md
 !/docs/portrait-optimization.json
+
+!/docs/font-assets.json
+!/docs/font-source.css

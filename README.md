@@ -58,6 +58,32 @@ approved links and images are available. Do not invent profile URLs or present a
 placeholder as a research result. The latest document governs content where it
 differs from the original brief; retain previously verified publication corrections.
 
+## Shared typography
+
+The site uses locally hosted **Source Serif 4** at weight 500 for the name, page
+and section headings, and **Source Sans 3** at 400/500/600 for body text,
+navigation and subsections. A genuine Source Sans 3 italic font supplies journal
+and institution italics. No external font service is required at page load.
+
+All text roles are defined together in `assets/css/academic.css`; do not add
+page-specific font sizes or weights. Desktop / phone sizes in pixels:
+
+| Role | Size | Weight |
+| --- | --- | --- |
+| Name | 38 / 32 | 500 |
+| Page title | 32 / 28 | 500 |
+| Section heading | 26 / 24 | 500 |
+| Subsection heading | 17 / 17 | 600 |
+| Body and course entries | 17 / 17 | 400 |
+| Citations and institutions | 15 / 15 | 400, with semantic italics |
+| Navigation and profile links | 15 / 15 | 500 |
+
+Page-title line height is 1.25, section-heading line height 1.35, and body text
+1.7. Long paragraphs have a responsive reading measure; headings, navigation,
+and citations keep their own available width. Home and Research retain their
+intentionally hidden page titles. The font binaries and licenses are committed
+under `assets/fonts/`; provenance is recorded in `docs/font-assets.json`.
+
 ## Portrait and CV
 
 The chosen `photo.png` is used as `assets/img/portrait.jpg`: 1122 × 1402 pixels,

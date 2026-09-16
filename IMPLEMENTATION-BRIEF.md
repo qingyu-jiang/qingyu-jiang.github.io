@@ -3,8 +3,11 @@
 The website uses Beautiful Jekyll 6.0.1 in this project folder. The latest supplied
 **Website_v2.docx** governs the current content and layout revision, superseding
 the original brief where they differ. Preserve the responsive portrait layout and
-accessible navigation while refining typography, font sizes, and colors for the
-longer biography and research text.
+accessible navigation. The settled typography uses self-hosted Source Serif 4 (500) and Source Sans 3
+(400/500/600 plus regular italic), with one shared style per text role.
+Page titles use 32/28 px at 1.25 line height; section headings 26/24 px at 1.35;
+subsections and body 17 px; citations, institutions and navigation 15 px.
+Body line height is 1.7. See README.md for the complete shared scale.
 
 - Identity: Qingyu Jiang, Assistant Professor, University of Idaho. The supplied
   biography uses the fuller description “Assistant Professor of Psychology.”
