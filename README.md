@@ -2,10 +2,6 @@
 
 A personal academic website built with Beautiful Jekyll.
 
-**Current status:** private review. The repository is private, GitHub Pages is
-unpublished, and publishing is disabled. Saving changes on GitHub does not make
-them public.
-
 ## What to edit
 
 | Update | File |
@@ -23,9 +19,8 @@ university changes, also update the written Home biography and any page
 
 ## Make changes on GitHub
 
-1. Sign in as **qingyu-jiang** and open the
-   [website repository](https://github.com/qingyu-jiang/qingyu-jiang.github.io).
-   Select the **main** branch.
+1. Open the [website repository](https://github.com/qingyu-jiang/qingyu-jiang.github.io)
+   and select the **main** branch.
 2. Open the file from the table above and click the **pencil / Edit** button.
 3. Edit the text and review your changes. Use a blank line to separate paragraphs;
    links use `[link text](https://example.com)`.
@@ -37,8 +32,7 @@ and template expressions such as `{{ ... }}` and `{% ... %}`. In `_config.yml`,
 keep the indentation and quotation marks. Edit source files, not `_site/`.
 
 GitHub’s **Preview** is a Markdown preview; use the local preview below to inspect
-the website’s fonts, layout, and navigation. Browser edits currently trigger
-neither automated checks nor publication.
+the website’s fonts, layout, and navigation.
 [GitHub’s file-editing guide](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
 
 ## Preview your changes locally
@@ -61,8 +55,7 @@ For first-time setup, run `./scripts/bootstrap` before starting the preview.
 
 ## Publish when ready
 
-**Keep publishing disabled during private review.** For the first launch, complete
-[the publishing setup](docs/DEPLOYMENT.md#launch-only-when-requested).
+For the first launch, complete [the publishing setup](docs/DEPLOYMENT.md#launch-only-when-requested).
 After launch, each update is still published manually:
 
 1. Save and review the latest changes on **main**.
