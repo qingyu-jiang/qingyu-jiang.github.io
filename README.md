@@ -27,8 +27,9 @@ university changes, also update the written Home biography and any page
 4. Click **Commit changes…**, write a short description such as “Update teaching
    courses,” choose to commit directly to **main**, and confirm.
 
-Preserve the settings between `---` at the top of each page, existing HTML tags,
-and template expressions such as `{{ ... }}` and `{% ... %}`. In `_config.yml`,
+Keep the `---` block and existing `title` and `permalink` settings intact.
+Update `share-description` when the page summary changes. Preserve existing HTML
+tags and template expressions such as `{{ ... }}` and `{% ... %}`. In `_config.yml`,
 keep the indentation and quotation marks. Edit source files, not `_site/`.
 
 GitHub’s **Preview** is a Markdown preview; use the local preview below to inspect
