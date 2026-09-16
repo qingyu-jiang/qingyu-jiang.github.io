@@ -22,6 +22,7 @@ ehthumbs.db
 # Only maintenance documentation and asset provenance are tracked here.
 /docs/*
 !/docs/LOCAL-PREVIEW.md
+!/docs/MAINTENANCE.md
 !/docs/DEPLOYMENT.md
 !/docs/UPSTREAM.md
 !/docs/portrait-optimization.json

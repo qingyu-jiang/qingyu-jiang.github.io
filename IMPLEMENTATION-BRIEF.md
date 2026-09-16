@@ -11,7 +11,7 @@ subsections, body, and header position/university 17 px; citations, education/te
 institutions and navigation 15 px.
 Body line height is 1.7. Teaching starts visibly with Instructor; its page title
 is visually hidden. WHEAT Lab and Contact page headings use the shared section
-style (24/22 px), while keeping their semantic h1 level. See README.md for the
+style (24/22 px), while keeping their semantic h1 level. See docs/MAINTENANCE.md for the
 complete shared scale.
 
 - Identity: Qingyu Jiang, Assistant Professor, University of Idaho. The supplied

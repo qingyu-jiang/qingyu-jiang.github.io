@@ -66,6 +66,7 @@ and generated output must remain ignored. These commands do not publish.
    remains manual after launch; a push alone never publishes.
    [Workflow controls](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows).
 5. Wait for both build and deployment to succeed, then verify the live site.
+   Update the current-status note in README.md to reflect the published state.
 
 The workflow retains Ruby 3.3.8/Bundler 2.5.22 and locked dependencies. Its build
 job always builds and checks output when manually run. Artifact upload and the
