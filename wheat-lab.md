@@ -20,11 +20,11 @@ Dr. Jiang is accepting undergraduate research assistants, welcoming inquiries fr
 
 ### Undergraduate Students
 
-Please [email](mailto:qjiang@uidaho.edu) a letter of interest (up to one page) describing why you are interested in joining the WHEAT Lab, any relevant experience or skills, and your weekly availability.
+Please {% include academic-email.html label="email" %} a letter of interest (up to one page) describing why you are interested in joining the WHEAT Lab, any relevant experience or skills, and your weekly availability.
 
 ### Prospective Graduate Students and Postdoctoral Scholars
 
-Please [email](mailto:qjiang@uidaho.edu) a letter of interest and your CV. In your letter, describe your research interests, relevant research or professional experience, and how your interests connect with the [WHEAT Lab’s research areas]({{ "/research/" | relative_url }}).
+Please {% include academic-email.html label="email" %} a letter of interest and your CV. In your letter, describe your research interests, relevant research or professional experience, and how your interests connect with the [WHEAT Lab’s research areas]({{ "/research/" | relative_url }}).
 
 <p class="lab-email">{% include academic-email.html %}</p>
 
