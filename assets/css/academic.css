@@ -68,7 +68,7 @@ h3 { color: var(--heading); font: var(--weight-semibold) var(--type-subsection)/
 .identity { display: flex; align-items: flex-start; gap: 24px; }
 .identity-text { min-width: 0; }
 .site-name { font: var(--weight-medium) var(--type-name)/var(--leading-title) var(--serif); color: var(--heading); letter-spacing: -.6px; text-decoration: none; overflow-wrap: anywhere; }
-.affiliation { font-size: var(--type-detail); line-height: var(--leading-body); color: var(--muted); margin: 10px 0 0; }
+.affiliation { font-size: var(--type-body); line-height: var(--leading-body); color: var(--muted); margin: 10px 0 0; }
 .academic-nav { margin: 25px 0 42px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
 .nav-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 4px 32px; }
 .nav-list a { display: flex; align-items: center; min-height: 40px; color: var(--muted); font: var(--weight-medium) var(--type-nav)/var(--leading-body) var(--sans); text-decoration: none; }

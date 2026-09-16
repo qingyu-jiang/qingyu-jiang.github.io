@@ -83,7 +83,8 @@ page-specific font sizes or weights. Desktop / phone sizes in pixels:
 | Section heading | 24 / 22 | 500 |
 | Subsection heading | 17 / 17 | 600 |
 | Body and course entries | 17 / 17 | 400 |
-| Citations and institutions | 15 / 15 | 400, with semantic italics |
+| Header position and university | 17 / 17 | 400 |
+| Citations and education/teaching institutions | 15 / 15 | 400, with semantic italics |
 | Navigation and profile links | 15 / 15 | 500 |
 
 Page-title line height is 1.25, section-heading line height 1.35, and body text
