@@ -5,22 +5,16 @@ share-description: "Research on developmental contexts and child adaptation, car
 ---
 <h1 class="visually-hidden">Research</h1>
 
+<div class="reading research-page" markdown="1">
+
+Dr. Jiang’s research focuses on how developmental contexts, experiences, and relationships shape mental health and child development. Recognizing that the early years lay the foundation for lifelong health and well-being, she studies families from pregnancy through infancy and early childhood, tracing how early experiences relate to development throughout childhood and adolescence. Her research connects three complementary areas: 1) how family, community, social, and cultural contexts shape children’s development and adaptation; 2) how caregiver well-being relates to parenting and early childhood development; and 3) how parents’ use of generative artificial intelligence (AI) shapes mental health, parenting, and family relationships. Her goal is to use this evidence to inform practical prevention and intervention strategies that respond to families’ circumstances and strengthen support for underserved children and families.
+
 <section class="research-area" aria-labelledby="research-1" markdown="1">
 
 ## Developmental Contexts, Family, and Child Adaptation
 {: #research-1 }
 
-<div class="research-overview">
-<div markdown="1">
-
-Dr. Jiang’s research examines how developmental contexts and family relationships shape child development and mental health. Across family, community, cultural, and socioeconomic contexts, she studies parenting stress, coparenting, and parent-child relationships to understand social-emotional development and the risk of behavioral and mental health problems. Much of this research draws on the Future of Families and Child Wellbeing Study, a national longitudinal study with substantial representation of racially and ethnically diverse families and families experiencing economic disadvantage. She uses repeated assessments from birth through early childhood and into adolescence to trace how early experiences and caregiving relate to later adjustment.
-
-</div>
-<figure class="research-figure">
-  <div class="figure-placeholder"><span class="placeholder-kicker">Research image</span><span>Image to be added</span></div>
-  <figcaption>Placeholder · Research area 1</figcaption>
-</figure>
-</div>
+She examines how developmental contexts and family relationships shape child development and mental health. Across family, community, cultural, and socioeconomic contexts, she studies parenting stress, coparenting, and parent-child relationships to understand social-emotional development and the risk of behavioral and mental health problems. Much of this research draws on the Future of Families and Child Wellbeing Study, a national longitudinal study with substantial representation of racially and ethnically diverse families and families experiencing economic disadvantage. She uses repeated assessments from birth through early childhood and into adolescence to trace how early experiences and caregiving relate to later adjustment.
 
 <div class="selected-publication" markdown="1">
 
@@ -53,17 +47,7 @@ Wang, D., Jiang, Q., Yang, Z., & Choi, J.-K. (2021). *Journal of Affective Disor
 ## Caregiver Well-Being and Early Childhood Development
 {: #research-2 }
 
-<div class="research-overview">
-<div markdown="1">
-
 She studies how psychological and relational resources support caregiver well-being, responsive caregiving, and early childhood development. Parents’ well-being matters in its own right and is central to the relationships through which young children grow. Her work focuses on self-compassion, self-efficacy, mindful parenting, and social support across pregnancy, infancy, and early childhood. She explores how these resources relate to parents’ experiences of mental health and stress, their responses during challenging parent-child interactions, and young children’s emotional, social, and cognitive development. She is particularly interested in how caregivers manage their own emotions while helping children learn to regulate theirs. This research also guides her plans for nature-based, mindfulness-informed programs that combine shared outdoor activities with practices to strengthen caregiver emotion regulation and responsive interaction.
-
-</div>
-<figure class="research-figure">
-  <div class="figure-placeholder"><span class="placeholder-kicker">Research image</span><span>Image to be added</span></div>
-  <figcaption>Placeholder · Research area 2</figcaption>
-</figure>
-</div>
 
 <div class="selected-publication" markdown="1">
 
@@ -105,27 +89,18 @@ Jiang, Q., Feldman, N., Koire, A., Ma, C., Mittal, L., Lin, H.-C., Erdei, C., Ro
 ## Mental Health and Parenting in the Age of AI
 {: #research-3 }
 
-<div class="research-overview">
-<div markdown="1">
-
 Her research investigates how parents use generative artificial intelligence (AI) for support and what these interactions may mean for mental health, parenting, and family relationships. She asks when and why parents turn to AI, the kinds of support they seek, and how their needs and experiences relate to their mental health and family resources. A central question is whether support that feels helpful also offers reliable guidance that is responsive to parents’ needs, appropriate for child development, and relevant to everyday family life. Her goal is to understand the immediate and longer-term implications of AI support, including how it relates to coping, seeking help from others, and parenting decisions.
-
-</div>
-<figure class="research-figure">
-  <div class="figure-placeholder"><span class="placeholder-kicker">Research image</span><span>Image to be added</span></div>
-  <figcaption>Placeholder · Research area 3</figcaption>
-</figure>
-</div>
 
 <div class="current-projects" markdown="1">
 
 ### Current Projects
 
-- AI Mental Health Chatbots and Parental Well-Being
-- Generative AI in Early Childhood Parenting
+AI Mental Health Chatbots and Parental Well-Being
+
+Generative AI in Early Childhood Parenting
 
 </div>
 
 </section>
 
-{% include academic-profiles.html scholar_only=true %}
+</div>

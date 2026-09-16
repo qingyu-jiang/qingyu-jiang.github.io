@@ -3,9 +3,7 @@
   <li><a href="mailto:{{ site.academic.email | escape }}">{% include academic-icon.html name='email' %}<span>Email</span></a></li>
   {% endif %}
   {% for profile in site.academic.profiles %}
-  {% if include.scholar_only != true or profile.label == 'Google Scholar' %}
   {% assign profile_url = profile.url | default: '' | strip %}
-  <li>{% if profile_url != '' %}<a href="{{ profile_url | escape }}">{% include academic-icon.html name=profile.icon %}<span>{% if include.scholar_only == true %}More publications on Google Scholar{% else %}{{ profile.label | escape }}{% endif %}</span></a>{% else %}<span class="pending-link">{% include academic-icon.html name=profile.icon %}<span>{{ profile.label | escape }} <small>[URL needed]</small></span></span>{% endif %}</li>
-  {% endif %}
+  <li>{% if profile_url != '' %}<a href="{{ profile_url | escape }}">{% include academic-icon.html name=profile.icon %}<span>{{ profile.label | escape }}</span></a>{% else %}<span class="pending-link">{% include academic-icon.html name=profile.icon %}<span>{{ profile.label | escape }} <small>[URL needed]</small></span></span>{% endif %}</li>
   {% endfor %}
 </ul>

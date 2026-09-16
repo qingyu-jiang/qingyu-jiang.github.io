@@ -1,10 +1,11 @@
 # Current implementation decisions
 
 The website uses Beautiful Jekyll 6.0.1 in this project folder. The latest supplied
-**Website_v2.docx** governs the current content and layout revision, superseding
-the original brief where they differ. Preserve the responsive portrait layout and
-accessible navigation. The settled typography uses self-hosted Source Serif 4 (500) and Source Sans 3
-(400/500/600 plus regular italic), with one shared style per text role.
+**Website_v3.docx** governs the current content and layout revision, superseding
+v2 and the original brief where specified. Preserve the responsive portrait layout and
+accessible navigation. The settled typography uses self-hosted Source Serif 4
+(500) and Source Sans 3 (400/500/600 plus regular italic), with one shared style
+per text role.
 Page titles use 32/28 px at 1.25 line height; section headings 26/24 px at 1.35;
 subsections and body 17 px; citations, institutions and navigation 15 px.
 Body line height is 1.7. Teaching starts visibly with Instructor; its page title
@@ -16,23 +17,29 @@ complete shared scale.
   biography uses the fuller description “Assistant Professor of Psychology.”
 - GitHub account: `qingyu-jiang`; private repository: `qingyu-jiang.github.io`.
 - Five-page navigation: Home · Research · Teaching · WHEAT Lab · Contact.
-- Home uses all four supplied third-person biography paragraphs, icon-and-text
-  profile links, and vertically stacked, left-aligned education. Education uses
+- Home uses the opening third-person biography beside the portrait, icon-and-text
+  profile links, and stacked, left-aligned education. The WHEAT name is plain text.
+  The three former research paragraphs are removed from Home. Education uses
   “PhD in Child, Youth, and Family Studies, 2023” and “BA in Psychology, 2016.”
-- Research begins with the three named research areas and includes five selected
-  publications with full author lists, plus two current AI projects. Preserve
-  publication metadata verified against publisher records. The generic visible
-  Research introduction is removed; a visually hidden page heading remains.
+- Research starts with the exact overview supplied in v3, then three text-only
+  research areas. The first area opens “She examines.” Image placeholders and
+  the extra Scholar link are removed. Preserve all five verified full-author
+  publication citations and DOI links. Current Projects has two plain paragraphs
+  without bullets. The Research page heading remains visually hidden.
 - Teaching contains eleven course entries grouped by the four supplied roles,
   with institution names and no course dates. The new list replaces the former
   mentoring and service summaries.
-- WHEAT Lab has a dedicated page with the supplied recruitment and application
-  instructions. It also appears in Home and navigation; the earlier restriction
-  to the bottom of Research no longer applies. The detailed recruitment copy
-  takes precedence over shorthand in the document’s overview table.
-- Contact includes the supplied email, office, and complete mailing address.
-- Missing external profile destinations and research imagery must remain clearly
-  marked pending approved choices; do not fabricate links or study figures.
+- WHEAT Lab remains a dedicated page. Center the italic coming-soon sentence.
+  Use the shorter v3 recruitment sentence, without funded/one-year terms or the
+  former specific-interest sentence. Application email and research-area phrases
+  are plain text; the standalone email is removed.
+- Contact displays `qjiang [at] uidaho [dot] edu` as plain text derived from the
+  shared email setting, plus the supplied office and mailing address. Keep the
+  Home Email link available.
+- Content sections use whitespace instead of dividing lines. Keep the navigation
+  divider and the footer boundary. Typography sizes and weights remain shared.
+- Missing external profile destinations remain clearly marked pending supplied
+  URLs. Research is intentionally text-only, with no image placeholders.
 - The selected root `photo.png` supplies the full-resolution optimized
   `assets/img/portrait.jpg`. Alternative-photo comparison is complete and its
   tooling has been removed.

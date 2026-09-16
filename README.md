@@ -32,31 +32,37 @@ time; stop the preview first or supply a different `--destination` for the build
 
 ## Content
 
-The current content revision follows the supplied **Website_v2.docx**. Its detailed
-page copy replaces the earlier first-person introduction, teaching summaries, and
-Research-only lab note. Navigation is **Home · Research · Teaching · WHEAT Lab ·
-Contact**. The original document is private source material, not a website asset.
+The current content revision follows **Website_v3.docx**, building on the earlier
+v2 copy and the approved shared typography. Home now contains the biography,
+profile links, and education; the supplied research overview appears on Research.
+Navigation is **Home · Research · Teaching · WHEAT Lab · Contact**. Source Word
+documents are private review material, not website assets.
 
 | File | Page or purpose |
 | --- | --- |
-| `index.md` | Four-paragraph biography, profile icons/links, and stacked education |
-| `research.md` | Three research areas, five selected publications with full author lists, and two current AI projects |
+| `index.md` | Biography and portrait, profile icons/links, and stacked education |
+| `research.md` | Research overview, three text-only areas, five full-author publications, and two plain-text AI projects |
 | `teaching.md` | Eleven course entries grouped by Instructor, Co-Instructor, Graduate Teaching Assistant, and Guest Lecturer |
 | `wheat-lab.md` | Lab introduction, recruitment information, and application instructions |
-| `contact.md` | Email, office, and mailing address |
+| `contact.md` | Email shown as [at]/[dot] text, office, and mailing address |
 | `_config.yml` | Identity, affiliation, email, profile links, navigation, and portrait |
 
 Edit paragraphs in Markdown while preserving front matter and permalinks. Research
-begins with the three areas; its page heading is available to assistive technology
-without repeating a visible introduction. WHEAT Lab has its own page and appears
-in the Home biography and navigation. Keep each publication’s complete author
-list and verify metadata when updating citations. The two AI entries are current
-projects, not published papers.
+begins with the supplied overview, followed by three text-only areas; do not
+restore image placeholders. Keep each publication’s complete author list and
+verified metadata. Current Projects uses two separate paragraphs without bullets.
+The Home Google Scholar profile remains; Research has no extra Scholar link.
 
-Keep missing profile destinations and research imagery clearly marked until
-approved links and images are available. Do not invent profile URLs or present a
-placeholder as a research result. The latest document governs content where it
-differs from the original brief; retain previously verified publication corrections.
+WHEAT Lab uses the shorter recruitment statement without funded/one-year terms.
+Its coming-soon sentence is centered; application instructions and the research
+areas reference are plain text. The standalone lab email is removed. Contact
+uses `academic-email.html obfuscated=true` to display [at]/[dot] text from the
+shared `academic.email` setting. The Home Email link remains available.
+
+Keep missing ResearchGate and LinkedIn destinations clearly marked until supplied;
+do not invent profile URLs. V3 supersedes earlier content choices where specified.
+Preserve the settled typography. Separate content sections with whitespace, keeping
+the navigation rule and the footer boundary.
 
 ## Shared typography
 

@@ -1,6 +1,10 @@
 {%- assign academic_email = site.academic.email | default: '' | strip -%}
 {%- if academic_email != '' -%}
+{%- if include.obfuscated -%}
+{{ academic_email | replace: '@', ' [at] ' | replace: '.', ' [dot] ' | escape }}
+{%- else -%}
 <a href="mailto:{{ academic_email | escape }}">{{ include.label | default: academic_email | escape }}</a>
+{%- endif -%}
 {%- else -%}
 <span class="pending-link">{{ include.label | default: 'Email' | escape }} <small>[needed]</small></span>
 {%- endif -%}
