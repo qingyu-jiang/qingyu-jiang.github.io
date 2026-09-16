@@ -1,6 +1,6 @@
 <ul class="profile-links" aria-label="Professional links">
   {% if include.email %}
-  <li><a href="mailto:{{ site.academic.email | escape }}">{% include academic-icon.html name='email' %}<span>Email</span></a></li>
+  <li><a href="{{ "/contact/" | relative_url }}" aria-label="Email contact details">{% include academic-icon.html name='email' %}<span>Email</span></a></li>
   {% endif %}
   {% for profile in site.academic.profiles %}
   {% assign profile_url = profile.url | default: '' | strip %}

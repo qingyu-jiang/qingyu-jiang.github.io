@@ -74,8 +74,8 @@ h3 { color: var(--heading); font: var(--weight-semibold) var(--type-subsection)/
 .nav-list a[aria-current='page'] { color: var(--heading); text-decoration: underline; text-underline-offset: 10px; text-decoration-thickness: 2px; }
 .nav-list a:hover { color: var(--heading); text-decoration: underline; }
 .menu-toggle { display: none; border: 0; border-radius: 0; background: transparent; padding: 0; min-height: 44px; font: var(--weight-medium) var(--type-nav)/var(--leading-body) var(--sans); text-align: left; }
-.profile { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 42px; align-items: start; }
-.portrait { width: 250px; aspect-ratio: 4 / 5; object-fit: cover; }
+.profile { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 36px; align-items: start; }
+.portrait { width: 220px; aspect-ratio: 4 / 5; object-fit: cover; }
 .portrait-placeholder { display: grid; place-items: center; background: var(--placeholder); padding: 18px; color: var(--muted); font-size: var(--type-detail); text-align: center; }
 .biography p:last-child { margin-bottom: 0; }
 /* Paragraph measure is independent of headings, citations, and navigation. */
@@ -91,9 +91,9 @@ h3 { color: var(--heading); font: var(--weight-semibold) var(--type-subsection)/
 .education-list li { line-height: var(--leading-body); }
 .education-list li + li { margin-top: 20px; }
 .education-list span { display: block; color: var(--muted); font-size: var(--type-detail); line-height: var(--leading-body); margin-top: 3px; }
-.reading { max-width: 760px; }
+.reading { max-width: var(--reading-measure); }
 .research-area { margin-top: 42px; }
-.selected-publication, .current-projects { max-width: 780px; margin-top: 26px; }
+.selected-publication, .current-projects { margin-top: 26px; }
 .publication + .publication { margin-top: 22px; }
 .publication-title { font-size: var(--type-body); line-height: var(--leading-body); margin-bottom: 7px; }
 .citation-details { font-size: var(--type-detail); color: var(--muted); line-height: var(--leading-body); margin-bottom: 0; }
@@ -135,7 +135,10 @@ h3 { color: var(--heading); font: var(--weight-semibold) var(--type-subsection)/
   .menu-ready .nav-list.is-open { display: flex; }
   .nav-list a { min-height: 44px; }
   .education { margin-top: 30px; }
-  .profile-links { gap: 8px 22px; }
+  .profile-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; }
+  .profile-links a, .profile-links .pending-link { align-items: flex-start; }
+  .profile-links .profile-icon { margin-top: 4px; }
+  .profile-links .pending-link small { display: block; }
   .research-area { margin-top: 36px; }
   .academic-footer { margin-top: 38px; }
 }

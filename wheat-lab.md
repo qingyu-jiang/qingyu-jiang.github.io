@@ -11,7 +11,7 @@ share-description: "The Well-being, Health, Early Adaptation and Thriving (WHEAT
 *The lab website is coming soon.*
 {: .lab-status }
 
-Dr. Jiang is accepting undergraduate research assistants, welcoming inquiries from prospective graduate students, and recruiting postdoctoral scholars.
+Dr. Jiang is accepting undergraduate research assistants and welcoming inquiries from prospective graduate students and postdoctoral scholars.
 
 <section class="content-section" aria-labelledby="join-the-lab" markdown="1">
 

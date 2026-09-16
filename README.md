@@ -53,11 +53,13 @@ restore image placeholders. Keep each publication’s complete author list and
 verified metadata. Current Projects uses two separate paragraphs without bullets.
 The Home Google Scholar profile remains; Research has no extra Scholar link.
 
-WHEAT Lab uses the shorter recruitment statement without funded/one-year terms.
+WHEAT Lab accepts undergraduate assistants and welcomes graduate/postdoctoral
+inquiries, without implying a specific postdoctoral opening.
 Its coming-soon sentence is centered; application instructions and the research
 areas reference are plain text. The standalone lab email is removed. Contact
 uses `academic-email.html obfuscated=true` to display [at]/[dot] text from the
-shared `academic.email` setting. The Home Email link remains available.
+shared `academic.email` setting. Home’s Email item leads to Contact, so contact
+details have one consistent destination.
 
 Keep missing ResearchGate and LinkedIn destinations clearly marked until supplied;
 do not invent profile URLs. V3 supersedes earlier content choices where specified.
@@ -85,8 +87,10 @@ page-specific font sizes or weights. Desktop / phone sizes in pixels:
 | Navigation and profile links | 15 / 15 | 500 |
 
 Page-title line height is 1.25, section-heading line height 1.35, and body text
-1.7. Long paragraphs have a responsive reading measure; headings, navigation,
-and citations keep their own available width. Home, Research, and Teaching retain
+1.7. Text-only pages share one responsive 70ch content column for headings, prose,
+publications, and the centered Lab notice. Home keeps its wider portrait/biography
+layout, with a 220 px desktop portrait and two-column phone profile links.
+Home, Research, and Teaching retain
 visually hidden page titles. WHEAT Lab and Contact use the shared section-heading
 style for their visible page headings, while retaining semantic h1 elements.
 The font binaries and licenses are committed under `assets/fonts/`; provenance

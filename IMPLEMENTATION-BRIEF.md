@@ -30,12 +30,15 @@ complete shared scale.
   with institution names and no course dates. The new list replaces the former
   mentoring and service summaries.
 - WHEAT Lab remains a dedicated page. Center the italic coming-soon sentence.
-  Use the shorter v3 recruitment sentence, without funded/one-year terms or the
-  former specific-interest sentence. Application email and research-area phrases
-  are plain text; the standalone email is removed.
+  Accept undergraduate assistants and welcome graduate/postdoctoral inquiries;
+  do not imply a specific postdoctoral opening. Application email and research-area
+  phrases are plain text; the standalone email is removed.
 - Contact displays `qjiang [at] uidaho [dot] edu` as plain text derived from the
   shared email setting, plus the supplied office and mailing address. Keep the
-  Home Email link available.
+  Home Email item linked to Contact, not a mailto destination.
+- Text-only pages share a 70ch content column, including headings, citations, and
+  the centered Lab notice. Home retains a wider portrait/biography layout with a
+  220 px desktop portrait; phone profile links use two deliberate columns.
 - Content sections use whitespace instead of dividing lines. Keep the navigation
   divider and the footer boundary. Typography sizes and weights remain shared.
 - Missing external profile destinations remain clearly marked pending supplied

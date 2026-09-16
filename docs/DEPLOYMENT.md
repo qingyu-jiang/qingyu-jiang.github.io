@@ -75,18 +75,22 @@ domains, or an accidentally exposed CV.
 
 ## Verify a launch or later publication
 
-The current content revision follows Website_v2.docx. Open Home, Research,
-Teaching, WHEAT Lab, and Contact at desktop and phone sizes. Check the five-item
-navigation, full-resolution portrait, Home profile icons and links, DOI/email
-links, and the custom 404 page. Verify all eleven teaching entries and the full
-author lists for the five selected publications. Research should start with its
-three areas, and lab recruitment should appear on the dedicated WHEAT Lab page.
+The current content revision follows Website_v3.docx and subsequent reviewed
+layout refinements. Open Home, Research, Teaching, WHEAT Lab, and Contact at
+desktop and phone sizes. Check navigation, the full-resolution portrait, Home
+profile links (Email leads to Contact), all five publication DOI links, and the
+custom 404 page. Contact displays the shared email as plain [at]/[dot] text.
+Verify all eleven teaching entries and complete publication author lists.
+Research starts with the supplied overview and uses a text-only layout, followed
+by three areas. The Lab welcomes graduate and postdoctoral inquiries without
+advertising a specific postdoctoral opening.
 
-Confirm the website has no CV control or placeholder and no exposed or linked CV
-PDF. The lab’s request for applicants to email their CV is intentional. Resolve
-or clearly retain any pending research-image and profile-link choices before
-approving publication. Source documents and private review records must not be
-included in the twelve-file production artifact.
+Confirm there is no CV control or placeholder and no exposed or linked CV PDF.
+The request for applicants to email their CV is intentional. Resolve or clearly
+retain the pending ResearchGate and LinkedIn URLs before approving publication.
+Research imagery is no longer pending. Source documents and private reviews must
+not be included in the 17-file production artifact; its explicit allowlist is
+maintained in `scripts/verify-build`.
 
 Confirm canonical URLs, sharing image, `sitemap.xml`, and `robots.txt` use the
 public HTTPS domain. Live pages must omit the local notice and noindex metadata
