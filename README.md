@@ -80,7 +80,7 @@ page-specific font sizes or weights. Desktop / phone sizes in pixels:
 | --- | --- | --- |
 | Name | 38 / 32 | 500 |
 | Page title | 32 / 28 | 500 |
-| Section heading | 26 / 24 | 500 |
+| Section heading | 24 / 22 | 500 |
 | Subsection heading | 17 / 17 | 600 |
 | Body and course entries | 17 / 17 | 400 |
 | Citations and institutions | 15 / 15 | 400, with semantic italics |
@@ -89,11 +89,10 @@ page-specific font sizes or weights. Desktop / phone sizes in pixels:
 Page-title line height is 1.25, section-heading line height 1.35, and body text
 1.7. Text-only pages share one responsive content column, capped at 720 px, for
 headings, prose, publications, and the centered Lab notice. Home keeps its wider
-portrait/biography
-layout, with a 220 px desktop portrait and two-column phone profile links.
-Home, Research, and Teaching retain
-visually hidden page titles. WHEAT Lab and Contact use the shared section-heading
-style for their visible page headings, while retaining semantic h1 elements.
+portrait/biography layout, with a 220 px desktop portrait and two-column phone
+profile links. Home, Research, and Teaching retain visually hidden page titles.
+WHEAT Lab and Contact use the shared section-heading style for their visible page
+headings, while retaining semantic h1 elements.
 The font binaries and licenses are committed under `assets/fonts/`; provenance
 is recorded in `docs/font-assets.json`.
 

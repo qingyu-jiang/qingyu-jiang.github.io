@@ -6,11 +6,11 @@ v2 and the original brief where specified. Preserve the responsive portrait layo
 accessible navigation. The settled typography uses self-hosted Source Serif 4
 (500) and Source Sans 3 (400/500/600 plus regular italic), with one shared style
 per text role.
-Page titles use 32/28 px at 1.25 line height; section headings 26/24 px at 1.35;
+Page titles use 32/28 px at 1.25 line height; section headings 24/22 px at 1.35;
 subsections and body 17 px; citations, institutions and navigation 15 px.
 Body line height is 1.7. Teaching starts visibly with Instructor; its page title
 is visually hidden. WHEAT Lab and Contact page headings use the shared section
-style (26/24 px), while keeping their semantic h1 level. See README.md for the
+style (24/22 px), while keeping their semantic h1 level. See README.md for the
 complete shared scale.
 
 - Identity: Qingyu Jiang, Assistant Professor, University of Idaho. The supplied
