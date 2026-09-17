@@ -88,11 +88,30 @@ removed or the project moves, use these steps to restore it:
 
 Open Home, Research, Teaching, WHEAT Lab, and Contact at desktop and phone sizes.
 Check navigation, the full-resolution portrait, Home profile links (Email leads
-to Contact), all five publication DOI links, and the custom 404 page. Contact
-shows the shared email as plain [at]/[dot] text. Verify all eleven teaching
-entries and complete publication author lists. Research uses the approved
-text-only layout and three research areas. The Lab welcomes graduate and
-postdoctoral inquiries without advertising a specific postdoctoral opening.
+to Contact), all five publications’ DOI and PDF links, and the custom 404 page.
+PDF links have no underline but retain visible keyboard focus; their existing
+DOI publisher destinations are unchanged. Contact starts with “Let’s Get in
+Touch!”, followed by one identity/address paragraph with six lines. The city
+follows the street with a line break and no extra paragraph gap. The shared
+email remains plain [at]/[dot] text below, retaining its 28 px desktop / 24 px
+phone group gap. Verify all twelve teaching entries, including Positive
+Psychology immediately after Developmental Psychology, and the inline universities
+in role headings and guest courses. University names are upright in the
+Instructor, Co-Instructor, and Graduate Teaching Assistant headings and all four
+Guest Lecturer course entries. Check
+approved publication wording and author order. Citations and the two current-project
+titles share Source Sans 3, 15 px, weight 400, muted `#596562` text, and 1.50
+line height; journal/volume italics and shared subsection-heading styles remain
+intact. Check that every page title and major section heading (`h1` and `h2`)
+uses Source Sans 3, 20 px, weight 600, and 1.35 line height on desktop and phone,
+with natural wrapping and the existing heading color and spacing. This covers
+Education, all Research areas, Teaching roles, WHEAT Lab, Join the Lab!, Contact,
+and the 404 page. No page-content heading should exceed 20 px; subsection
+headings remain 17 px and the separate site identity name remains 38/32 px. Research retains the approved text-only layout and
+three research areas. The full WHEAT Lab h1 and the coming-soon notice are
+centered within the existing 720 px reading column; Lab body text and other
+headings remain left-aligned. The Lab welcomes graduate and postdoctoral
+inquiries without advertising a specific postdoctoral opening.
 
 Confirm there is no CV control or placeholder and no exposed or linked CV PDF.
 The request for applicants to email their CV is intentional. Faculty Page,

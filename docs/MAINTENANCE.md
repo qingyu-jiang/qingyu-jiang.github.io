@@ -6,22 +6,36 @@ covers shared styles, the portrait, and changes to the site's public files.
 ## Shared typography
 
 The site uses locally hosted **Source Sans 3** for every text role, with genuine
-400/500/600 weights and a separate italic font for intentional journal and
-institution italics. No external font service is required at page load.
+400/500/600 weights and a separate italic font for intentional journal italics
+and the Lab coming-soon notice. No external font service is required at page load.
 
 Typography and spacing are centralized in the shared variables and styles in
-`assets/css/academic.css`; do not add page-specific font sizes, weights, or
-spacing overrides. Letter spacing is normal. Desktop / phone sizes in pixels:
+`assets/css/academic.css`; use the shared text roles instead of page-specific
+font or spacing overrides. Letter spacing is normal. Desktop / phone sizes in pixels:
 
 | Role | Size | Weight |
 | --- | --- | --- |
 | Name | 38 / 32 | 600 |
-| Page title and major section heading | 24 / 22 | 600 |
+| Page title and major section heading | 20 / 20 | 600 |
 | Smaller subsection heading | 17 / 17 | 600 |
 | Body, education, and course entries | 17 / 17 | 400 |
+| Publication entries and current-project titles | 15 / 15 | 400 |
 | Header position and university | 17 / 17 | 400 |
-| Supporting details: citations, institutions, footer | 15 / 15 | 400, with semantic italics where appropriate |
+| Supporting details, including the footer | 15 / 15 | 400 |
 | Navigation and profile links | 15 / 15 | 500 |
+
+The shared header joins position and university with a comma: “Assistant Professor,
+University of Idaho”. It uses 17 px regular text, 1.50 line height, and the original
+muted text color. Keep it on one line when space permits and let it wrap naturally
+on narrow phones; do not insert a forced line break.
+
+All page titles and major section headings (`h1` and `h2`) use the shared
+`--type-section: 1.25rem` (20 px) at every width, with 600 weight, 1.35 line
+height, the existing heading color and spacing, and natural wrapping. This
+uniform role covers Education, all Research areas, Teaching roles, WHEAT Lab,
+Join the Lab!, Contact, and the 404 page. No page-content heading is larger than
+20 px. Smaller subsection headings remain 17 px; the separate site identity name
+retains its 38/32 px scale.
 
 Name line height is 1.25; page titles and major section headings use 1.35,
 smaller subsection headings 1.40, and body text 1.50. These are unitless values.
@@ -36,17 +50,45 @@ headings, prose, publications, and the centered Lab notice. Home keeps its wider
 portrait/biography layout, with a 220 px desktop portrait. It stacks at 720 px
 and below; phone profile links use two columns. Home, Research, and Teaching
 retain visually hidden page titles. WHEAT Lab, Contact, and the 404 page use the
-shared major-section style for their visible h1 headings, matching Instructor.
-There is no larger page-title tier.
+shared 20 px major-section style for their visible h1 headings, matching
+Instructor and all other major section headings. There is no larger page-title tier.
+The full WHEAT Lab h1 is centered within the existing 720 px reading column,
+alongside the already centered coming-soon notice. Lab body text and other
+headings remain left-aligned.
 The two font binaries and shared license are committed under `assets/fonts/`;
 provenance is recorded in `docs/font-assets.json`. The retained regular and italic
 WOFF2 files total 57,256 bytes.
 
-Research publications use one 15 px citation paragraph each: authors and year,
-article title, italic journal and volume, issue/pages, plain DOI, then “[PDF]”.
-Only “PDF” is linked, using the existing DOI publisher destination. These are
-not direct PDF download URLs. Preserve verified author initials and final issue
-metadata when changing citation formatting.
+Research publications and the two current-project titles share Source Sans 3,
+15 px, weight 400, 1.50 line height, and muted `#596562` text. These publication
+values were restored from `assets/css/academic.css` at commit `0c2776b`; they
+supersede the subsequent 17 px body-text treatment. Keep `.citation-details` and
+`.project-title` in one shared style. The project titles use normal citation
+text, without journal italics or link styling. “Selected Publications” and
+“Current Projects” retain the shared subsection-heading style and tighter
+spacing. Each citation is one paragraph:
+authors and year, article title, italic journal and volume, issue/pages where
+supplied, a clickable DOI, then “[PDF]”. Both links retain the existing DOI
+publisher destination; these are not direct PDF download URLs. PDF anchors use
+`publication-pdf` to remove their underline while retaining a visible keyboard
+focus indicator. The PDF label alone uses the shared 600 weight as a non-color
+link cue; citation text remains regular. Keep this styling scoped to PDF links.
+Preserve the approved author order and citation wording, including the two
+user-supplied entries that omit article numbers.
+
+Instructor, Co-Instructor, and Graduate Teaching Assistant headings combine the
+role and university with a comma. University names in these role lines are
+upright (`font-style: normal`) and retain the shared heading size, weight, and
+color. All four Guest Lecturer entries also use upright university names,
+keeping each course and its university together at the normal 17 px course size. Entries may wrap naturally on smaller screens;
+publication journal italics remain unchanged.
+
+Contact begins “Let’s Get in Touch!” in the shared major-section style. Its
+address is one paragraph with line breaks between the name, office, department,
+university, street address, and city/postal line. There is no extra paragraph
+gap between the street and city. The separate email group retains its approved
+28 px desktop / 24 px phone gap. Identity and address values remain in the shared
+settings; the email stays obfuscated as plain text.
 
 
 ## Shared layout files

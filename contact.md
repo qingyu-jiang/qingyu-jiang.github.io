@@ -5,16 +5,17 @@ share-description: "Contact Qingyu Jiang, Assistant Professor at the University 
 ---
 <div class="reading contact-page" markdown="1">
 
-# Let’s get in touch!
-
-<p>Email: {% include academic-email.html obfuscated=true %}</p>
-<p>Office: {{ site.academic.office | escape }}</p>
+# Let’s Get in Touch!
 
 <address class="postal-address">
-  {{ site.academic.affiliation | escape }}<br>
+  <p>{{ site.title | escape }}<br>
+  {{ site.academic.office | escape }}<br>
   {{ site.academic.department | escape }}<br>
+  {{ site.academic.affiliation | escape }}<br>
   {{ site.academic.street_address | escape }}<br>
-  {{ site.academic.postal_city | escape }}
+  {{ site.academic.postal_city | escape }}</p>
 </address>
+
+<p class="contact-email">Email: {% include academic-email.html obfuscated=true %}</p>
 
 </div>
