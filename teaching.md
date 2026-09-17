@@ -9,7 +9,7 @@ share-description: "Qingyu Jiang’s teaching experience as an instructor, co-in
 
 <section class="teaching-role" aria-labelledby="instructor" markdown="1">
 
-## Instructor, University of Idaho
+## Instructor<span class="role-university">, University of Idaho</span>
 {: #instructor }
 
 <ul class="course-list">
@@ -23,7 +23,7 @@ share-description: "Qingyu Jiang’s teaching experience as an instructor, co-in
 
 <section class="teaching-role" aria-labelledby="co-instructor" markdown="1">
 
-## Co-Instructor, University of Nebraska-Lincoln
+## Co-Instructor<span class="role-university">, University of Nebraska-Lincoln</span>
 {: #co-instructor }
 
 <ul class="course-list">
@@ -35,7 +35,7 @@ share-description: "Qingyu Jiang’s teaching experience as an instructor, co-in
 
 <section class="teaching-role" aria-labelledby="teaching-assistant" markdown="1">
 
-## Graduate Teaching Assistant, University of Nebraska-Lincoln
+## Graduate Teaching Assistant<span class="role-university">, University of Nebraska-Lincoln</span>
 {: #teaching-assistant }
 
 <ul class="course-list">

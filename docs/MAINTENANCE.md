@@ -29,13 +29,15 @@ University of Idaho”. It uses 17 px regular text, 1.50 line height, and the or
 muted text color. Keep it on one line when space permits and let it wrap naturally
 on narrow phones; do not insert a forced line break.
 
-All page titles and major section headings (`h1` and `h2`) use the shared
-`--type-section: 1.25rem` (20 px) at every width, with 600 weight, 1.35 line
-height, the existing heading color and spacing, and natural wrapping. This
-uniform role covers Education, all Research areas, Teaching roles, WHEAT Lab,
-Join the Lab!, Contact, and the 404 page. No page-content heading is larger than
-20 px. Smaller subsection headings remain 17 px; the separate site identity name
-retains its 38/32 px scale.
+Page titles and major section headings use the shared `--type-section: 1.25rem`
+(20 px) at every width, with 600 weight, 1.35 line height, the existing heading
+color and spacing, and natural wrapping. This role covers Education, all Research
+areas, WHEAT Lab, Join the Lab!, Contact, and the 404 page. All four Teaching
+role headings remain semantic `h2` elements but share the `h3` subsection style
+through `h3, .teaching-role > h2`: 17 px, weight 600, and 1.40 line height,
+matching the Lab application headings. No page-content heading is larger than
+20 px. Other smaller subsection headings also use 17 px; the separate site
+identity name retains its 38/32 px scale.
 
 Name line height is 1.25; page titles and major section headings use 1.35,
 smaller subsection headings 1.40, and body text 1.50. These are unitless values.
@@ -50,8 +52,8 @@ headings, prose, publications, and the centered Lab notice. Home keeps its wider
 portrait/biography layout, with a 220 px desktop portrait. It stacks at 720 px
 and below; phone profile links use two columns. Home, Research, and Teaching
 retain visually hidden page titles. WHEAT Lab, Contact, and the 404 page use the
-shared 20 px major-section style for their visible h1 headings, matching
-Instructor and all other major section headings. There is no larger page-title tier.
+shared 20 px major-section style for their visible h1 headings. There is no
+larger page-title tier.
 The full WHEAT Lab h1 is centered within the existing 720 px reading column,
 alongside the already centered coming-soon notice. Lab body text and other
 headings remain left-aligned.
@@ -77,11 +79,16 @@ Preserve the approved author order and citation wording, including the two
 user-supplied entries that omit article numbers.
 
 Instructor, Co-Instructor, and Graduate Teaching Assistant headings combine the
-role and university with a comma. University names in these role lines are
-upright (`font-style: normal`) and retain the shared heading size, weight, and
-color. All four Guest Lecturer entries also use upright university names,
-keeping each course and its university together at the normal 17 px course size. Entries may wrap naturally on smaller screens;
-publication journal italics remain unchanged.
+role and university with a comma. Keep each role label at weight 600; wrap the
+comma and university together in `.role-university` at regular weight 400 and
+`font-style: normal`, inheriting the heading size and color. All four role
+headings, including Guest Lecturer, use the same 17 px subsection style described
+above. Every `.course-list` has no extra margin between items, retaining normal
+17 px regular text and 1.50 line height. Keep the 12 px heading-to-content gap
+and 28 px desktop / 24 px phone separation between role blocks. All four Guest
+Lecturer entries also use upright university names, keeping each course and its
+university together at the normal 17 px course size. Entries may wrap naturally
+on smaller screens; publication journal italics remain unchanged.
 
 Contact begins “Let’s Get in Touch!” in the shared major-section style. Its
 address is one paragraph with line breaks between the name, office, department,

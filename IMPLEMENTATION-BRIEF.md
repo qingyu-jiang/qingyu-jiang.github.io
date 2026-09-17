@@ -7,14 +7,15 @@ Preserve the responsive portrait layout and accessible navigation. The settled
 typography uses self-hosted Source Sans 3
 throughout, with genuine 400/500/600 weights, regular italic, normal letter
 spacing, and one shared style per text role.
-The site identity name uses 38/32 px, weight 600, and 1.25 line height. All page
-titles and major section headings (`h1` and `h2`) use the shared
-`--type-section: 1.25rem`: 20 px at every viewport, weight 600, and 1.35 line
-height. This includes Education, all Research areas, Teaching roles, WHEAT Lab,
-Join the Lab!, Contact, and the 404 page. Preserve the existing heading color,
-spacing, and natural wrapping. No page-content heading is larger than 20 px;
-there is no larger page-title tier or page-specific size exception. Subsections
-use 17 px, weight 600, and 1.40 line height.
+The site identity name uses 38/32 px, weight 600, and 1.25 line height. Page
+titles and major section headings use the shared `--type-section: 1.25rem`:
+20 px at every viewport, weight 600, and 1.35 line height. This includes
+Education, all Research areas, WHEAT Lab, Join the Lab!, Contact, and the 404
+page. All four Teaching role headings remain semantic `h2` elements and share
+the `h3` subsection style through `h3, .teaching-role > h2`, matching the Lab
+application headings: 17 px, weight 600, and 1.40 line height. Other subsections
+use this same scale. Preserve the existing heading color, spacing, and natural wrapping.
+No page-content heading is larger than 20 px; there is no larger page-title tier.
 Body, education and course entries, and header position/university use 17 px
 at weight 400. Publication entries, current-project titles, and footer details
 use 15 px at weight 400; navigation and profile links use 15 px at weight 500. Body line height is 1.50. Inline teaching
@@ -25,8 +26,8 @@ at the existing 600 px phone breakpoint; section headings have a 12 px gap befor
 content. Shared spacing rules prevent paragraph margins from increasing section
 gaps. Teaching starts visibly with Instructor; its page title is visually
 hidden. WHEAT Lab, Contact, and the 404 page use the shared 20 px major-section
-style for their visible h1 headings, matching Instructor. See docs/MAINTENANCE.md
-for the complete shared scale.
+style for their visible h1 headings. See docs/MAINTENANCE.md for the complete
+shared scale.
 
 - Identity: Qingyu Jiang, with “Assistant Professor, University of Idaho” on one
   shared header line where space permits, wrapping naturally on narrow phones.
@@ -69,10 +70,16 @@ for the complete shared scale.
 - Teaching contains twelve course entries grouped by four roles, with no course
   dates. Positive Psychology (PSYC 3600) follows Developmental Psychology
   (PSYC 3050). Instructor, Co-Instructor, and Graduate Teaching Assistant headings
-  combine the role and university with a comma and upright university names,
-  using the shared 20 px heading size, weight 600, and existing color. Guest Lecturer entries
-  place the university after each course name, also separated by a comma; these
-  university names are upright. The course list replaces the former mentoring and service summaries.
+  combine the role and university with a comma. Role labels retain weight 600;
+  each comma and university share `.role-university`, using upright regular
+  weight 400 and inheriting the heading size and color. All four role headings,
+  including Guest Lecturer, use the shared 17 px subsection style. All course
+  lists have zero extra margin between entries, with normal 17 px regular text
+  at 1.50 line height. The heading-to-content gap remains 12 px and role blocks
+  retain 28 px desktop / 24 px phone separation. Guest Lecturer entries place
+  the university after each course name, also separated by a comma; these
+  university names are upright. The course list replaces the former mentoring
+  and service summaries.
 - WHEAT Lab remains a dedicated page. Center its full h1 heading within the
   existing 720 px reading column, retaining the shared 20 px heading style. Keep
   the italic coming-soon sentence centered; body text and other headings remain

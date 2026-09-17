@@ -55,7 +55,7 @@ p { margin: 0; }
 p + p { margin-top: var(--space-paragraph); }
 /* All page and major-section headings share a 20 px scale at every viewport. */
 h1, h2 { font-family: var(--sans); font-weight: var(--weight-semibold); color: var(--heading); text-wrap: pretty; font-size: var(--type-section); line-height: var(--leading-section); letter-spacing: normal; margin: 0 0 var(--space-heading); }
-h3 { color: var(--heading); font: var(--weight-semibold) var(--type-subsection)/var(--leading-subsection) var(--sans); margin: 0 0 var(--space-heading); }
+h3, .teaching-role > h2 { color: var(--heading); font: var(--weight-semibold) var(--type-subsection)/var(--leading-subsection) var(--sans); margin: 0 0 var(--space-heading); }
 .academic-page { width: 100%; max-width: 1048px; margin: auto; padding: 42px 44px 24px; }
 .academic-main { overflow-wrap: anywhere; }
 .academic-main:focus { outline: none; }
@@ -94,7 +94,8 @@ h3 { color: var(--heading); font: var(--weight-semibold) var(--type-subsection)/
 /* Semibold identifies PDF actions without relying on color or an underline. */
 .publication-pdf, .publication-pdf:hover { text-decoration: none; font-weight: var(--weight-semibold); }
 .course-list { list-style: none; padding: 0; margin: 0; }
-.course-list li + li { margin-top: var(--space-paragraph); }
+.course-list li + li { margin-top: 0; }
+.role-university { font-weight: var(--weight-regular); font-style: normal; }
 .lab-page > h1 { text-align: center; }
 .lab-status { color: var(--muted); text-align: center; }
 .postal-address { font-style: normal; margin: 0; }

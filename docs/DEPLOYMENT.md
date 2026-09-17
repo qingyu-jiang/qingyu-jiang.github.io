@@ -98,16 +98,24 @@ phone group gap. Verify all twelve teaching entries, including Positive
 Psychology immediately after Developmental Psychology, and the inline universities
 in role headings and guest courses. University names are upright in the
 Instructor, Co-Instructor, and Graduate Teaching Assistant headings and all four
-Guest Lecturer course entries. Check
+Guest Lecturer course entries. In the three role/university headings, the comma
+and university use regular weight 400 while each role label stays 600, with
+size and color inherited. Check that all four role headings, including Guest
+Lecturer, match the Lab application headings at 17 px, weight 600, and 1.40 line
+height. All twelve course entries use normal 17 px regular text at 1.50 line
+height with no extra margin between items. Heading-to-content gaps remain 12 px;
+role blocks retain 28 px desktop / 24 px phone separation. Check
 approved publication wording and author order. Citations and the two current-project
 titles share Source Sans 3, 15 px, weight 400, muted `#596562` text, and 1.50
 line height; journal/volume italics and shared subsection-heading styles remain
-intact. Check that every page title and major section heading (`h1` and `h2`)
-uses Source Sans 3, 20 px, weight 600, and 1.35 line height on desktop and phone,
-with natural wrapping and the existing heading color and spacing. This covers
-Education, all Research areas, Teaching roles, WHEAT Lab, Join the Lab!, Contact,
-and the 404 page. No page-content heading should exceed 20 px; subsection
-headings remain 17 px and the separate site identity name remains 38/32 px. Research retains the approved text-only layout and
+intact. Page titles and major section headings use Source Sans 3, 20 px, weight
+600, and 1.35 line height on desktop and phone, with natural wrapping and the
+existing heading color and spacing. This covers Education, all Research areas,
+WHEAT Lab, Join the Lab!, Contact, and the 404 page. All Teaching role headings
+use the 17 px subsection style described above; regular-weight university
+suffixes are intentional. No page-content heading should exceed 20 px; subsection headings
+remain 17 px and the separate site identity name remains 38/32 px. Research
+retains the approved text-only layout and
 three research areas. The full WHEAT Lab h1 and the coming-soon notice are
 centered within the existing 720 px reading column; Lab body text and other
 headings remain left-aligned. The Lab welcomes graduate and postdoctoral
