@@ -11,7 +11,8 @@ and the Lab coming-soon notice. No external font service is required at page loa
 
 Typography and spacing are centralized in the shared variables and styles in
 `assets/css/academic.css`; use the shared text roles instead of page-specific
-font or spacing overrides. Letter spacing is normal. Desktop / phone sizes in pixels:
+font overrides or untracked spacing values. Letter spacing is normal.
+Desktop / phone sizes in pixels:
 
 | Role | Size | Weight |
 | --- | --- | --- |
@@ -41,11 +42,17 @@ identity name retains its 38/32 px scale.
 
 Name line height is 1.25; page titles and major section headings use 1.35,
 smaller subsection headings 1.40, and body text 1.50. These are unitless values.
-Prose paragraphs have a 12 px gap. Major sections have a 28 px visible gap on
-desktop and 24 px at the existing 600 px phone breakpoint. A section heading
-has a 12 px gap before its content. Paragraph margins must not add extra space
-to section gaps; use the shared flow rules instead of stacking margins and
-padding on adjacent elements.
+Prose paragraphs have a 12 px gap; the two Home education entries use a compact
+6 px gap (`--space-education`). Major sections have a 28 px visible gap on
+desktop and 24 px at the existing 600 px phone breakpoint. The first Research
+area has a slightly larger 32/28 px gap (`--space-research-lead`) above its
+heading. Research's “Selected Publications” and “Current Projects” subsections
+have 20 px gaps above their headings at every screen width (`--space-subsection`).
+A section heading normally has a 12 px gap before its content; all four Teaching
+role headings and the two Lab application headings use a compact 8 px gap
+(`--space-heading-compact`). Paragraph margins must not add extra space to
+section gaps; use the shared flow rules instead of stacking margins and padding
+on adjacent elements.
 
 Text-only pages share one responsive content column, capped at 720 px, for
 headings, prose, publications, and the centered Lab notice. Home keeps its wider
@@ -70,8 +77,10 @@ text, without journal italics or link styling. “Selected Publications” and
 “Current Projects” retain the shared subsection-heading style and tighter
 spacing. Each citation is one paragraph:
 authors and year, article title, italic journal and volume, issue/pages where
-supplied, a clickable DOI, then “[PDF]”. Both links retain the existing DOI
-publisher destination; these are not direct PDF download URLs. PDF anchors use
+supplied, a plain-text DOI, then a linked “[PDF]” label. Keep visible DOI URLs
+as bare text rather than Markdown links; only the PDF label is clickable.
+The PDF link retains its existing DOI publisher destination; these are not
+direct PDF download URLs. PDF anchors use
 `publication-pdf` to remove their underline while retaining a visible keyboard
 focus indicator. The PDF label alone uses the shared 600 weight as a non-color
 link cue; citation text remains regular. Keep this styling scoped to PDF links.
@@ -84,15 +93,15 @@ comma and university together in `.role-university` at regular weight 400 and
 `font-style: normal`, inheriting the heading size and color. All four role
 headings, including Guest Lecturer, use the same 17 px subsection style described
 above. Every `.course-list` has no extra margin between items, retaining normal
-17 px regular text and 1.50 line height. Keep the 12 px heading-to-content gap
-and 28 px desktop / 24 px phone separation between role blocks. All four Guest
+17 px regular text and 1.50 line height. Keep the compact 8 px heading-to-list
+gap and 28 px desktop / 24 px phone separation between role blocks. All four Guest
 Lecturer entries also use upright university names, keeping each course and its
 university together at the normal 17 px course size. Entries may wrap naturally
 on smaller screens; publication journal italics remain unchanged.
 
 Contact begins “Let’s Get in Touch!” in the shared major-section style. Its
-address is one paragraph with line breaks between the name, office, department,
-university, street address, and city/postal line. There is no extra paragraph
+address is one paragraph with line breaks in this order: name, department,
+university, office, street address, and city/postal line. There is no extra paragraph
 gap between the street and city. The separate email group retains its approved
 28 px desktop / 24 px phone gap. Identity and address values remain in the shared
 settings; the email stays obfuscated as plain text.

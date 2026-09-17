@@ -88,10 +88,12 @@ removed or the project moves, use these steps to restore it:
 
 Open Home, Research, Teaching, WHEAT Lab, and Contact at desktop and phone sizes.
 Check navigation, the full-resolution portrait, Home profile links (Email leads
-to Contact), all five publications’ DOI and PDF links, and the custom 404 page.
+to Contact), all five publications’ plain DOI text and PDF-link destinations,
+and the custom 404 page. Full DOI URLs remain visible but are not clickable;
 PDF links have no underline but retain visible keyboard focus; their existing
 DOI publisher destinations are unchanged. Contact starts with “Let’s Get in
-Touch!”, followed by one identity/address paragraph with six lines. The city
+Touch!”, followed by one identity/address paragraph with six lines in this
+order: name, department, university, office, street, and city/postal line. The city
 follows the street with a line break and no extra paragraph gap. The shared
 email remains plain [at]/[dot] text below, retaining its 28 px desktop / 24 px
 phone group gap. Verify all twelve teaching entries, including Positive
@@ -103,7 +105,7 @@ and university use regular weight 400 while each role label stays 600, with
 size and color inherited. Check that all four role headings, including Guest
 Lecturer, match the Lab application headings at 17 px, weight 600, and 1.40 line
 height. All twelve course entries use normal 17 px regular text at 1.50 line
-height with no extra margin between items. Heading-to-content gaps remain 12 px;
+height with no extra margin between items. Heading-to-list gaps are 8 px;
 role blocks retain 28 px desktop / 24 px phone separation. Check
 approved publication wording and author order. Citations and the two current-project
 titles share Source Sans 3, 15 px, weight 400, muted `#596562` text, and 1.50
@@ -114,11 +116,16 @@ existing heading color and spacing. This covers Education, all Research areas,
 WHEAT Lab, Join the Lab!, Contact, and the 404 page. All Teaching role headings
 use the 17 px subsection style described above; regular-weight university
 suffixes are intentional. No page-content heading should exceed 20 px; subsection headings
-remain 17 px and the separate site identity name remains 38/32 px. Research
-retains the approved text-only layout and
-three research areas. The full WHEAT Lab h1 and the coming-soon notice are
+remain 17 px and the separate site identity name remains 38/32 px. Home education
+entries have a 6 px gap. Research retains the approved text-only layout and
+three research areas, with the supplied “Her research connects three complementary
+areas...” sentence immediately before “Her goal is to use this evidence to inform...”.
+The first Research area has a 32 px desktop / 28 px phone gap above its heading;
+both “Selected Publications” headings and “Current Projects” have 20 px gaps
+above them at every screen width. The full WHEAT Lab h1 and the coming-soon notice are
 centered within the existing 720 px reading column; Lab body text and other
-headings remain left-aligned. The Lab welcomes graduate and postdoctoral
+headings remain left-aligned. Both Lab application headings have an 8 px gap
+before their following paragraphs. The Lab welcomes graduate and postdoctoral
 inquiries without advertising a specific postdoctoral opening.
 
 Confirm there is no CV control or placeholder and no exposed or linked CV PDF.

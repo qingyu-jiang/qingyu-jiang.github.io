@@ -37,7 +37,11 @@
   --leading-body: 1.5;
   --space-paragraph: 12px;
   --space-heading: 12px;
+  --space-heading-compact: 8px;
+  --space-education: 6px;
   --space-section: 28px;
+  --space-subsection: 20px;
+  --space-research-lead: 32px;
   --reading-measure: 45rem;
   --biography-measure: 70ch;
 }
@@ -80,13 +84,16 @@ h3, .teaching-role > h2 { color: var(--heading); font: var(--weight-semibold) va
 .profile-icon { display: inline-block; flex: 0 0 18px; width: 18px; height: 18px; }
 .pending-link { color: var(--muted); }
 .pending-link small { font-size: var(--type-detail); font-weight: var(--weight-regular); }
-/* The same section gap applies to all pages and named subsection blocks. */
+/* Each shared flow rule owns its gap without stacking paragraph margins. */
 .education, .research-area, .content-section,
-.teaching-role + .teaching-role, .selected-publication, .current-projects,
+.teaching-role + .teaching-role,
 .content-section p + h3, .contact-email { margin-top: var(--space-section); }
+.selected-publication, .current-projects { margin-top: var(--space-subsection); }
+.research-page > .research-area:first-of-type { margin-top: var(--space-research-lead); }
+.teaching-role > h2, .lab-page .content-section > h3 { margin-bottom: var(--space-heading-compact); }
 .education-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; font-size: var(--type-body); }
 .education-list li { line-height: var(--leading-body); }
-.education-list li + li { margin-top: var(--space-paragraph); }
+.education-list li + li { margin-top: var(--space-education); }
 .reading { max-width: var(--reading-measure); }
 .publication + .publication { margin-top: var(--space-paragraph); }
 /* Citations and project titles share the original supporting-text treatment. */
@@ -116,7 +123,7 @@ h3, .teaching-role > h2 { color: var(--heading); font: var(--weight-semibold) va
 }
 @media (max-width: 600px) {
   .academic-page { padding: 26px 22px 22px; }
-  :root { --type-name: 2rem; --space-section: 24px; }
+  :root { --type-name: 2rem; --space-section: 24px; --space-research-lead: 28px; }
   .academic-nav { padding-bottom: 10px; }
   .menu-ready .menu-toggle { display: block; }
   .menu-ready .nav-list { display: none; }

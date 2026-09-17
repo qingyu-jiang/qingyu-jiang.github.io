@@ -9,9 +9,9 @@ share-description: "Contact Qingyu Jiang, Assistant Professor at the University 
 
 <address class="postal-address">
   <p>{{ site.title | escape }}<br>
-  {{ site.academic.office | escape }}<br>
   {{ site.academic.department | escape }}<br>
   {{ site.academic.affiliation | escape }}<br>
+  {{ site.academic.office | escape }}<br>
   {{ site.academic.street_address | escape }}<br>
   {{ site.academic.postal_city | escape }}</p>
 </address>

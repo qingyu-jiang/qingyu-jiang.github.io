@@ -7,7 +7,7 @@ share-description: "Research on developmental contexts and child adaptation, car
 
 <div class="reading research-page" markdown="1">
 
-Dr. Jiang’s research focuses on how developmental contexts, experiences, and relationships shape mental health and child development. Recognizing that the early years lay the foundation for lifelong health and well-being, she studies families from pregnancy through infancy and early childhood, tracing how early experiences relate to development throughout childhood and adolescence. Her goal is to use this evidence to inform practical prevention and intervention strategies that respond to families’ circumstances and strengthen support for underserved children and families.
+Dr. Jiang’s research focuses on how developmental contexts, experiences, and relationships shape mental health and child development. Recognizing that the early years lay the foundation for lifelong health and well-being, she studies families from pregnancy through infancy and early childhood, tracing how early experiences relate to development throughout childhood and adolescence. Her research connects three complementary areas: 1) developmental contexts, family, and child adaptation; 2) caregiver well-being and early childhood development; and 3) mental health and parenting in the age of AI. Her goal is to use this evidence to inform practical prevention and intervention strategies that respond to families’ circumstances and strengthen support for underserved children and families.
 
 <section class="research-area" aria-labelledby="research-1" markdown="1">
 
@@ -22,13 +22,13 @@ Dr. Jiang examines how developmental contexts and family relationships shape chi
 
 <div class="publication" markdown="1">
 
-Jiang, Q., Wang, D., Yang, Z., & Choi, J.-K. (2023). Bidirectional relationships between parenting stress and child behavior problems in multi-stressed, single-mother families: A cross-lagged panel model. *Family Process, 62*(2), 671–686. [https://doi.org/10.1111/famp.12796](https://doi.org/10.1111/famp.12796) \[[PDF](https://doi.org/10.1111/famp.12796 "Open the publisher page"){: .publication-pdf aria-label="PDF: Bidirectional relationships between parenting stress and child behavior problems in multi-stressed, single-mother families: A cross-lagged panel model — publisher page" }\]
+Jiang, Q., Wang, D., Yang, Z., & Choi, J.-K. (2023). Bidirectional relationships between parenting stress and child behavior problems in multi-stressed, single-mother families: A cross-lagged panel model. *Family Process, 62*(2), 671–686. https://doi.org/10.1111/famp.12796 \[[PDF](https://doi.org/10.1111/famp.12796 "Open the publisher page"){: .publication-pdf aria-label="PDF: Bidirectional relationships between parenting stress and child behavior problems in multi-stressed, single-mother families: A cross-lagged panel model — publisher page" }\]
 {: .citation-details }
 
 </div>
 <div class="publication" markdown="1">
 
-Wang, D., Jiang, Q., Yang, Z., & Choi, J.-K. (2021). The longitudinal influences of adverse childhood experiences and positive childhood experiences at family, school, and neighborhood on adolescent depression and anxiety. *Journal of Affective Disorders, 292*, 542–551. [https://doi.org/10.1016/j.jad.2021.05.108](https://doi.org/10.1016/j.jad.2021.05.108) \[[PDF](https://doi.org/10.1016/j.jad.2021.05.108 "Open the publisher page"){: .publication-pdf aria-label="PDF: The longitudinal influences of adverse childhood experiences and positive childhood experiences at family, school, and neighborhood on adolescent depression and anxiety — publisher page" }\]
+Wang, D., Jiang, Q., Yang, Z., & Choi, J.-K. (2021). The longitudinal influences of adverse childhood experiences and positive childhood experiences at family, school, and neighborhood on adolescent depression and anxiety. *Journal of Affective Disorders, 292*, 542–551. https://doi.org/10.1016/j.jad.2021.05.108 \[[PDF](https://doi.org/10.1016/j.jad.2021.05.108 "Open the publisher page"){: .publication-pdf aria-label="PDF: The longitudinal influences of adverse childhood experiences and positive childhood experiences at family, school, and neighborhood on adolescent depression and anxiety — publisher page" }\]
 {: .citation-details }
 
 </div>
@@ -49,19 +49,19 @@ Dr. Jiang studies how psychological and relational resources support caregiver w
 
 <div class="publication" markdown="1">
 
-Jiang, Q., Wilhite, H., Williams, N. A., Dev, D. A., Clark, C. A. C., Avari, P., & Ladd, S. B. (2026). Mindful parenting and toddlers’ food responsiveness: The role of controlling feeding practices. *Journal of Extension, 64*(1), [https://doi.org/10.66752/1077-5315.5184](https://doi.org/10.66752/1077-5315.5184) \[[PDF](https://doi.org/10.66752/1077-5315.5184 "Open the publisher page"){: .publication-pdf aria-label="PDF: Mindful parenting and toddlers’ food responsiveness: The role of controlling feeding practices — publisher page" }\]
+Jiang, Q., Wilhite, H., Williams, N. A., Dev, D. A., Clark, C. A. C., Avari, P., & Ladd, S. B. (2026). Mindful parenting and toddlers’ food responsiveness: The role of controlling feeding practices. *Journal of Extension, 64*(1), https://doi.org/10.66752/1077-5315.5184 \[[PDF](https://doi.org/10.66752/1077-5315.5184 "Open the publisher page"){: .publication-pdf aria-label="PDF: Mindful parenting and toddlers’ food responsiveness: The role of controlling feeding practices — publisher page" }\]
 {: .citation-details }
 
 </div>
 <div class="publication" markdown="1">
 
-Jiang, Q., Koire, A., Lin, H.-C., Feldman, N., Ma, C., Erdei, C., Mittal, L., Roffman, J. L., & Liu, C. H. (2025). Behavioral activation and postpartum mental health among mothers during the COVID-19 pandemic. *Journal of Prenatal and Perinatal Psychology and Health, 39*(3), 42–63. [https://doi.org/10.62858/apph251203](https://doi.org/10.62858/apph251203) \[[PDF](https://doi.org/10.62858/apph251203 "Open the publisher page"){: .publication-pdf aria-label="PDF: Behavioral activation and postpartum mental health among mothers during the COVID-19 pandemic — publisher page" }\]
+Jiang, Q., Koire, A., Lin, H.-C., Feldman, N., Ma, C., Erdei, C., Mittal, L., Roffman, J. L., & Liu, C. H. (2025). Behavioral activation and postpartum mental health among mothers during the COVID-19 pandemic. *Journal of Prenatal and Perinatal Psychology and Health, 39*(3), 42–63. https://doi.org/10.62858/apph251203 \[[PDF](https://doi.org/10.62858/apph251203 "Open the publisher page"){: .publication-pdf aria-label="PDF: Behavioral activation and postpartum mental health among mothers during the COVID-19 pandemic — publisher page" }\]
 {: .citation-details }
 
 </div>
 <div class="publication" markdown="1">
 
-Jiang, Q., Feldman, N., Koire, A., Ma, C., Mittal, L., Lin, H.-C., Erdei, C., Roffman, J. L., & Liu, C. H. (2024). Infant neurodevelopment during the COVID-19 pandemic: Associations with maternal pandemic-related experiences, parenting stress, and self-efficacy. *Early Human Development, 193*, [https://doi.org/10.1016/j.earlhumdev.2024.106018](https://doi.org/10.1016/j.earlhumdev.2024.106018) \[[PDF](https://doi.org/10.1016/j.earlhumdev.2024.106018 "Open the publisher page"){: .publication-pdf aria-label="PDF: Infant neurodevelopment during the COVID-19 pandemic: Associations with maternal pandemic-related experiences, parenting stress, and self-efficacy — publisher page" }\]
+Jiang, Q., Feldman, N., Koire, A., Ma, C., Mittal, L., Lin, H.-C., Erdei, C., Roffman, J. L., & Liu, C. H. (2024). Infant neurodevelopment during the COVID-19 pandemic: Associations with maternal pandemic-related experiences, parenting stress, and self-efficacy. *Early Human Development, 193*, https://doi.org/10.1016/j.earlhumdev.2024.106018 \[[PDF](https://doi.org/10.1016/j.earlhumdev.2024.106018 "Open the publisher page"){: .publication-pdf aria-label="PDF: Infant neurodevelopment during the COVID-19 pandemic: Associations with maternal pandemic-related experiences, parenting stress, and self-efficacy — publisher page" }\]
 {: .citation-details }
 
 </div>

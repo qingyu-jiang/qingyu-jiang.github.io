@@ -23,9 +23,12 @@ universities inherit their heading or course size. University names are upright
 in the three teaching role headings and all four Guest Lecturer course entries.
 Prose paragraph gaps are 12 px; major-section gaps are 28 px desktop / 24 px
 at the existing 600 px phone breakpoint; section headings have a 12 px gap before
-content. Shared spacing rules prevent paragraph margins from increasing section
-gaps. Teaching starts visibly with Instructor; its page title is visually
-hidden. WHEAT Lab, Contact, and the 404 page use the shared 20 px major-section
+content. Teaching role headings and Lab application headings use a compact 8 px
+gap before their content. Research subsection headings have 20 px gaps above
+them at every screen width; the first Research area has a 32/28 px gap above
+its heading. These values use shared spacing variables. Shared flow rules prevent
+paragraph margins from increasing section gaps. Teaching starts visibly with
+Instructor; its page title is visually hidden. WHEAT Lab, Contact, and the 404 page use the shared 20 px major-section
 style for their visible h1 headings. See docs/MAINTENANCE.md for the complete
 shared scale.
 
@@ -43,15 +46,21 @@ shared scale.
   The three former research paragraphs are removed from Home. Each education entry
   is one line on desktop and wraps naturally on smaller screens:
   “Ph.D. in Child, Youth, and Family Studies, University of Nebraska-Lincoln, 2023”
-  and “B.A. in Psychology, Michigan State University, 2016.”
-- Research has one shortened overview paragraph, omitting the sentence listing
-  three complementary areas while preserving the remaining introduction. Its
-  three text-only research areas begin “Dr. Jiang examines,” “Dr. Jiang studies,”
-  and “Dr. Jiang investigates.”
+  and “B.A. in Psychology, Michigan State University, 2016.” The two entries
+  use a compact 6 px gap; ordinary prose retains its 12 px paragraph gap.
+- Research has one overview paragraph. Immediately before “Her goal is to use
+  this evidence to inform...” it includes: “Her research connects three
+  complementary areas: 1) developmental contexts, family, and child adaptation;
+  2) caregiver well-being and early childhood development; and 3) mental health
+  and parenting in the age of AI.” Preserve the remaining introduction.
+  Its three text-only research areas begin “Dr. Jiang examines,” “Dr. Jiang
+  studies,” and “Dr. Jiang investigates.”
   The caregiver description is one paragraph; the AI description uses the latest
   user-supplied wording about generative AI support and its implications.
   Publications follow the supplied `papers.docx` structure: authors, year, title,
-  journal details, a clickable DOI, and a linked “[PDF]” label. All publication
+  journal details, a plain-text DOI, and a linked “[PDF]” label. Only the PDF
+  label is clickable; keep visible DOI URLs as bare text rather than Markdown
+  links. All publication
   entries share Source Sans 3, 15 px, weight 400, 1.50 line height, and muted
   `#596562` text with the two current-project titles. The publication values are
   restored from stylesheet revision `0c2776b`, superseding the 17 px treatment.
@@ -75,21 +84,24 @@ shared scale.
   weight 400 and inheriting the heading size and color. All four role headings,
   including Guest Lecturer, use the shared 17 px subsection style. All course
   lists have zero extra margin between entries, with normal 17 px regular text
-  at 1.50 line height. The heading-to-content gap remains 12 px and role blocks
-  retain 28 px desktop / 24 px phone separation. Guest Lecturer entries place
+  at 1.50 line height. The heading-to-list gap is 8 px and role blocks retain
+  28 px desktop / 24 px phone separation. Guest Lecturer entries place
   the university after each course name, also separated by a comma; these
   university names are upright. The course list replaces the former mentoring
   and service summaries.
 - WHEAT Lab remains a dedicated page. Center its full h1 heading within the
   existing 720 px reading column, retaining the shared 20 px heading style. Keep
   the italic coming-soon sentence centered; body text and other headings remain
-  left-aligned.
+  left-aligned. Both application headings, “Undergraduate Students” and
+  “Prospective Graduate Students and Postdoctoral Scholars,” have an 8 px gap
+  before their following paragraphs.
   Accept undergraduate assistants and welcome graduate/postdoctoral inquiries;
   do not imply a specific postdoctoral opening. Application email and research-area
   phrases are plain text; the standalone email is removed.
-- Contact begins “Let’s Get in Touch!” and groups the name, office, department,
-  university, street address, and city/postal line in one paragraph with line
-  breaks. The city directly follows the street without an extra paragraph gap.
+- Contact begins “Let’s Get in Touch!” and groups the name, department,
+  university, office, street address, and city/postal line, in that order, in one
+  paragraph with line breaks. The city directly follows the street without an
+  extra paragraph gap.
   A separate email group follows with its existing 28 px desktop / 24 px phone
   gap, displaying
   `qjiang [at] uidaho [dot] edu` as plain text. All identity, address, and email
