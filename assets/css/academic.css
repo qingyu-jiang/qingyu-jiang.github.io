@@ -91,7 +91,6 @@ h3 { color: var(--heading); font: var(--weight-semibold) var(--type-subsection)/
 .education-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; font-size: var(--type-body); }
 .education-list li { line-height: var(--leading-body); }
 .education-list li + li { margin-top: 20px; }
-.education-list span { display: block; color: var(--muted); font-size: var(--type-detail); line-height: var(--leading-body); margin-top: 3px; }
 .reading { max-width: var(--reading-measure); }
 .research-area { margin-top: 42px; }
 .selected-publication, .current-projects { margin-top: 26px; }

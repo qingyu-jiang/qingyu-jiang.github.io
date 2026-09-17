@@ -7,7 +7,7 @@ accessible navigation. The settled typography uses self-hosted Source Serif 4
 (500) and Source Sans 3 (400/500/600 plus regular italic), with one shared style
 per text role.
 Page titles use 32/28 px at 1.25 line height; section headings 24/22 px at 1.35;
-subsections, body, and header position/university 17 px; citations, education/teaching
+subsections, body, education, and header position/university 17 px; citations, teaching
 institutions and navigation 15 px.
 Body line height is 1.7. Teaching starts visibly with Instructor; its page title
 is visually hidden. WHEAT Lab and Contact page headings use the shared section
@@ -22,8 +22,10 @@ complete shared scale.
 - Home uses the opening third-person biography beside the portrait, icon-and-text
   profile links, and stacked, left-aligned education. Appointments and academic
   training form two paragraphs with the approved wording. The WHEAT name is plain text.
-  The three former research paragraphs are removed from Home. Education uses
-  “PhD in Child, Youth, and Family Studies, 2023” and “BA in Psychology, 2016.”
+  The three former research paragraphs are removed from Home. Each education entry
+  is one line on desktop and wraps naturally on smaller screens:
+  “PhD in Child, Youth, and Family Studies, University of Nebraska-Lincoln, 2023”
+  and “BA in Psychology, Michigan State University, 2016.”
 - Research starts with the exact overview wording supplied in v3, split before
   “Her research connects three complementary areas,” then three text-only research
   areas. The caregiver section also breaks before “She explores how these
