@@ -47,9 +47,8 @@ complete shared scale.
   two deliberate columns.
 - Content sections use whitespace instead of dividing lines. Keep the navigation
   divider and the footer boundary. Typography sizes and weights remain shared.
-- Missing external profile destinations are marked pending only in local preview
-  and omitted from production until verified URLs are supplied. Research is
-  intentionally text-only, with no image placeholders.
+- All supplied professional profile URLs are configured in `_config.yml`.
+  Research is intentionally text-only, with no image placeholders.
 - The selected root `photo.png` supplies the full-resolution optimized
   `assets/img/portrait.jpg`. Alternative-photo comparison is complete and its
   tooling has been removed. The portrait URL uses an image-specific SHA-256 prefix

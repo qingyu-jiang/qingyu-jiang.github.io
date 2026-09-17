@@ -95,10 +95,9 @@ text-only layout and three research areas. The Lab welcomes graduate and
 postdoctoral inquiries without advertising a specific postdoctoral opening.
 
 Confirm there is no CV control or placeholder and no exposed or linked CV PDF.
-The request for applicants to email their CV is intentional. ResearchGate and
-LinkedIn have no supplied URLs yet: their pending labels appear only in local
-preview and are omitted from production. Add verified URLs in `_config.yml`
-when available. The explicit 17-file production allowlist is maintained in
+The request for applicants to email their CV is intentional. Faculty Page,
+Google Scholar, ResearchGate, and LinkedIn use the supplied profile URLs in
+`_config.yml`. The explicit 17-file production allowlist is maintained in
 `scripts/verify-build`; source documents and private reviews must never appear
 in the artifact.
 

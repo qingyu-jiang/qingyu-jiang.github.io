@@ -33,10 +33,10 @@ academic:
       url: "https://scholar.google.com/citations?user=ZQPFSWsAAAAJ&hl=en"
     - label: ResearchGate
       icon: researchgate
-      url: "" # Awaiting the supplied profile URL.
+      url: "https://www.researchgate.net/profile/Qingyu-Jiang?ev=hdr_xprf"
     - label: LinkedIn
       icon: linkedin
-      url: "" # Awaiting the supplied profile URL.
+      url: "https://www.linkedin.com/in/qingyujiang/"
   navigation:
     - title: Home
       url: /
