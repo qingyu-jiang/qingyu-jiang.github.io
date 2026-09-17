@@ -1,26 +1,28 @@
-# Private review and future GitHub Pages launch
+# GitHub Pages publishing
 
-Account: **qingyu-jiang**. Repository: **qingyu-jiang.github.io**.
-Future site: https://qingyu-jiang.github.io.
+Account: **qingyu-jiang**. Public repository: **qingyu-jiang.github.io**.
+Website: <https://qingyu-jiang.github.io/>.
 
-## Current status
+## Deployment configuration
 
-The repository is **private** and Pages is **unpublished**. No active Pages
-configuration is returned by GitHub. The earlier publishing settings were saved
-locally before this change. The **Academic website** workflow is disabled on GitHub. Its source now accepts
-manual runs only, with `publish` defaulting to `false`. Commits and pushes do not
-trigger deployment. Keep this setup until Qingyu explicitly asks to publish.
+The repository, source files, and Git history are public. GitHub Pages uses
+**GitHub Actions** as its publishing source, with HTTPS enforced and the
+`github-pages` environment restricted to `main`.
 
-The site files and Git history remain available locally and in the private
-repository. `origin` points to https://github.com/qingyu-jiang/qingyu-jiang.github.io;
-`upstream` retains the Beautiful Jekyll source. The default branch remains `main`.
+The **Academic website** workflow is enabled and accepts manual runs only.
+Its `publish` input defaults to `false`. Committing or pushing changes does not
+update the live website; publishing requires a deliberate run from `main` with
+**Publish the approved website to GitHub Pages** selected.
 
-The project-local GitHub CLI is `.runtime/github-cli/gh`; its configuration is in
-`.runtime/github-config/`. These remain ignored and excluded. Git identity and the
-credential helper are configured only for this repository. After moving the
-project or signing out, reconnect authentication as `qingyu-jiang` before pushing.
+`origin` points to https://github.com/qingyu-jiang/qingyu-jiang.github.io;
+`upstream` retains the Beautiful Jekyll source. The default branch is `main`.
+The project-local GitHub CLI is `.runtime/github-cli/gh`, with configuration in
+`.runtime/github-config/`. These directories remain ignored and excluded. Git
+identity and the credential helper are configured only for this repository.
+After moving the project or signing out, reconnect authentication as
+`qingyu-jiang` before pushing.
 
-## Continue reviewing privately
+## Review changes locally
 
 From this project folder:
 
@@ -28,11 +30,10 @@ From this project folder:
 PORT=4001 ./scripts/preview
 ```
 
-Open <http://127.0.0.1:4001> on this computer. The server binds only to loopback;
-this address is not a shareable website link. Keep editing the Markdown pages,
-configuration, and assets, and review desktop and phone layouts locally. The
-local notice and `noindex` metadata identify a draft; privacy comes from keeping
-Pages offline and the repository private.
+Open <http://127.0.0.1:4001/> on this computer. The server binds only to loopback;
+this address is not a shareable website link. Review desktop and phone layouts
+before publishing. Local previews include a notice and `noindex` metadata;
+production builds omit them. A `noindex` directive is not access control.
 
 Build and verify in a separate directory while the preview is running:
 
@@ -41,77 +42,84 @@ Build and verify in a separate directory while the preview is running:
 ./scripts/verify-build /tmp/qingyu-production
 ```
 
-Commit and push reviewed changes to preserve them in the private repository.
-Original documents, raw photos, private review records, installed dependencies,
-and generated output must remain ignored. These commands do not publish.
+Commit and push reviewed source changes. Because the repository is public,
+pushed changes can be read on GitHub before they are deployed. Original
+documents, raw photos, private review records, installed dependencies, and
+generated output must remain ignored and excluded from the repository.
 
-## Launch only when requested
+## Publish an update
 
-1. Obtain Qingyu’s explicit request to publish, finish the local review, and verify
-   the production build. Confirm the active GitHub account is `qingyu-jiang`.
-2. Choose whether to make the repository public or retain private source on an
-   eligible GitHub Pages plan. For a personal account, Pages supports public
-   repositories on GitHub Free and private repositories on GitHub Pro. Private
-   source does not make this user site private once Pages publishes it.
+1. Save and review the latest changes on `main`.
+2. Open **Actions → Academic website → Run workflow**.
+3. Select `main` and check **Publish the approved website to GitHub Pages**
+   (`publish: true`). Leaving it unchecked only builds and verifies.
+4. Run the workflow, wait for both build and deployment to succeed, then check
+   <https://qingyu-jiang.github.io/> using the checklist below.
+
+The workflow uses Ruby 3.3.8, Bundler 2.5.22, and locked dependencies. Its build
+job always builds and checks output. Artifact upload and deployment require both
+Boolean `inputs.publish == true` and the `main` ref. The production guard rejects
+unexpected output, preview metadata, incorrect domains, incomplete profile
+links, and an accidentally exposed CV.
+[GitHub's manual-workflow guide](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow).
+
+<a id="launch-only-when-requested"></a>
+
+## Publishing setup
+
+These settings are already configured for this repository. If publishing is
+removed or the project moves, use these steps to restore it:
+
+1. Confirm the account and repository. GitHub Free supports Pages from a public
+   repository; a personal account needs GitHub Pro to use a private repository.
+   A private source repository can still publish a public website.
    [GitHub Pages availability](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages).
-3. Check **Settings → Pages → Build and deployment** and restore publishing with
-   **GitHub Actions** as the source. If the Pages configuration is absent, recreate
-   it; the corresponding API creation uses `build_type: workflow`. Restore HTTPS
-   enforcement and confirm the `github-pages` environment allows deployments only
-   from `main`. The checked-in workflow is already supplied;
-   do not add a second template. [Pages setup and settings](https://docs.github.com/en/rest/pages/pages).
-4. Enable **Actions → Academic website**. Manually run it from `main` with the
-   **Publish the approved website to GitHub Pages** checkbox selected
-   (`publish: true`). Leaving it unchecked only builds and verifies. The workflow
-   remains manual after launch; a push alone never publishes.
+2. In **Settings → Pages → Build and deployment**, choose **GitHub Actions**.
+   If the Pages configuration is absent, recreate it; the API uses
+   `build_type: workflow`. Use the checked-in workflow rather than adding a
+   second template. Enable HTTPS enforcement and restrict the `github-pages`
+   deployment environment to `main`.
+   [Pages setup and settings](https://docs.github.com/en/rest/pages/pages).
+3. Enable **Actions → Academic website**, then follow **Publish an update**.
+   Keep publishing manual; a push alone should not deploy.
    [Workflow controls](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows).
-5. Wait for both build and deployment to succeed, then verify the live site.
 
-The workflow retains Ruby 3.3.8/Bundler 2.5.22 and locked dependencies. Its build
-job always builds and checks output when manually run. Artifact upload and the
-deployment job require both Boolean `inputs.publish == true` and the `main` ref.
-The production guard rejects unexpected output, preview metadata, incorrect
-domains, or an accidentally exposed CV.
+## Verify a publication
 
-## Verify a launch or later publication
-
-The current content revision follows Website_v3.docx and subsequent reviewed
-layout refinements. Open Home, Research, Teaching, WHEAT Lab, and Contact at
-desktop and phone sizes. Check navigation, the full-resolution portrait, Home
-profile links (Email leads to Contact), all five publication DOI links, and the
-custom 404 page. Contact displays the shared email as plain [at]/[dot] text.
-Verify all eleven teaching entries and complete publication author lists.
-Research starts with the supplied overview and uses a text-only layout, followed
-by three areas. The Lab welcomes graduate and postdoctoral inquiries without
-advertising a specific postdoctoral opening.
+Open Home, Research, Teaching, WHEAT Lab, and Contact at desktop and phone sizes.
+Check navigation, the full-resolution portrait, Home profile links (Email leads
+to Contact), all five publication DOI links, and the custom 404 page. Contact
+shows the shared email as plain [at]/[dot] text. Verify all eleven teaching
+entries and complete publication author lists. Research uses the approved
+text-only layout and three research areas. The Lab welcomes graduate and
+postdoctoral inquiries without advertising a specific postdoctoral opening.
 
 Confirm there is no CV control or placeholder and no exposed or linked CV PDF.
-The request for applicants to email their CV is intentional. Resolve or clearly
-retain the pending ResearchGate and LinkedIn URLs before approving publication.
-Research imagery is no longer pending. Source documents and private reviews must
-not be included in the 17-file production artifact; its explicit allowlist is
-maintained in `scripts/verify-build`.
+The request for applicants to email their CV is intentional. ResearchGate and
+LinkedIn have no supplied URLs yet: their pending labels appear only in local
+preview and are omitted from production. Add verified URLs in `_config.yml`
+when available. The explicit 17-file production allowlist is maintained in
+`scripts/verify-build`; source documents and private reviews must never appear
+in the artifact.
 
-Confirm canonical URLs, sharing image, `sitemap.xml`, and `robots.txt` use the
-public HTTPS domain. Live pages must omit the local notice and noindex metadata
-(except the 404 page). Check sharing previews after the domain is live.
+Confirm canonical URLs, the sharing image, `sitemap.xml`, and `robots.txt` use
+the public HTTPS domain. Live pages must omit the local notice and `noindex`
+metadata (except the 404 page). Check sharing previews when relevant metadata
+changes.
 
-For later edits, build, verify, and review locally before committing and pushing.
-Publish only with an explicit manual `publish: true` run on `main`. To undo a
-committed change, use `git revert <commit>` and push the new commit; publishing
-that revert is a separate deliberate action.
+To undo a committed change, use `git revert <commit>` and push the new commit.
+Publishing that revert requires a separate manual run.
 
-## Return to private review later
+## Unpublish the website
 
-Disable the Academic website workflow, cancel active or queued deployment runs,
-and use **Settings → Pages → Unpublish site**. Make the repository private if its
-source must also be hidden. Verify that Pages is offline, the workflow remains
-disabled, and logged-out requests cannot load the site or repository.
+Disable the **Academic website** workflow, cancel active or queued deployment
+runs, and use **Settings → Pages → ⋯ → Unpublish site**. Verify that the live
+site is unavailable and the workflow remains disabled. Unpublishing Pages does
+not hide the public source repository or its history. If source access also
+needs to be restricted, change the repository to private separately and verify
+logged-out access. Previous public copies cannot be recalled.
 [Unpublishing instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site).
 
-For this private-review change, the Pages deletion API rejected deactivation of
-this repository. Changing the repository to private unpublished the site; a
-subsequent authenticated Pages lookup returned 404 while the private repository
-remained accessible. Do not assume the deletion endpoint will work for this user
-site, or that a future visibility change has completed unpublishing without
-checking the actual site and Pages settings.
+Continue using the local preview while the site is unpublished. Restoring Pages
+from a private repository requires an eligible plan; with GitHub Free, return
+the repository to public before following **Publishing setup**.

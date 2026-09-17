@@ -16,7 +16,8 @@ complete shared scale.
 
 - Identity: Qingyu Jiang, Assistant Professor, University of Idaho. The supplied
   biography uses the fuller description “Assistant Professor of Psychology.”
-- GitHub account: `qingyu-jiang`; private repository: `qingyu-jiang.github.io`.
+- GitHub account: `qingyu-jiang`; public repository: `qingyu-jiang.github.io`.
+  The public website is https://qingyu-jiang.github.io/.
 - Five-page navigation: Home · Research · Teaching · WHEAT Lab · Contact.
 - Home uses the opening third-person biography beside the portrait, icon-and-text
   profile links, and stacked, left-aligned education. Appointments and academic
@@ -46,24 +47,26 @@ complete shared scale.
   two deliberate columns.
 - Content sections use whitespace instead of dividing lines. Keep the navigation
   divider and the footer boundary. Typography sizes and weights remain shared.
-- Missing external profile destinations remain clearly marked pending supplied
-  URLs. Research is intentionally text-only, with no image placeholders.
+- Missing external profile destinations are marked pending only in local preview
+  and omitted from production until verified URLs are supplied. Research is
+  intentionally text-only, with no image placeholders.
 - The selected root `photo.png` supplies the full-resolution optimized
   `assets/img/portrait.jpg`. Alternative-photo comparison is complete and its
   tooling has been removed. The portrait URL uses an image-specific SHA-256 prefix
   in `academic.portrait_version`, checked by the build verifier.
 - The website’s CV control and placeholder are removed. No CV PDF is public or
   linked. References to applicants sending their CV remain in lab instructions.
-- Private review is the current mode: GitHub Pages is unpublished, the repository
-  is private, and the Academic website workflow is disabled. Use the local preview
-  at http://127.0.0.1:4001 while editing. Do not republish without Qingyu’s explicit
-  request.
-- Production builds retain the future public URL and indexable metadata; building
-  locally does not publish. Local previews add a notice and noindex metadata.
+- The repository, source files, and Git history are public. GitHub Pages publishes
+  the website through GitHub Actions with HTTPS enforced and the `github-pages`
+  environment restricted to `main`.
+- Use the local preview at http://127.0.0.1:4001 while editing. Local previews add
+  a notice and noindex metadata. Production builds use the public URL and
+  indexable metadata; building locally does not publish.
 - The personal repository remains connected as `origin`; `upstream` retains the
-  theme source. The workflow has manual runs only, with publishing disabled by
-  default. A future launch must restore Pages, HTTPS, and the `main` deployment
-  environment, then deliberately enable and run the workflow with `publish: true`.
+  theme source. The enabled Academic website workflow accepts manual runs only,
+  with `publish` defaulting to `false`. Pushing commits makes source changes
+  public on GitHub but does not update the website. Publish reviewed updates
+  with an explicit manual run from `main` using `publish: true`.
 
 See README.md and docs/DEPLOYMENT.md for current commands and maintenance.
 The original brief and dated review history are preserved locally under
