@@ -103,11 +103,13 @@ university together at the normal 17 px course size. Entries may wrap naturally
 on smaller screens; publication journal italics remain unchanged.
 
 Contact begins “Let’s Get in Touch!” in the shared major-section style. Its
-address is one paragraph with line breaks in this order: name, department,
-university, office, street address, and city/postal line. There is no extra paragraph
-gap between the street and city. The separate email group retains its approved
-28 px desktop / 24 px phone gap. Identity and address values remain in the shared
-settings; the email stays obfuscated as plain text.
+address is one paragraph with five logical lines in this order: name, department,
+university, office, and the complete street/city/postal address. Join the street
+address and city/postal text with a comma and one normal space on the final line;
+allow natural wrapping on narrow screens without a forced line break. The separate
+email group retains its approved 28 px desktop / 24 px phone gap. Identity and
+address values remain in the shared settings; the email stays obfuscated as plain
+text.
 
 
 ## Shared layout files

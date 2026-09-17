@@ -12,8 +12,7 @@ share-description: "Contact Qingyu Jiang, Assistant Professor at the University 
   {{ site.academic.department | escape }}<br>
   {{ site.academic.affiliation | escape }}<br>
   {{ site.academic.office | escape }}<br>
-  {{ site.academic.street_address | escape }}<br>
-  {{ site.academic.postal_city | escape }}</p>
+  {{ site.academic.street_address | escape }}, {{ site.academic.postal_city | escape }}</p>
 </address>
 
 <p class="contact-email">Email: {% include academic-email.html obfuscated=true %}</p>

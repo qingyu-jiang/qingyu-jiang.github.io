@@ -102,9 +102,10 @@ shared scale.
   do not imply a specific postdoctoral opening. Application email and research-area
   phrases are plain text; the standalone email is removed.
 - Contact begins “Let’s Get in Touch!” and groups the name, department,
-  university, office, street address, and city/postal line, in that order, in one
-  paragraph with line breaks. The city directly follows the street without an
-  extra paragraph gap.
+  university, office, and complete street/city/postal address, in that order, in
+  one paragraph with five logical lines. Join the street and city/postal text
+  with a comma and one normal space on the final line; allow natural responsive
+  wrapping without a forced line break.
   A separate email group follows with its existing 28 px desktop / 24 px phone
   gap, displaying
   `qjiang [at] uidaho [dot] edu` as plain text. All identity, address, and email

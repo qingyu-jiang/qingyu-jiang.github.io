@@ -92,11 +92,12 @@ to Contact), all five publications’ plain DOI text and PDF-link destinations,
 and the custom 404 page. Full DOI URLs remain visible but are not clickable;
 PDF links have no underline but retain visible keyboard focus; their existing
 DOI publisher destinations are unchanged. Contact starts with “Let’s Get in
-Touch!”, followed by one identity/address paragraph with six lines in this
-order: name, department, university, office, street, and city/postal line. The city
-follows the street with a line break and no extra paragraph gap. The shared
-email remains plain [at]/[dot] text below, retaining its 28 px desktop / 24 px
-phone group gap. Verify all twelve teaching entries, including Positive
+Touch!”, followed by one identity/address paragraph with five logical lines in
+this order: name, department, university, office, and the complete street/city/postal
+address. The final line joins the street and city/postal text with a comma and one
+normal space, allowing natural responsive wrapping without a forced line break.
+The shared email remains plain [at]/[dot] text below, retaining its 28 px desktop /
+24 px phone group gap. Verify all twelve teaching entries, including Positive
 Psychology immediately after Developmental Psychology, and the inline universities
 in role headings and guest courses. University names are upright in the
 Instructor, Co-Instructor, and Graduate Teaching Assistant headings and all four

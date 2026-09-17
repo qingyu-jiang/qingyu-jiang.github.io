@@ -49,7 +49,7 @@ Dr. Jiang studies how psychological and relational resources support caregiver w
 
 <div class="publication" markdown="1">
 
-Jiang, Q., Wilhite, H., Williams, N. A., Dev, D. A., Clark, C. A. C., Avari, P., & Ladd, S. B. (2026). Mindful parenting and toddlers’ food responsiveness: The role of controlling feeding practices. *Journal of Extension, 64*(1), https://doi.org/10.66752/1077-5315.5184 \[[PDF](https://doi.org/10.66752/1077-5315.5184 "Open the publisher page"){: .publication-pdf aria-label="PDF: Mindful parenting and toddlers’ food responsiveness: The role of controlling feeding practices — publisher page" }\]
+Jiang, Q., Wilhite, H., Williams, N. A., Dev, D. A., Clark, C. A. C., Avari, P., & Ladd, S. B. (2026). Mindful parenting and toddlers’ food responsiveness: The role of controlling feeding practices. *Journal of Extension, 64*(1), 19. https://doi.org/10.66752/1077-5315.5184 \[[PDF](https://doi.org/10.66752/1077-5315.5184 "Open the publisher page"){: .publication-pdf aria-label="PDF: Mindful parenting and toddlers’ food responsiveness: The role of controlling feeding practices — publisher page" }\]
 {: .citation-details }
 
 </div>
@@ -61,7 +61,7 @@ Jiang, Q., Koire, A., Lin, H.-C., Feldman, N., Ma, C., Erdei, C., Mittal, L., Ro
 </div>
 <div class="publication" markdown="1">
 
-Jiang, Q., Feldman, N., Koire, A., Ma, C., Mittal, L., Lin, H.-C., Erdei, C., Roffman, J. L., & Liu, C. H. (2024). Infant neurodevelopment during the COVID-19 pandemic: Associations with maternal pandemic-related experiences, parenting stress, and self-efficacy. *Early Human Development, 193*, https://doi.org/10.1016/j.earlhumdev.2024.106018 \[[PDF](https://doi.org/10.1016/j.earlhumdev.2024.106018 "Open the publisher page"){: .publication-pdf aria-label="PDF: Infant neurodevelopment during the COVID-19 pandemic: Associations with maternal pandemic-related experiences, parenting stress, and self-efficacy — publisher page" }\]
+Jiang, Q., Feldman, N., Koire, A., Ma, C., Mittal, L., Lin, H.-C., Erdei, C., Roffman, J. L., & Liu, C. H. (2024). Infant neurodevelopment during the COVID-19 pandemic: Associations with maternal pandemic-related experiences, parenting stress, and self-efficacy. *Early Human Development, 193*, 106018. https://doi.org/10.1016/j.earlhumdev.2024.106018 \[[PDF](https://doi.org/10.1016/j.earlhumdev.2024.106018 "Open the publisher page"){: .publication-pdf aria-label="PDF: Infant neurodevelopment during the COVID-19 pandemic: Associations with maternal pandemic-related experiences, parenting stress, and self-efficacy — publisher page" }\]
 {: .citation-details }
 
 </div>
