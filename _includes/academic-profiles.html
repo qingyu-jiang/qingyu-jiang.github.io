@@ -4,6 +4,8 @@
   {% endif %}
   {% for profile in site.academic.profiles %}
   {% assign profile_url = profile.url | default: '' | strip %}
+  {% if profile_url != '' or site.academic.content_pending %}
   <li>{% if profile_url != '' %}<a href="{{ profile_url | escape }}">{% include academic-icon.html name=profile.icon %}<span>{{ profile.label | escape }}</span></a>{% else %}<span class="pending-link">{% include academic-icon.html name=profile.icon %}<span>{{ profile.label | escape }} <small>[URL needed]</small></span></span>{% endif %}</li>
+  {% endif %}
   {% endfor %}
 </ul>

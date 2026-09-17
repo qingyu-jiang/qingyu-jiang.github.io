@@ -79,6 +79,7 @@ pages.each do |path, url_path|
   errors << "#{path}: og:url must match its public canonical URL." unless metadata(html, 'og:url') == ["#{origin}#{url_path}"]
   errors << "#{path}: contains a local development URL." if html.match?(%r{(?:https?:)?//(?:localhost|127\.\d+\.\d+\.\d+|0\.0\.0\.0|\[::1\])(?=[:/"'\s<])}i)
   errors << "#{path}: contains the local review notice." if html.match?(/review-note|Local (?:draft|preview|review)/i)
+  errors << "#{path}: omit incomplete profile links from the published site." if html.match?(/\bpending-link\b|\[URL needed\]/)
   robots = metadata(html, 'robots').join(',')
   if path == '404.html'
     errors << '404.html: add noindex metadata to the error page.' unless robots.match?(/\bnoindex\b/i)

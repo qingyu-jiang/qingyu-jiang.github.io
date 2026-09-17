@@ -44,7 +44,8 @@ is recorded in `docs/font-assets.json`.
 - [academic-header.html](../_includes/academic-header.html) supplies the identity
   and navigation; [academic.js](../assets/js/academic.js) controls the phone menu.
 - [academic-profiles.html](../_includes/academic-profiles.html) renders professional
-  links from `academic.profiles` in [_config.yml](../_config.yml).
+  links from `academic.profiles` in [_config.yml](../_config.yml). Empty URLs
+  appear as placeholders in local preview and are omitted from the public site.
 
 Keep one shared style per text role. Check all five pages at desktop, tablet,
 and phone widths after changing shared styles. The current content and design
