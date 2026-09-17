@@ -95,7 +95,6 @@ h3 { color: var(--heading); font: var(--weight-semibold) var(--type-subsection)/
 .research-area { margin-top: 42px; }
 .selected-publication, .current-projects { margin-top: 26px; }
 .publication + .publication { margin-top: 22px; }
-.publication-title { font-size: var(--type-body); line-height: var(--leading-body); margin-bottom: 7px; }
 .citation-details { font-size: var(--type-detail); color: var(--muted); line-height: var(--leading-body); margin-bottom: 0; }
 .current-projects p { margin: 0; }
 .current-projects p + p { margin-top: 10px; }

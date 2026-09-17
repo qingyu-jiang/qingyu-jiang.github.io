@@ -26,13 +26,16 @@ complete shared scale.
   is one line on desktop and wraps naturally on smaller screens:
   “Ph.D. in Child, Youth, and Family Studies, University of Nebraska-Lincoln, 2023”
   and “B.A. in Psychology, Michigan State University, 2016.”
-- Research starts with the exact overview wording supplied in v3, split before
-  “Her research connects three complementary areas,” then three text-only research
-  areas. The caregiver section also breaks before “She explores how these
-  resources relate.” The first area opens “She examines.” Image placeholders
-  and the extra Scholar link are removed. Preserve all five verified full-author
-  publication citations and DOI links. Current Projects has two plain paragraphs
-  without bullets. The Research page heading remains visually hidden.
+- Research combines the overview into one paragraph. Its three text-only research
+  areas begin “Dr. Jiang examines,” “Dr. Jiang studies,” and “Dr. Jiang investigates.”
+  The caregiver description is one paragraph; the AI description uses the latest
+  user-supplied wording about generative AI support and its implications.
+  Publications follow the supplied `papers.docx` structure: authors, year, title,
+  journal details, plain DOI text, and a linked “[PDF]” label. The PDF labels use
+  the existing DOI publisher destinations; no separate PDF URLs were supplied.
+  Preserve all five verified full-author lists and final publication metadata.
+  Current Projects has two plain paragraphs without bullets. The Research page
+  heading remains visually hidden; no image placeholders or extra Scholar link.
 - Teaching contains eleven course entries grouped by the four supplied roles,
   with institution names and no course dates. The new list replaces the former
   mentoring and service summaries.

@@ -35,6 +35,12 @@ headings, while retaining semantic h1 elements.
 The font binaries and licenses are committed under `assets/fonts/`; provenance
 is recorded in `docs/font-assets.json`.
 
+Research publications use one 15 px citation paragraph each: authors and year,
+article title, italic journal and volume, issue/pages, plain DOI, then “[PDF]”.
+Only “PDF” is linked, using the existing DOI publisher destination. These are
+not direct PDF download URLs. Preserve verified author initials and final issue
+metadata when changing citation formatting.
+
 
 ## Shared layout files
 
