@@ -6,7 +6,6 @@ share-description: "The Well-being, Health, Early Adaptation and Thriving (WHEAT
 <div class="reading lab-page" markdown="1">
 
 # Well-being, Health, Early Adaptation and Thriving (WHEAT) Lab
-{: .section-heading }
 
 *The lab website is coming soon.*
 {: .lab-status }

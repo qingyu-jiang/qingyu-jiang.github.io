@@ -3,16 +3,23 @@
 The website uses Beautiful Jekyll 6.0.1 in this project folder. The latest supplied
 **Website_v3.docx** governs the current content and layout revision, superseding
 v2 and the original brief where specified. Preserve the responsive portrait layout and
-accessible navigation. The settled typography uses self-hosted Source Serif 4
-(500) and Source Sans 3 (400/500/600 plus regular italic), with one shared style
-per text role.
-Page titles use 32/28 px at 1.25 line height; section headings 24/22 px at 1.35;
-subsections, body, education, and header position/university 17 px; citations, teaching
-institutions and navigation 15 px.
-Body line height is 1.7. Teaching starts visibly with Instructor; its page title
-is visually hidden. WHEAT Lab and Contact page headings use the shared section
-style (24/22 px), while keeping their semantic h1 level. See docs/MAINTENANCE.md for the
-complete shared scale.
+accessible navigation. The settled typography uses self-hosted Source Sans 3
+throughout, with genuine 400/500/600 weights, regular italic, normal letter
+spacing, and one shared style per text role.
+The name uses 38/32 px, weight 600, and 1.25 line height. Displayed page titles
+and major section headings share 24/22 px, weight 600, and 1.35 line height;
+there is no larger page-title tier. Subsections use 17 px, weight 600, and
+1.40 line height.
+Body, education, and header position/university use 17 px at weight 400;
+citations, teaching institutions, and footer details use 15 px at weight 400; navigation and
+profile links use 15 px at weight 500. Body line height is 1.50.
+Prose paragraph gaps are 12 px; major-section gaps are 28 px desktop / 24 px
+at the existing 600 px phone breakpoint; section headings have a 12 px gap before
+content. Shared spacing rules prevent paragraph margins from increasing section
+gaps. Teaching starts visibly with Instructor; its page title is visually
+hidden. WHEAT Lab, Contact, and the 404 page use the shared major-section style
+for their visible h1 headings, matching Instructor. See docs/MAINTENANCE.md for
+the complete shared scale.
 
 - Identity: Qingyu Jiang, Assistant Professor, University of Idaho. The supplied
   biography uses the fuller description “Assistant Professor of Psychology.”

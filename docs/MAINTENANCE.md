@@ -5,35 +5,42 @@ covers shared styles, the portrait, and changes to the site's public files.
 
 ## Shared typography
 
-The site uses locally hosted **Source Serif 4** at weight 500 for the name, page
-and section headings, and **Source Sans 3** at 400/500/600 for body text,
-navigation and subsections. A genuine Source Sans 3 italic font supplies journal
-and institution italics. No external font service is required at page load.
+The site uses locally hosted **Source Sans 3** for every text role, with genuine
+400/500/600 weights and a separate italic font for intentional journal and
+institution italics. No external font service is required at page load.
 
-All text roles are defined together in `assets/css/academic.css`; do not add
-page-specific font sizes or weights. Desktop / phone sizes in pixels:
+Typography and spacing are centralized in the shared variables and styles in
+`assets/css/academic.css`; do not add page-specific font sizes, weights, or
+spacing overrides. Letter spacing is normal. Desktop / phone sizes in pixels:
 
 | Role | Size | Weight |
 | --- | --- | --- |
-| Name | 38 / 32 | 500 |
-| Page title | 32 / 28 | 500 |
-| Section heading | 24 / 22 | 500 |
-| Subsection heading | 17 / 17 | 600 |
+| Name | 38 / 32 | 600 |
+| Page title and major section heading | 24 / 22 | 600 |
+| Smaller subsection heading | 17 / 17 | 600 |
 | Body, education, and course entries | 17 / 17 | 400 |
 | Header position and university | 17 / 17 | 400 |
-| Citations and teaching institutions | 15 / 15 | 400, with semantic italics |
+| Supporting details: citations, institutions, footer | 15 / 15 | 400, with semantic italics where appropriate |
 | Navigation and profile links | 15 / 15 | 500 |
 
-Page-title line height is 1.25, section-heading line height 1.35, and body text
-1.7. Text-only pages share one responsive content column, capped at 720 px, for
+Name line height is 1.25; page titles and major section headings use 1.35,
+smaller subsection headings 1.40, and body text 1.50. These are unitless values.
+Prose paragraphs have a 12 px gap. Major sections have a 28 px visible gap on
+desktop and 24 px at the existing 600 px phone breakpoint. A section heading
+has a 12 px gap before its content. Paragraph margins must not add extra space
+to section gaps; use the shared flow rules instead of stacking margins and
+padding on adjacent elements.
+
+Text-only pages share one responsive content column, capped at 720 px, for
 headings, prose, publications, and the centered Lab notice. Home keeps its wider
 portrait/biography layout, with a 220 px desktop portrait. It stacks at 720 px
 and below; phone profile links use two columns. Home, Research, and Teaching
-retain visually hidden page titles.
-WHEAT Lab and Contact use the shared section-heading style for their visible page
-headings, while retaining semantic h1 elements.
-The font binaries and licenses are committed under `assets/fonts/`; provenance
-is recorded in `docs/font-assets.json`.
+retain visually hidden page titles. WHEAT Lab, Contact, and the 404 page use the
+shared major-section style for their visible h1 headings, matching Instructor.
+There is no larger page-title tier.
+The two font binaries and shared license are committed under `assets/fonts/`;
+provenance is recorded in `docs/font-assets.json`. The retained regular and italic
+WOFF2 files total 57,256 bytes.
 
 Research publications use one 15 px citation paragraph each: authors and year,
 article title, italic journal and volume, issue/pages, plain DOI, then “[PDF]”.

@@ -97,7 +97,7 @@ postdoctoral inquiries without advertising a specific postdoctoral opening.
 Confirm there is no CV control or placeholder and no exposed or linked CV PDF.
 The request for applicants to email their CV is intentional. Faculty Page,
 Google Scholar, ResearchGate, and LinkedIn use the supplied profile URLs in
-`_config.yml`. The explicit 17-file production allowlist is maintained in
+`_config.yml`. The explicit 15-file production allowlist is maintained in
 `scripts/verify-build`; source documents and private reviews must never appear
 in the artifact.
 
