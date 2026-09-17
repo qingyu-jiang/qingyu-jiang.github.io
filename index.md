@@ -23,8 +23,8 @@ She received her Ph.D. in Human Sciences, with a specialization in Child, Youth,
 {: #education-title }
 
 <ul class="education-list">
-  <li>PhD in Child, Youth, and Family Studies, University of Nebraska-Lincoln, 2023</li>
-  <li>BA in Psychology, Michigan State University, 2016</li>
+  <li>Ph.D. in Child, Youth, and Family Studies, University of Nebraska-Lincoln, 2023</li>
+  <li>B.A. in Psychology, Michigan State University, 2016</li>
 </ul>
 
 </section>

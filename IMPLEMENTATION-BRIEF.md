@@ -24,8 +24,8 @@ complete shared scale.
   training form two paragraphs with the approved wording. The WHEAT name is plain text.
   The three former research paragraphs are removed from Home. Each education entry
   is one line on desktop and wraps naturally on smaller screens:
-  “PhD in Child, Youth, and Family Studies, University of Nebraska-Lincoln, 2023”
-  and “BA in Psychology, Michigan State University, 2016.”
+  “Ph.D. in Child, Youth, and Family Studies, University of Nebraska-Lincoln, 2023”
+  and “B.A. in Psychology, Michigan State University, 2016.”
 - Research starts with the exact overview wording supplied in v3, split before
   “Her research connects three complementary areas,” then three text-only research
   areas. The caregiver section also breaks before “She explores how these
