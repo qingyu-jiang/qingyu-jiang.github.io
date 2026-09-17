@@ -105,9 +105,12 @@ and university use regular weight 400 while each role label stays 600, with
 size and color inherited. Check that all four role headings, including Guest
 Lecturer, match the Lab application headings at 17 px, weight 600, and 1.40 line
 height. All twelve course entries use normal 17 px regular text at 1.50 line
-height with no extra margin between items. Heading-to-list gaps are 8 px;
-role blocks retain 28 px desktop / 24 px phone separation. Check
-approved publication wording and author order. Citations and the two current-project
+height. Check the 4 px gap between Guest Lecturer entries only on phones at
+widths of 600 px or less; other course lists and wider screens have no extra
+margin between entries. Within-entry line spacing stays unchanged.
+Heading-to-list gaps are 8 px; role blocks retain 28 px desktop / 24 px phone
+separation. Check approved publication wording and author order. Citations and
+the two current-project
 titles share Source Sans 3, 15 px, weight 400, muted `#596562` text, and 1.50
 line height; journal/volume italics and shared subsection-heading styles remain
 intact. Page titles and major section headings use Source Sans 3, 20 px, weight

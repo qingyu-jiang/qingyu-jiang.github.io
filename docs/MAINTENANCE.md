@@ -92,10 +92,13 @@ role and university with a comma. Keep each role label at weight 600; wrap the
 comma and university together in `.role-university` at regular weight 400 and
 `font-style: normal`, inheriting the heading size and color. All four role
 headings, including Guest Lecturer, use the same 17 px subsection style described
-above. Every `.course-list` has no extra margin between items, retaining normal
-17 px regular text and 1.50 line height. Keep the compact 8 px heading-to-list
-gap and 28 px desktop / 24 px phone separation between role blocks. All four Guest
-Lecturer entries also use upright university names, keeping each course and its
+above. Course lists use no extra margin between items except for Guest Lecturer
+entries on phones at widths of 600 px or less: add a 4 px gap between those
+entries using `--space-guest-course`. All other course lists and wider screens
+retain zero extra margin. Within every entry, keep normal 17 px regular text
+and 1.50 line height. Keep the compact 8 px heading-to-list gap and 28 px desktop /
+24 px phone separation between role blocks. All four Guest Lecturer entries also
+use upright university names, keeping each course and its
 university together at the normal 17 px course size. Entries may wrap naturally
 on smaller screens; publication journal italics remain unchanged.
 

@@ -20,9 +20,9 @@ The Gemfile pins Jekyll 3.10.0 and only the dependencies needed locally;
 `Gemfile.lock` records transitive versions. A separate Beautiful Jekyll theme gem
 or remote-theme setting is unnecessary because the source is already present.
 The GitHub workflow uses the same locked dependencies to build and verify output.
-It is disabled during private review and accepts manual runs only. A future
-GitHub Pages deployment requires a deliberate `publish: true` run on `main` after
-Qingyu requests launch and publishing has been restored. See [deployment settings](DEPLOYMENT.md).
+The workflow accepts manual runs only. Committing or pushing changes does not
+publish the website; GitHub Pages deployment requires a deliberate run on `main`
+with `publish: true`. See [deployment settings](DEPLOYMENT.md).
 
 ## Reviewing future upstream changes
 

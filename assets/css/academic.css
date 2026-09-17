@@ -38,6 +38,7 @@
   --space-paragraph: 12px;
   --space-heading: 12px;
   --space-heading-compact: 8px;
+  --space-guest-course: 4px;
   --space-education: 6px;
   --space-section: 28px;
   --space-subsection: 20px;
@@ -124,6 +125,7 @@ h3, .teaching-role > h2 { color: var(--heading); font: var(--weight-semibold) va
 @media (max-width: 600px) {
   .academic-page { padding: 26px 22px 22px; }
   :root { --type-name: 2rem; --space-section: 24px; --space-research-lead: 28px; }
+  .guest-courses li + li { margin-top: var(--space-guest-course); }
   .academic-nav { padding-bottom: 10px; }
   .menu-ready .menu-toggle { display: block; }
   .menu-ready .nav-list { display: none; }

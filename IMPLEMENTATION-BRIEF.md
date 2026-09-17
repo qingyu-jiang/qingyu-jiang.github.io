@@ -82,11 +82,14 @@ shared scale.
   combine the role and university with a comma. Role labels retain weight 600;
   each comma and university share `.role-university`, using upright regular
   weight 400 and inheriting the heading size and color. All four role headings,
-  including Guest Lecturer, use the shared 17 px subsection style. All course
-  lists have zero extra margin between entries, with normal 17 px regular text
-  at 1.50 line height. The heading-to-list gap is 8 px and role blocks retain
-  28 px desktop / 24 px phone separation. Guest Lecturer entries place
-  the university after each course name, also separated by a comma; these
+  including Guest Lecturer, use the shared 17 px subsection style. Course lists
+  have zero extra margin between entries except for Guest Lecturer entries at
+  phone widths of 600 px or less, which have a 4 px gap. All entries retain
+  normal 17 px regular text at 1.50 line height within each entry; wider screens
+  and other course lists retain zero extra margin. The heading-to-list gap is
+  8 px and role blocks retain 28 px desktop / 24 px phone separation. Guest
+  Lecturer entries place the university after each course name, also separated
+  by a comma; these
   university names are upright. The course list replaces the former mentoring
   and service summaries.
 - WHEAT Lab remains a dedicated page. Center its full h1 heading within the
