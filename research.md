@@ -7,14 +7,14 @@ share-description: "Research on developmental contexts and child adaptation, car
 
 <div class="reading research-page" markdown="1">
 
-Dr. Jiang’s research focuses on how contexts, experiences, and relationships shape mental health and child development. Recognizing that the early years lay the foundation for lifelong health and well-being, she studies families from pregnancy through infancy and early childhood, tracing how early experiences relate to development throughout childhood and adolescence. Her research connects three complementary areas: 1) developmental contexts, family, and child adaptation; 2) caregiver well-being and early childhood development; and 3) mental health and parenting in the age of AI. Her goal is to use this evidence to inform practical prevention and intervention strategies that respond to families’ circumstances and strengthen support for underserved children and families.
+Dr. Jiang’s research focuses on how contexts, experiences, and relationships shape mental health and child development. Recognizing that the early years lay the foundation for lifelong health and well-being, she studies families from pregnancy through infancy and early childhood, tracing how early experiences relate to development throughout childhood and adolescence. Her research connects three complementary areas: 1) developmental contexts, family, and child adaptation; 2) caregiver well-being and early childhood development; and 3) mental health and parenting in the age of AI. Her goal is to use this evidence to inform practical prevention and intervention strategies that respond to families’ needs and strengthen support for underserved children and families.
 
 <section class="research-area" aria-labelledby="research-1" markdown="1">
 
 ## Developmental Contexts, Family, and Child Adaptation
 {: #research-1 }
 
-Dr. Jiang examines how developmental contexts and family relationships shape child development and mental health. Across family, community, cultural, and socioeconomic contexts, she studies parenting stress, coparenting, and parent-child relationships to understand social-emotional development and the risk of behavioral and mental health problems. Much of this research draws on the Future of Families and Child Wellbeing Study, a national longitudinal study with substantial representation of racially and ethnically diverse families and families experiencing economic disadvantage. She uses repeated assessments from birth through early childhood and into adolescence to trace how early experiences and caregiving relate to later adjustment.
+Dr. Jiang examines how developmental contexts and family processes shape children’s development and mental health. Across family, community, cultural, and socioeconomic contexts, she studies parenting stress, coparenting, and parent-child relationships to understand social-emotional development and the risk of behavioral and mental health problems. Much of this research draws on the Future of Families and Child Wellbeing Study, a national longitudinal study with substantial representation of racially and ethnically diverse families and families experiencing economic disadvantage. She uses repeated assessments from birth through early childhood and into adolescence to trace how early experiences and caregiving relate to later adjustment.
 
 <div class="selected-publication" markdown="1">
 
@@ -74,7 +74,7 @@ Jiang, Q., Feldman, N., Koire, A., Ma, C., Mittal, L., Lin, H.-C., Erdei, C., Ro
 ## Mental Health and Parenting in the Age of AI
 {: #research-3 }
 
-Dr. Jiang investigates how parents use generative AI for support and what these interactions may mean for mental health, parenting, and family relationships. She asks when and why parents turn to AI, the kinds of support they seek, and how their needs and experiences relate to their mental health and family resources. She examines whether AI support that feels helpful also offers reliable guidance that is responsive to parents’ needs, appropriate for child development, and relevant to everyday family life. Her goal is to understand the immediate and longer-term implications of AI support, including how it relates to coping, seeking support, and parenting decisions.
+Dr. Jiang investigates how parents use generative AI for support and what these interactions may mean for mental health, parenting, and family relationships. She asks when and why parents turn to AI, the kinds of support they seek, and how their needs and experiences relate to their mental health and family resources. She examines whether AI support that feels helpful also offers reliable guidance that is responsive to parents’ needs, appropriate for child development, and relevant to everyday family life. Her goal is to understand the immediate and longer-term implications of AI support, including how it relates to coping, help-seeking, and parenting decisions.
 
 <div class="current-projects" markdown="1">
 
