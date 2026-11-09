@@ -131,8 +131,11 @@ existing heading color and spacing. This covers Education, all Research areas,
 WHEAT Lab, Join the Lab!, Contact, and the 404 page. All Teaching role headings
 use the 17 px subsection style described above; regular-weight university
 suffixes are intentional. No page-content heading should exceed 20 px; subsection headings
-remain 17 px and the separate site identity name remains 38/32 px. Home education
-entries have a 6 px gap. Research retains the approved text-only layout and
+remain 17 px. The separate site identity name uses 34 px desktop / 30 px at the
+600 px phone breakpoint, weight 500 through `--weight-medium` on `.site-name`,
+and 1.25 line height with its existing color. Confirm the global
+`--weight-semibold: 600` still applies to headings and other semibold elements.
+Home education entries have a 6 px gap. Research retains the approved text-only layout and
 three research areas, with the supplied “Her research connects three complementary
 areas...” sentence immediately before “Her goal is to use this evidence to inform...”.
 The first Research area has a 32 px desktop / 28 px phone gap above its heading;

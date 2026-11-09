@@ -7,8 +7,11 @@ Preserve the responsive portrait layout and accessible navigation. The settled
 typography uses self-hosted Source Sans 3
 throughout, with genuine 400/500/600 weights, regular italic, normal letter
 spacing, and one shared style per text role.
-The site identity name uses 38/32 px, weight 600, and 1.25 line height. Page
-titles and major section headings use the shared `--type-section: 1.25rem`:
+The site identity name uses 34 px desktop / 30 px at the existing 600 px phone
+breakpoint, weight 500 through `--weight-medium` on `.site-name`, and 1.25 line
+height. Preserve its existing color and the global `--weight-semibold: 600`
+setting for headings and other semibold elements.
+Page titles and major section headings use the shared `--type-section: 1.25rem`:
 20 px at every viewport, weight 600, and 1.35 line height. This includes
 Education, all Research areas, WHEAT Lab, Join the Lab!, Contact, and the 404
 page. All four Teaching role headings remain semantic `h2` elements and share
