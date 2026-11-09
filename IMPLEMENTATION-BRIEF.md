@@ -16,8 +16,7 @@ the `h3` subsection style through `h3, .teaching-role > h2`, matching the Lab
 application headings: 17 px, weight 600, and 1.40 line height. Other subsections
 use this same scale. Preserve the existing heading color, spacing, and natural wrapping.
 No page-content heading is larger than 20 px; there is no larger page-title tier.
-Body, education and course entries, and header position/university use 17 px
-at weight 400. Publication entries, current-project titles, and footer details
+Body, education and course entries use 17 px at weight 400. Publication entries, current-project titles, and footer details
 use 15 px at weight 400; navigation and profile links use 15 px at weight 500. Body line height is 1.50. Inline teaching
 universities inherit their heading or course size. University names are upright
 in the three teaching role headings and all four Guest Lecturer course entries.
@@ -32,11 +31,16 @@ Instructor; its page title is visually hidden. WHEAT Lab, Contact, and the 404 p
 style for their visible h1 headings. See docs/MAINTENANCE.md for the complete
 shared scale.
 
-- Identity: Qingyu Jiang, with “Assistant Professor, University of Idaho” on one
-  shared header line where space permits, wrapping naturally on narrow phones.
-  The affiliation uses 17 px regular Source Sans 3, 1.50 line height, and its
-  original muted color. The supplied biography uses the fuller description
-  “Assistant Professor of Psychology.”
+- Identity: the shared header shows only Qingyu Jiang above the navigation on
+  every page, including the 404 page. The position and university line is removed;
+  retain the shared configuration values for other content. Name-to-navigation
+  spacing uses `--space-header-nav`: 20 px desktop / 16 px at widths of 600 px or
+  less. Navigation-to-content spacing remains 28/24 px. The supplied biography
+  retains the fuller description “Assistant Professor of Psychology.”
+- Keep horizontal alignment stable across tabs with root
+  `scrollbar-gutter: stable both-edges` and an `overflow-y: scroll` fallback in
+  unsupported browsers. Check all five pages and the 404 page with classic and
+  overlay scrollbars at desktop, tablet, and phone widths.
 - GitHub account: `qingyu-jiang`; public repository: `qingyu-jiang.github.io`.
   The public website is https://qingyu-jiang.github.io/.
 - Five-page navigation: Home · Research · Teaching · WHEAT Lab · Contact.

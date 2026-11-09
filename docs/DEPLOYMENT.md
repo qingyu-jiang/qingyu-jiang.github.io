@@ -86,7 +86,18 @@ removed or the project moves, use these steps to restore it:
 
 ## Verify a publication
 
-Open Home, Research, Teaching, WHEAT Lab, and Contact at desktop and phone sizes.
+Open Home, Research, Teaching, WHEAT Lab, Contact, and the custom 404 page at
+desktop, tablet, and phone sizes. Compare the header, navigation, and content
+edges while switching tabs in both classic and overlay scrollbar modes. The
+long Research page must not shift the centered layout horizontally. The root
+uses `scrollbar-gutter: stable both-edges`, with `overflow-y: scroll` as the
+unsupported-browser fallback.
+
+Confirm every shared header shows only Qingyu Jiang above the navigation, with
+no position/university line. Name-to-navigation spacing is 20 px desktop / 16 px
+at widths of 600 px or less; navigation-to-content spacing remains 28/24 px.
+Keep the shared position and affiliation settings for other content.
+
 Check navigation, the full-resolution portrait, Home profile links (Email leads
 to Contact), all five publications’ plain DOI text and PDF-link destinations,
 and the custom 404 page. Full DOI URLs remain visible but are not clickable;

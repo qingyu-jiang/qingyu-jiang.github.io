@@ -37,6 +37,7 @@
   --leading-body: 1.5;
   --space-paragraph: 12px;
   --space-heading: 12px;
+  --space-header-nav: 20px;
   --space-heading-compact: 8px;
   --space-guest-course: 4px;
   --space-education: 6px;
@@ -48,7 +49,11 @@
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-html { background: #fff; font-size: 100%; }
+/* Keep centered pages aligned when only the longer pages need a scrollbar. */
+html { background: #fff; font-size: 100%; scrollbar-gutter: stable both-edges; }
+@supports not (scrollbar-gutter: stable both-edges) {
+  html { overflow-y: scroll; }
+}
 body { margin: 0; color: var(--ink); font: var(--weight-regular) var(--type-body)/var(--leading-body) var(--sans); font-optical-sizing: auto; font-synthesis: none; letter-spacing: normal; }
 a { color: var(--link); text-underline-offset: 4px; text-decoration-thickness: 1px; }
 a:hover { color: var(--heading); text-decoration-thickness: 2px; }
@@ -64,11 +69,10 @@ h3, .teaching-role > h2 { color: var(--heading); font: var(--weight-semibold) va
 .academic-page { width: 100%; max-width: 1048px; margin: auto; padding: 42px 44px 24px; }
 .academic-main { overflow-wrap: anywhere; }
 .academic-main:focus { outline: none; }
-.identity { display: flex; align-items: flex-start; gap: 24px; }
-.identity-text { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-heading); }
+.identity { display: flex; align-items: flex-start; }
+.identity-text { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; }
 .site-name { font: var(--weight-semibold) var(--type-name)/var(--leading-name) var(--sans); color: var(--heading); letter-spacing: normal; text-decoration: none; overflow-wrap: anywhere; }
-.affiliation { font: var(--weight-regular) var(--type-body)/var(--leading-body) var(--sans); color: var(--muted); margin: 0; }
-.academic-nav { margin: var(--space-section) 0; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.academic-nav { margin: var(--space-header-nav) 0 var(--space-section); border-bottom: 1px solid var(--line); padding-bottom: 8px; }
 .nav-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 4px 32px; }
 .nav-list a { display: flex; align-items: center; min-height: 40px; color: var(--muted); font: var(--weight-medium) var(--type-nav)/var(--leading-body) var(--sans); text-decoration: none; }
 .nav-list a[aria-current='page'] { color: var(--heading); text-decoration: underline; text-underline-offset: 10px; text-decoration-thickness: 2px; }
@@ -124,7 +128,7 @@ h3, .teaching-role > h2 { color: var(--heading); font: var(--weight-semibold) va
 }
 @media (max-width: 600px) {
   .academic-page { padding: 26px 22px 22px; }
-  :root { --type-name: 2rem; --space-section: 24px; --space-research-lead: 28px; }
+  :root { --type-name: 2rem; --space-header-nav: 16px; --space-section: 24px; --space-research-lead: 28px; }
   .guest-courses li + li { margin-top: var(--space-guest-course); }
   .academic-nav { padding-bottom: 10px; }
   .menu-ready .menu-toggle { display: block; }

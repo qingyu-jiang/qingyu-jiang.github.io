@@ -21,14 +21,15 @@ Desktop / phone sizes in pixels:
 | Smaller subsection heading | 17 / 17 | 600 |
 | Body, education, and course entries | 17 / 17 | 400 |
 | Publication entries and current-project titles | 15 / 15 | 400 |
-| Header position and university | 17 / 17 | 400 |
 | Supporting details, including the footer | 15 / 15 | 400 |
 | Navigation and profile links | 15 / 15 | 500 |
 
-The shared header joins position and university with a comma: “Assistant Professor,
-University of Idaho”. It uses 17 px regular text, 1.50 line height, and the original
-muted text color. Keep it on one line when space permits and let it wrap naturally
-on narrow phones; do not insert a forced line break.
+The shared header shows only the name above the navigation; the position and
+university line is removed on every page, including the 404 page. Keep the shared
+position and affiliation configuration values for content that still uses them.
+Name-to-navigation spacing uses `--space-header-nav`: 20 px on desktop and 16 px
+at the existing 600 px phone breakpoint. Navigation-to-content spacing remains
+28 px desktop / 24 px phone; keep these two gaps independent.
 
 Page titles and major section headings use the shared `--type-section: 1.25rem`
 (20 px) at every width, with 600 weight, 1.35 line height, the existing heading
@@ -53,6 +54,12 @@ role headings and the two Lab application headings use a compact 8 px gap
 (`--space-heading-compact`). Paragraph margins must not add extra space to
 section gaps; use the shared flow rules instead of stacking margins and padding
 on adjacent elements.
+
+The root reserves a symmetric scrollbar gutter with
+`scrollbar-gutter: stable both-edges`. This keeps the centered outer layout in
+place when switching between short pages and the longer Research page in
+browsers with classic scrollbars. Unsupported browsers use `overflow-y: scroll`
+as a fallback; overlay scrollbars do not consume layout space.
 
 Text-only pages share one responsive content column, capped at 720 px, for
 headings, prose, publications, and the centered Lab notice. Home keeps its wider
@@ -84,8 +91,9 @@ direct PDF download URLs. PDF anchors use
 `publication-pdf` to remove their underline while retaining a visible keyboard
 focus indicator. The PDF label alone uses the shared 600 weight as a non-color
 link cue; citation text remains regular. Keep this styling scoped to PDF links.
-Preserve the approved author order and citation wording, including the two
-user-supplied entries that omit article numbers.
+Preserve the approved author order and citation wording, including article 19
+for the Journal of Extension paper and article 106018 for the Early Human
+Development paper.
 
 Instructor, Co-Instructor, and Graduate Teaching Assistant headings combine the
 role and university with a comma. Keep each role label at weight 600; wrap the
@@ -123,9 +131,12 @@ text.
   links from `academic.profiles` in [_config.yml](../_config.yml). Empty URLs
   appear as placeholders in local preview and are omitted from the public site.
 
-Keep one shared style per text role. Check all five pages at desktop, tablet,
-and phone widths after changing shared styles. The current content and design
-choices are recorded in [the implementation brief](../IMPLEMENTATION-BRIEF.md).
+Keep one shared style per text role. Check all five pages and the 404 page at
+desktop, tablet, and phone widths after changing shared styles. Test both classic
+and overlay scrollbar modes: the shared header, navigation, and content edges
+must remain aligned when switching tabs. Confirm the name-only header and the
+20/16 px name-to-navigation gap. The current content and design choices are
+recorded in [the implementation brief](../IMPLEMENTATION-BRIEF.md).
 
 ## Replace the portrait
 
