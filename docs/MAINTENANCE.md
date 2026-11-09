@@ -16,7 +16,7 @@ Desktop / phone sizes in pixels:
 
 | Role | Size | Weight |
 | --- | --- | --- |
-| Name | 34 / 30 | 500 |
+| Name | 34 / 30 | 600 |
 | Page title and major section heading | 20 / 20 | 600 |
 | Smaller subsection heading | 17 / 17 | 600 |
 | Body, education, and course entries | 17 / 17 | 400 |
@@ -40,7 +40,7 @@ through `h3, .teaching-role > h2`: 17 px, weight 600, and 1.40 line height,
 matching the Lab application headings. No page-content heading is larger than
 20 px. Other smaller subsection headings also use 17 px; the separate site
 identity name uses 34 px on desktop / 30 px at the existing 600 px phone
-breakpoint. Set `.site-name` to `--weight-medium` (500); keep the global
+breakpoint. Set `.site-name` to `--weight-semibold` (600); keep the global
 `--weight-semibold: 600` for section headings and other semibold elements.
 Retain the name’s existing color and 1.25 line height.
 

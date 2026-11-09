@@ -8,7 +8,7 @@ typography uses self-hosted Source Sans 3
 throughout, with genuine 400/500/600 weights, regular italic, normal letter
 spacing, and one shared style per text role.
 The site identity name uses 34 px desktop / 30 px at the existing 600 px phone
-breakpoint, weight 500 through `--weight-medium` on `.site-name`, and 1.25 line
+breakpoint, weight 600 through `--weight-semibold` on `.site-name`, and 1.25 line
 height. Preserve its existing color and the global `--weight-semibold: 600`
 setting for headings and other semibold elements.
 Page titles and major section headings use the shared `--type-section: 1.25rem`:
